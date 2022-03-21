@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geotechnics | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/tag/geotechnics/</link>
+      <atom:link href="https://gabri.xyz/tag/geotechnics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geotechnics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <title>Geotechnics</title>
+      <link>https://gabri.xyz/tag/geotechnics/</link>
+    </image>
+    
+    <item>
+      <title>Rocpy</title>
+      <link>https://gabri.xyz/project/rocpy/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/rocpy/</guid>
+      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
+&lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab&amp;rsquo;s using python to increase the overall accessibility of the program and improve the plot&amp;rsquo;s interfaces (thanks to matplotlib).&lt;/p&gt;
+&lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Calculate Hoek-Brown criterion parameters&lt;/li&gt;
+&lt;li&gt;Calculate Rock mass parameters ($\sigma_t$, $\sigma_c$, $\sigma_{cm}$, $E_{rm}$)&lt;/li&gt;
+&lt;li&gt;Calculate $\sigma_{3}^{max}$ based on different applications (e.g tunnels)&lt;/li&gt;
+&lt;li&gt;Calculate Mohr-Coulomb parameters (c and $\phi$)&lt;/li&gt;
+&lt;li&gt;Plot H-B and M-C envelope.&lt;/li&gt;
+&lt;li&gt;Plot failure mohr circle and calculate the $\sigma_{1}^{max}$ value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/HB.png&#34; alt=&#34;Main view with the HB crit plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Main view with the HB crit plot
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_2&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/HB_MC.png&#34; alt=&#34;Main view with the HB and MC crit plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Main view with the HB and MC crit plot
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_3&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/Mohr.png&#34; alt=&#34;Secondary veiw with the Mohr-Coulomb failure circle&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Secondary veiw with the Mohr-Coulomb failure circle
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h1 id=&#34;future-additions&#34;&gt;Future additions:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tabulated list values for D&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tabulated list values for $m_i$&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Import data&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Export data&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Electronic Compass</title>
+      <link>https://gabri.xyz/project/ec/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/ec/</guid>
+      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
+&lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
+A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.
+This project has the aim to create a low-cost, open-source electronic geological compass that reduces the time needed to take a measurement, write it down and afterwards rewrite in a txt to be used in other programs (Stereonet, wintensor&amp;hellip;) by creating a tool that works as a normal compass but can save the measurements locally in the appropriate files for different softwares.&lt;/p&gt;
+&lt;p&gt;The planned compass features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure dip and dip direction of a plane&lt;/li&gt;
+&lt;li&gt;Measure strike slip, trend and plunge&lt;/li&gt;
+&lt;li&gt;Quick profile switch (direction/dip, trend/plunge etc..)&lt;/li&gt;
+&lt;li&gt;Automatic txt files save&lt;/li&gt;
+&lt;li&gt;Calibration features&lt;/li&gt;
+&lt;li&gt;Data elaboration software (pydip)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;components-list&#34;&gt;Components list&lt;/h2&gt;
+&lt;p&gt;The Electronic Compass components are searched to be the most cost-effective and easy to solder available that I could find. I provide the links from where the components are purchased but some are europe based (mostly Germany) so check if worldwide shipping is convenient or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Component Name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Quantity&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Price&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Adafruit adalogger M0&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;26€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ThePiHut&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;GY-61 ADXL335 acceletometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.79€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-61-adxl335-beschleunigungssensor-3-axis-neigungswinkel-modul-1?variant=20332875546720&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;128x32 Oled display&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.29€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;GY-271 QMC5883L magnetometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.79€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-271-kompassmodul-kompass-magnet-sensor-fuer-arduino-und-raspberry-pi?variant=18912984432736&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;SD card&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;may vary&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1200mAh 3.7V LiPo battery&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.36€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.welectron.com/LiPo-Pouch-Battery-503562-37V-1200mAh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Welectron&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Potentiometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Buttons&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x?&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;software-used&#34;&gt;Software used&lt;/h2&gt;
+&lt;p&gt;To have a truly open-source project the software used is 100% free and open-source from the CAD project files to the software used to code and flash the code on the adalogger chip.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Software program&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CAD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;FreeCAD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.freecadweb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FreeCAD&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Electronics&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;KiCad EDA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://kicad.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KiCad&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Code environment and upload&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;ArduinoIDE&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.arduino.cc/en/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arduino&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;licences&#34;&gt;Licences&lt;/h2&gt;
+&lt;p&gt;Since the E.C. project covers hardware and software licences that cover both are necessary. You can find the choosen licences in the &amp;ldquo;Licences folder&amp;rdquo; in PDF and .txt format.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;License name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Software&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GNU General Public License v3.0 or later&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://spdx.org/licenses/GPL-3.0-or-later.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPDX&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Hardware&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CERN-OHL-S-2.0 or any later version&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://ohwr.org/cern_ohl_s_v2.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OHWR&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The copyrights to both hardware and software are explicited in the copyright.pdf and copyright.md files and the original copies are stored in the License folder. If you want to apply any kind of change you &lt;strong&gt;always need to log it in the changes.md file&lt;/strong&gt; and include all the original source and copyright files as per licences.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WRF | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/tag/wrf/</link>
+      <atom:link href="https://gabri.xyz/tag/wrf/index.xml" rel="self" type="application/rss+xml" />
+    <description>WRF</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <title>WRF</title>
+      <link>https://gabri.xyz/tag/wrf/</link>
+    </image>
+    
+    <item>
+      <title>Tslist converter</title>
+      <link>https://gabri.xyz/project/tslist/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/tslist/</guid>
+      <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates.
+The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;
+&lt;p&gt;This converter uses javascript to import and manipulate the data. Everything is done locally so it works even offline if the page is saved.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: For now batch conversion is not supported. You need to convert one file at a time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;todo&#34;&gt;Todo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Batch conversions&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mean caluclations over time&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; User defined separator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;converter&#34;&gt;Converter&lt;/h1&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;title&gt;File(s) size&lt;/title&gt;
+  &lt;style&gt;
+    html {
+        font-family: sans-serif;
+    }
+    div#drop_box {
+          height: 400px;
+          width: 400px;
+          border: 3px solid;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 4px;
+      }
+      input[type=&#39;file&#39;] {
+  color: transparent;
+}
+      button, input[type=&#39;file&#39;]::file-selector-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 3px;
+      }
+      pre {
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+      }
+      .dropBox{
+        font-size: 1.15em;
+      }
+      .formCtrl{
+          font-size: 1.15em;
+          font-weight: normal;
+          line-height: 1.1;
+          display: grid;
+          grid-template-columns: 1em auto;
+          gap: 0.5em;
+      }
+      input[type=&#39;radio&#39;]{
+        width: 1em;
+        height: 1em;
+      }
+    &lt;/style&gt;
+&lt;/head&gt;
+  &lt;h2&gt;Input options&lt;/h2&gt;
+    &lt;input type=&#34;file&#34; id=&#34;file-selector&#34;  multiple&gt;
+   &lt;br&gt;
+   &lt;br&gt;
+    or
+    &lt;h4&gt; Drop to upload &lt;/h4&gt;
+      &lt;div id=&#34;drop_box&#34;&gt;
+        &lt;label class=&#34;dropBox&#34;&gt;Drop here&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;h5&gt;Chosen file/s&lt;/h5&gt;
+      &lt;pre id=&#39;fileBox&#39;&gt; &lt;/pre&gt;
+      &lt;h2&gt;Conversion options&lt;/h2&gt;
+      &lt;h3&gt;Time options&lt;/h3&gt;
+      &lt;label for=&#34;convertTimeDay&#34; class=&#34;formCtrl&#34;&gt;
+        &lt;input type=&#34;radio&#34; id=&#34;convertTimeDay&#34; value=&#34;td&#34; name=&#39;timeopt&#39;&gt;
+        Convert hours in days
+      &lt;/label&gt;
+      &lt;label for=&#34;convertTimeMin&#34; class=&#34;formCtrl&#34;&gt;
+        &lt;input type=&#34;radio&#34; id=&#34;convertTimeMin&#34; value=&#34;tm&#34; name=&#39;timeopt&#39;&gt;
+        Convert hours in minutes
+      &lt;/label&gt;
+      &lt;label for=&#34;convertTimeSec&#34; class= &#34;formCtrl&#34;&gt;
+        &lt;input type=&#34;radio&#34; id=&#34;convertTimeSec&#34; value=&#34;ts&#34; name=&#39;timeopt&#39;&gt;
+         Convert hours in seconds
+       &lt;/label&gt;
+       &lt;label for=&#34;convertNone&#34; class= &#34;formCtrl&#34;&gt;
+         &lt;input type=&#34;radio&#34; id=&#34;convertNone&#34; value=&#34;ts&#34; name=&#39;timeopt&#39; checked=&#34;checked&#34;&gt;
+          Leave as is
+        &lt;/label&gt;
+       &lt;br&gt;
+      &lt;button type=&#34;button&#34; id=&#34;convert_button&#34;&gt;&lt;i class=&#34;fas fa-exchange-alt&#34;&gt;&lt;/i&gt; Convert!&lt;/button&gt;
+      &lt;hr&gt;
+      &lt;h4&gt;Output&lt;/h4&gt;
+      &lt;pre id=&#39;output&#39;&gt; &lt;/pre&gt;
+      &lt;button type=&#34;button&#34; id=&#34;save_button&#34; onclick=&#34;saveCSV()&#34;&gt;&lt;i class=&#34;fa fa-save&#34;&gt;&lt;/i&gt; Save&lt;/button&gt;
+      &lt;script&gt;
+        function displayOutput(text){
+          const outBox = document.getElementById(&#39;output&#39;);
+          outBox.textContent = &#39;&#39;;
+          outBox.textContent = text;
+        }
+        function saveCSV(){
+          // console.log(newCSV)
+          const  blob = new Blob([newCSV], {type: &#39;text/plain&#39;});
+          const inFileName = fileList[0].name
+          const fileName = inFileName + &#39;_toCSV.csv&#39;;
+          let newLink = document.createElement(&#39;a&#39;);
+          newLink.download = fileName;
+          newLink.href = window.webkitURL.createObjectURL(blob);
+          // newLink.style.display = &#39;none&#39;;
+          // document.body.appendChild(newLink);
+          newLink.click();
+        }
+        const tdCheckBox = document.getElementById(&#39;convertTimeDay&#39;);
+        const tmCheckBox = document.getElementById(&#39;convertTimeMin&#39;);
+        const tsCheckBox = document.getElementById(&#39;convertTimeSec&#39;);
+        const fileSelector = document.getElementById(&#39;file-selector&#39;);
+        const fileNameBox = document.getElementById(&#39;fileBox&#39;);
+        fileSelector.addEventListener(&#39;change&#39;, (event) =&gt; {
+          window.fileList = event.target.files;
+          fileNameBox.textContent = event.target.files[0].name
+        });
+        const convertButton = document.getElementById(&#39;convert_button&#39;)
+        convertButton.addEventListener(&#39;click&#39;,(event)=&gt;{
+          var reader = new FileReader();
+          var header = &#39;id;ts_hour;id_tsloc;ix;iy;t;q;u;v;psfc;glw;gsw;hfx;lh;tsk;tslb(1);rainc;rainnc;clw\n&#39;;
+          reader.onload = function(){
+              var infileName = window.fileList[0].name;
+              var text = reader.result;
+              var csv = header+text.split(&#39;\n&#39;).slice(1).join(&#39;\n&#39;).replace(/ \s+/g,&#39;;&#39;);
+              // CSV and data manipulation
+              var lines = csv.split(&#39;\n&#39;);
+              var result = [];
+              var headers = lines[0].split(&#39;;&#39;);
+              for(var i=1; i&lt;lines.length;i++){
+                var obj = {};
+                var currentline = lines[i].split(&#39;;&#39;);
+                // console.log(currentline)
+                for(var j=0;j&lt;headers.length;j++){
+                  obj[headers[j]] = currentline[j];
+                }
+                result.push(obj);
+              }
+              var jString = JSON.stringify(result);
+              var jDF = JSON.parse(jString);
+              // console.log(Object.values(jDF[0]));
+              // DO stuff here
+              for (i=0;i&lt;jDF.length;i++){
+                if (tdCheckBox.checked == true){
+                  jDF[i][&#39;ts_days&#39;] = jDF[i][&#39;ts_hour&#39;]/24;
+                }
+                else if (tmCheckBox.checked == true){
+                  jDF[i][&#39;ts_minutes&#39;] = jDF[i][&#39;ts_hour&#39;]*60;
+                }
+                else if (tsCheckBox.checked == true){
+                  jDF[i][&#39;ts_seconds&#39;] = jDF[i][&#39;ts_hour&#39;]*3600;
+                }
+              }
+              // for(var k=0;j&lt; jDF.length;k++){
+              //   console.log(jDF[k]);
+              // }
+              // console.log(jDF.length);
+              // Save stuff
+              // var keys = Object.keys(jDF[0]);
+              window.newCSV = Object.keys(jDF[0]).join(&#39;;&#39;).trim()+&#39;\n&#39;;
+              for (i=0;i&lt;jDF.length;i++){
+                var line = Object.values(jDF[i]).join(&#39;;&#39;).trim()+&#39;\n&#39;;
+                newCSV = newCSV+line
+              }
+              displayOutput(newCSV)
+            }
+            var files = window.fileList;
+            reader.readAsText(files[0]);
+          // console.log(reader.readAsDataURL(window.fileList[0]));
+        });
+        const dropZone = document.getElementById(&#39;drop_box&#39;);
+        dropZone.addEventListener(&#39;dragover&#39;,(event)=&gt;{
+          event.stopPropagation();
+          event.preventDefault();
+          // Style the drag-and-drop as a &#34;copy file&#34; operation.
+          event.target.style.border = &#34;4px solid teal&#34;;
+          event.target.style.color = &#34;teal&#34;;
+          event.target.style.fontWeight = &#34;bold&#34;;
+          event.dataTransfer.dropEffect = &#39;copy&#39;;
+        });
+        dropZone.addEventListener(&#39;dragleave&#39;,(event)=&gt;{
+          event.stopPropagation();
+          event.preventDefault();
+          // Style the drag-and-drop as a &#34;copy file&#34; operation.
+          event.target.style.border = &#34;3px solid&#34;;
+          event.target.style.color = &#34;&#34;;
+          event.target.style.fontWeight = &#34;normal&#34;;
+        });
+        dropZone.addEventListener(&#39;drop&#39;, (event) =&gt; {
+          event.stopPropagation();
+          event.preventDefault();
+          event.target.style.border = &#34;3px solid&#34;;
+          event.target.style.fontWeight = &#34;normal&#34;;
+          event.target.style.color = &#34;&#34;;
+          window.fileList = event.dataTransfer.files;
+          fileNameBox.textContent = fileList[0].name
+        });
+      &lt;/script&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

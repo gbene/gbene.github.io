@@ -1,0 +1,1379 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gabriele Benedetti" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://gabri.xyz/post/pydip/random-planes/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.101333be2c4fb529664ace116163c014.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gabri.xyz/post/pydip/random-planes/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Gabriele Benedetti" />
+  <meta property="og:url" content="https://gabri.xyz/post/pydip/random-planes/" />
+  <meta property="og:title" content="Generate and plot random planes using python | Gabriele Benedetti" />
+  <meta property="og:description" content="In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal." /><meta property="og:image" content="https://gabri.xyz/post/pydip/random-planes/featured.png" />
+    <meta property="twitter:image" content="https://gabri.xyz/post/pydip/random-planes/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-11-12T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-11-12T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gabri.xyz/post/pydip/random-planes/"
+  },
+  "headline": "Generate and plot random planes using python",
+  
+  "image": [
+    "https://gabri.xyz/post/pydip/random-planes/featured.png"
+  ],
+  
+  "datePublished": "2021-11-12T00:00:00Z",
+  "dateModified": "2021-11-12T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Gabriele Benedetti"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gabriele Benedetti",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Generate and plot random planes using python | Gabriele Benedetti</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="46aeda8a256519f639ab2e5832eb2514" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Gabriele Benedetti</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Gabriele Benedetti</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/project/tslist/"><span>Tslist converter</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Generate and plot random planes using python</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 12, 2021
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 640px; max-height: 403px;">
+  <div style="position: relative">
+    <img src="/post/pydip/random-planes/featured.png" width="640" height="403" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="general-introduction-to-planes-and-plotting"><strong>General introduction to planes and plotting</strong></h2>
+<div class="alert alert-note">
+  <div>
+    To know more about planes and plotting read <a href="https://www.cambridge.org/core/books/stereographic-projection-techniques-for-geologists-and-civil-engineers/3462D8306346A41ADE5667A3B0A3E82F">Stereographic Projection Techniques for Geologists and Civil Engineers</a>
+  </div>
+</div>
+<p>In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal. The first parameter can be expressed in different ways but the main two are:</p>
+<ol>
+<li><strong>Strike</strong></li>
+<li><strong>Dip direction</strong></li>
+</ol>
+<p>The second parameter on the other hand is defined only by one value defined as the <strong>Dip angle</strong></p>
+<p>The strike and dip direction of a plane are strictly linked.</p>
+<blockquote>
+<p>The <strong>strike</strong> is defined as the direction given by the intersection line between the given plane and a horizontal plane. The <strong>dip direction</strong> is the angle orthogonal to the strike.</p>
+</blockquote>
+<p>As an example a plane with 90° of strike has a dip direction of 180°. To visualize this relationship we can use the right hand rule:</p>
+<p>the thumb coincides with the direction while the direction of fingers (palm facing downward) the dip direction of the plane.</p>
+<p>This way with a value of strike = 90° we can extrapolate that the plane has a direction of 90° and it is dipping South (180°).</p>
+<p>These basic parameters can be very usefull in geology to understand the general orientation of rock strata encountered on the field and so their overall geometry.</p>
+<h2 id="plotting-planes"><strong>Plotting planes</strong></h2>
+<p>To efficiently analyze the gathered data we can use stereoplots. These kind of plot are obtained as the equatorial projection of the intersection of a plane or line typically with the southern hemisphere of a sphere. In this way planes are rappresented as curves while lines as dots.
+When we have a high number of planes some patterns can emerge such as planes dipping in the same general direction and with similar inclination angles. This grouping is called a set of planes. On stereoplots defining sets can be very difficult especially if there are lots of sets and planes with different orientation. To semplify the view usually poles are used<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h1 id="mplstereonet">mplstereonet</h1>
+<div class="alert alert-note">
+  <div>
+    To know more about mplstereonet go to <a href="https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html">https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html</a>
+  </div>
+</div>
+<p>Using the mplstereonet library we can plot geological data as lines or poles by giving the appropriate strike and dip measurements of the given plane. The process to generate random planes is not that complex since the values that need to be generated are only two.</p>
+<p>First we need to install the two main libraries: mplstereonet and numpy using pip:</p>
+<pre><code class="language-bash">pip install mplstereonet numpy
+</code></pre>
+<p>Now we can start scripting. Let&rsquo;s plot a simple plane with 90° strike and 60° dip angle.</p>
+<pre><code class="language-python">
+import mplstereonet as mpl
+import matplotlib.pyplot as plt
+
+
+strike = 90 #strike value
+dip = 60 #dip value
+
+fig = plt.figure('Stereoplot') #initialize a figure with the name 'Stereoplot'
+
+ax = fig.add_subplot(111,projection='stereonet') #add plot in the figure with the stereonet projection
+ax.grid() #add a grid
+
+ax.plane(strike,dip,'k-') #plot the plane data as a black line
+ax.pole(strike,dip,'kx') #plot the corresponding pole of the plane as a black x
+
+
+plt.show() #show the plot
+
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-ex_1">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/pydip/ex_1.png" alt="Example 1 result" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Example 1 result
+    </figcaption></figure>
+<p>Adding random measurements can be archived using numpy random library</p>
+<pre><code class="language-python">
+import numpy.random as r 
+import mplstereonet as mpl
+import matplotlib.pyplot as plt
+
+
+strike = r.randint(0,361) #random strike value (range from min to max-1)
+dip = r.randint(0,91) #random dip value
+
+print(f'strike:{strike}, dip dir:{(strike+90)%360}, dip:{dip}') #print string to display the strike, dip dir and dip values. 
+
+'''
+The dip direction can be calculated by adding 90°and
+applying the reminder operator % to constrain the result to max 360.
+For example if the strike is 300 the dip direction will be 30° 
+because 390%360 = 30. 
+
+'''
+
+fig = plt.figure('Stereoplot') #initialize a figure with the name 'Stereoplot'
+
+ax = fig.add_subplot(111,projection='stereonet') #add plot in the figure with the stereonet projection
+ax.grid() #add a grid
+
+ax.plane(strike,dip,'k-') #plot the plane data as a black line
+ax.pole(strike,dip,'kx') #plot the corresponding pole of the plane as a black x
+
+
+plt.show() #show the plot
+
+</code></pre>
+<p>The plot will be similar to the <a href="#figure-ex_1">figure of the first examlpe</a> but with a random value of strike and dip angle.</p>
+<p>If we want more than one plane we can create a numpy array of random values that can be plotted. This can be accomplished by modifying the lines</p>
+<pre><code class="language-python">strike = r.randint(0,361,5) #5 random strike values (range from min to max-1)
+dip = r.randint(0,91,5) #5 random dip values
+</code></pre>
+<p>matplotlib is able to unpack and plot the different strike;dip pairs from the two lists.</p>
+<p>A more complex approach is by introducing the concept of plane set. We need a number of planes with the same general orientation and inclination. To do this we can:</p>
+<ol>
+<li>Define a random &ldquo;generator&rdquo; plane. This will define the direction and dip of the set</li>
+<li>Generate random data based on the generator direction and dip</li>
+</ol>
+<p>To give the set a more &ldquo;natural feeling&rdquo; we can use a random number given by a normal distribuition with:</p>
+<p>$$\mu = \text{strike} \text{ or } \mu = \text{dip} $$</p>
+<p>and random $\sigma^2$.</p>
+<pre><code class="language-python">
+import numpy as np
+import matplotlib.pyplot as plt
+import mplstereonet as mpl
+
+
+
+
+
+def random_plane_gen(sets=1, n_planes=10):
+
+	r_s = np.random.randint(0,361,sets) #random strike
+
+	r_dip = np.random.randint(0,91,sets) #random dip
+
+	r_std = np.random.randint(5,20,sets) #random sigma^2
+	
+	planes_dict = {x:{'s':0,'d':0} for x in range(sets)} 
+	'''
+	We can use dictionaries to be more tidy. 
+	For every set there is an entry
+	
+	0: 
+	 + s: 0
+	 + d: 0 
+	1:
+	 + s: 0
+	 + d: 0
+	
+	that then can be filled:
+		
+	0: 
+	 + s: 120
+	 + d: 20
+	1:
+	 + s: 200
+	 + d: 33
+	 
+	'''
+	for nset,s,d,std in zip(list(range(sets)),r_s,r_dip,r_std):
+	
+		#take only the absolute values of n_planes random values with center s and given sigma^2 rounded to 2 decimals
+		planes_dict[nset]['s'] = np.abs(np.round(np.random.normal(s,std,n_planes),2)) 
+		planes_dict[nset]['d'] = np.abs(np.round(np.random.normal(d,std,n_planes),2))
+
+		
+	return planes_dict
+	
+	
+random_set = random_plane_gen()
+print(random_set) #print dict
+
+
+	
+def plane_plot(planes_dict,show_planes=1,show_poles=0):
+
+	#plot with different colors depending on the set (0:red, 1:green, ...)
+	set_color = ['r','g','b','k','m','c'] 
+	
+	fig = plt.figure('Stereonet')
+	ax = fig.add_subplot(111, projection='stereonet')
+	
+	
+	for sets in planes_dict: #for every set present in the dict
+		for i in range(len(planes_dict[sets]['s'])):
+			if show_planes:
+				ax.plane(planes_dict[sets]['s'][i],
+					 planes_dict[sets]['d'][i],
+					 f'{set_color[sets]}-')
+			if show_poles:
+				ax.pole(planes_dict[sets]['s'][i],
+					planes_dict[sets]['d'][i],
+					f'{set_color[sets]}o')
+
+		
+	ax.grid()
+	plt.show()
+	
+plane_plot(random_set)
+</code></pre>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-ex_4a">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/pydip/ex_4.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-ex_4b">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/pydip/ex_4_2.png" alt="Example 4 results. Below plotted 2 sets of different planes" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Example 4 results. Below plotted 2 sets of different planes
+    </figcaption></figure></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Poles are artificial lines normal to the surface of a given plane.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/structural-geology/">Structural geology</a>
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Generate%20and%20plot%20random%20planes%20using%20python&amp;body=https://gabri.xyz/post/pydip/random-planes/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://reddit.com/submit?url=https://gabri.xyz/post/pydip/random-planes/&amp;title=Generate%20and%20plot%20random%20planes%20using%20python" target="_blank" rel="noopener" class="share-btn-reddit" aria-label="reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://gabri.xyz/post/pydip/random-planes/&amp;title=Generate%20and%20plot%20random%20planes%20using%20python" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://gabri.xyz/post/pydip/random-planes/&amp;text=Generate%20and%20plot%20random%20planes%20using%20python" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://gabri.xyz/post/pydip/random-planes/&amp;t=Generate%20and%20plot%20random%20planes%20using%20python" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://gabri.xyz"><img class="avatar mr-3 avatar-circle" src="/author/gabriele-benedetti/avatar_hu39a1860b7e975276ba6916a3df73bbcc_817132_270x270_fill_lanczos_center_3.png" alt="Gabriele Benedetti"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://gabri.xyz">Gabriele Benedetti</a></h5>
+      <h6 class="card-subtitle">Student</h6>
+      <p class="card-text">MSc student in Geology and Geodinamics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/gbene" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/Gabriele_Benedetti_CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/pydip/">Pydip</a></li>
+      
+      <li><a href="/project/ec/">Electronic Compass</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  <p class="powered-by">
+      Powered by the <a href="https://github.com/wowchemy/starter-hugo-academic" target="_blank" rel="noopener">Academic theme</a> for <a href="https://gohugo.io/" rel="noopener">Hugo</a>.
+    
+  </p>
+    <p class="powered-by">
+    
+	© 2021 Gabriele Benedetti 
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.7cd6ec29d281a73c92a2958a1584aadc.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

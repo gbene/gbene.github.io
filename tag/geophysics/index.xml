@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geophysics | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/tag/geophysics/</link>
+      <atom:link href="https://gabri.xyz/tag/geophysics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geophysics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <title>Geophysics</title>
+      <link>https://gabri.xyz/tag/geophysics/</link>
+    </image>
+    
+    <item>
+      <title>Pyseismic</title>
+      <link>https://gabri.xyz/project/pyseismic/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/pyseismic/</guid>
+      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
+&lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly &lt;a href=&#34;http://www.wgeosoft.ch/PDF/Visual_SUNT_Pro_Data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual SUNT&lt;/a&gt; that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;
+&lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
+&lt;p&gt;For now there are very few functions available (the essentials). In particular seispy can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read and plot with matplotlib seismic traces from files supported on &lt;a href=&#34;https://docs.obspy.org/packages/autogen/obspy.core.stream.read.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apply FFT analysis on single or multiple traces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic filtering (band pass, low and high pass)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First break picking with options of live dromochrome plot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;future-capabilities&#34;&gt;Future capabilities&lt;/h1&gt;
+&lt;p&gt;As it is this software is very bare bones but I have plans to expand it with more features such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Automatic first break&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Trace muting&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; More precise import options (as for now it relies on the autodetect features of Obspy)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Simple stratigraphic model reconstruction (from dromochrome elaboration)&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Delaytime and GRM applications&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; SRCS&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Focal mechanism reconstruction&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

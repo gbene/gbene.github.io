@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Structural geology | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/tag/structural-geology/</link>
+      <atom:link href="https://gabri.xyz/tag/structural-geology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Structural geology</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <title>Structural geology</title>
+      <link>https://gabri.xyz/tag/structural-geology/</link>
+    </image>
+    
+    <item>
+      <title>Generate and plot random planes using python</title>
+      <link>https://gabri.xyz/post/pydip/random-planes/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/post/pydip/random-planes/</guid>
+      <description>&lt;h2 id=&#34;general-introduction-to-planes-and-plotting&#34;&gt;&lt;strong&gt;General introduction to planes and plotting&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    To know more about planes and plotting read &lt;a href=&#34;https://www.cambridge.org/core/books/stereographic-projection-techniques-for-geologists-and-civil-engineers/3462D8306346A41ADE5667A3B0A3E82F&#34;&gt;Stereographic Projection Techniques for Geologists and Civil Engineers&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal. The first parameter can be expressed in different ways but the main two are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Strike&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dip direction&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The second parameter on the other hand is defined only by one value defined as the &lt;strong&gt;Dip angle&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The strike and dip direction of a plane are strictly linked.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;strike&lt;/strong&gt; is defined as the direction given by the intersection line between the given plane and a horizontal plane. The &lt;strong&gt;dip direction&lt;/strong&gt; is the angle orthogonal to the strike.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As an example a plane with 90° of strike has a dip direction of 180°. To visualize this relationship we can use the right hand rule:&lt;/p&gt;
+&lt;p&gt;the thumb coincides with the direction while the direction of fingers (palm facing downward) the dip direction of the plane.&lt;/p&gt;
+&lt;p&gt;This way with a value of strike = 90° we can extrapolate that the plane has a direction of 90° and it is dipping South (180°).&lt;/p&gt;
+&lt;p&gt;These basic parameters can be very usefull in geology to understand the general orientation of rock strata encountered on the field and so their overall geometry.&lt;/p&gt;
+&lt;h2 id=&#34;plotting-planes&#34;&gt;&lt;strong&gt;Plotting planes&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;To efficiently analyze the gathered data we can use stereoplots. These kind of plot are obtained as the equatorial projection of the intersection of a plane or line typically with the southern hemisphere of a sphere. In this way planes are rappresented as curves while lines as dots.
+When we have a high number of planes some patterns can emerge such as planes dipping in the same general direction and with similar inclination angles. This grouping is called a set of planes. On stereoplots defining sets can be very difficult especially if there are lots of sets and planes with different orientation. To semplify the view usually poles are used&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;mplstereonet&#34;&gt;mplstereonet&lt;/h1&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    To know more about mplstereonet go to &lt;a href=&#34;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&#34;&gt;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Using the mplstereonet library we can plot geological data as lines or poles by giving the appropriate strike and dip measurements of the given plane. The process to generate random planes is not that complex since the values that need to be generated are only two.&lt;/p&gt;
+&lt;p&gt;First we need to install the two main libraries: mplstereonet and numpy using pip:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install mplstereonet numpy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can start scripting. Let&amp;rsquo;s plot a simple plane with 90° strike and 60° dip angle.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+import mplstereonet as mpl
+import matplotlib.pyplot as plt
+
+
+strike = 90 #strike value
+dip = 60 #dip value
+
+fig = plt.figure(&#39;Stereoplot&#39;) #initialize a figure with the name &#39;Stereoplot&#39;
+
+ax = fig.add_subplot(111,projection=&#39;stereonet&#39;) #add plot in the figure with the stereonet projection
+ax.grid() #add a grid
+
+ax.plane(strike,dip,&#39;k-&#39;) #plot the plane data as a black line
+ax.pole(strike,dip,&#39;kx&#39;) #plot the corresponding pole of the plane as a black x
+
+
+plt.show() #show the plot
+
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-ex_1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_1.png&#34; alt=&#34;Example 1 result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Example 1 result
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;Adding random measurements can be archived using numpy random library&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+import numpy.random as r 
+import mplstereonet as mpl
+import matplotlib.pyplot as plt
+
+
+strike = r.randint(0,361) #random strike value (range from min to max-1)
+dip = r.randint(0,91) #random dip value
+
+print(f&#39;strike:{strike}, dip dir:{(strike+90)%360}, dip:{dip}&#39;) #print string to display the strike, dip dir and dip values. 
+
+&#39;&#39;&#39;
+The dip direction can be calculated by adding 90°and
+applying the reminder operator % to constrain the result to max 360.
+For example if the strike is 300 the dip direction will be 30° 
+because 390%360 = 30. 
+
+&#39;&#39;&#39;
+
+fig = plt.figure(&#39;Stereoplot&#39;) #initialize a figure with the name &#39;Stereoplot&#39;
+
+ax = fig.add_subplot(111,projection=&#39;stereonet&#39;) #add plot in the figure with the stereonet projection
+ax.grid() #add a grid
+
+ax.plane(strike,dip,&#39;k-&#39;) #plot the plane data as a black line
+ax.pole(strike,dip,&#39;kx&#39;) #plot the corresponding pole of the plane as a black x
+
+
+plt.show() #show the plot
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The plot will be similar to the &lt;a href=&#34;#figure-ex_1&#34;&gt;figure of the first examlpe&lt;/a&gt; but with a random value of strike and dip angle.&lt;/p&gt;
+&lt;p&gt;If we want more than one plane we can create a numpy array of random values that can be plotted. This can be accomplished by modifying the lines&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;strike = r.randint(0,361,5) #5 random strike values (range from min to max-1)
+dip = r.randint(0,91,5) #5 random dip values
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;matplotlib is able to unpack and plot the different strike;dip pairs from the two lists.&lt;/p&gt;
+&lt;p&gt;A more complex approach is by introducing the concept of plane set. We need a number of planes with the same general orientation and inclination. To do this we can:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Define a random &amp;ldquo;generator&amp;rdquo; plane. This will define the direction and dip of the set&lt;/li&gt;
+&lt;li&gt;Generate random data based on the generator direction and dip&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To give the set a more &amp;ldquo;natural feeling&amp;rdquo; we can use a random number given by a normal distribuition with:&lt;/p&gt;
+&lt;p&gt;$$\mu = \text{strike} \text{ or } \mu = \text{dip} $$&lt;/p&gt;
+&lt;p&gt;and random $\sigma^2$.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+import numpy as np
+import matplotlib.pyplot as plt
+import mplstereonet as mpl
+
+
+
+
+
+def random_plane_gen(sets=1, n_planes=10):
+
+	r_s = np.random.randint(0,361,sets) #random strike
+
+	r_dip = np.random.randint(0,91,sets) #random dip
+
+	r_std = np.random.randint(5,20,sets) #random sigma^2
+	
+	planes_dict = {x:{&#39;s&#39;:0,&#39;d&#39;:0} for x in range(sets)} 
+	&#39;&#39;&#39;
+	We can use dictionaries to be more tidy. 
+	For every set there is an entry
+	
+	0: 
+	 + s: 0
+	 + d: 0 
+	1:
+	 + s: 0
+	 + d: 0
+	
+	that then can be filled:
+		
+	0: 
+	 + s: 120
+	 + d: 20
+	1:
+	 + s: 200
+	 + d: 33
+	 
+	&#39;&#39;&#39;
+	for nset,s,d,std in zip(list(range(sets)),r_s,r_dip,r_std):
+	
+		#take only the absolute values of n_planes random values with center s and given sigma^2 rounded to 2 decimals
+		planes_dict[nset][&#39;s&#39;] = np.abs(np.round(np.random.normal(s,std,n_planes),2)) 
+		planes_dict[nset][&#39;d&#39;] = np.abs(np.round(np.random.normal(d,std,n_planes),2))
+
+		
+	return planes_dict
+	
+	
+random_set = random_plane_gen()
+print(random_set) #print dict
+
+
+	
+def plane_plot(planes_dict,show_planes=1,show_poles=0):
+
+	#plot with different colors depending on the set (0:red, 1:green, ...)
+	set_color = [&#39;r&#39;,&#39;g&#39;,&#39;b&#39;,&#39;k&#39;,&#39;m&#39;,&#39;c&#39;] 
+	
+	fig = plt.figure(&#39;Stereonet&#39;)
+	ax = fig.add_subplot(111, projection=&#39;stereonet&#39;)
+	
+	
+	for sets in planes_dict: #for every set present in the dict
+		for i in range(len(planes_dict[sets][&#39;s&#39;])):
+			if show_planes:
+				ax.plane(planes_dict[sets][&#39;s&#39;][i],
+					 planes_dict[sets][&#39;d&#39;][i],
+					 f&#39;{set_color[sets]}-&#39;)
+			if show_poles:
+				ax.pole(planes_dict[sets][&#39;s&#39;][i],
+					planes_dict[sets][&#39;d&#39;][i],
+					f&#39;{set_color[sets]}o&#39;)
+
+		
+	ax.grid()
+	plt.show()
+	
+plane_plot(random_set)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-ex_4a&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-ex_4b&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_4_2.png&#34; alt=&#34;Example 4 results. Below plotted 2 sets of different planes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Example 4 results. Below plotted 2 sets of different planes
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Poles are artificial lines normal to the surface of a given plane.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pydip</title>
+      <link>https://gabri.xyz/project/pydip/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/pydip/</guid>
+      <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;
+&lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The plots are generated with &lt;a href=&#34;https://github.com/joferkington/mplstereonet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mplstereonet library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;capabilities&#34;&gt;Capabilities:&lt;/h2&gt;
+&lt;h3 id=&#34;generate-multiple-random-sets-of-planes&#34;&gt;Generate multiple random sets of planes&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-ex_1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The program chooses a random dip direction and angle for every set and depending on that plane the planes will be generated with a normal distribuition with a random std value.&lt;/p&gt;
+&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of sets&lt;/li&gt;
+&lt;li&gt;Number of planes&lt;/li&gt;
+&lt;li&gt;Plot planes and/or poles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;generate-multiple-random-sets-of-folds&#34;&gt;Generate multiple random sets of folds&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-rand_p&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The program can generate n sets of random planes that follow random cilindrical fold parameters (axial plane and hinge line inclination etcetc).&lt;/p&gt;
+&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of sets of folds&lt;/li&gt;
+&lt;li&gt;Number of planes for every fold limb&lt;/li&gt;
+&lt;li&gt;Plot limb planes and/or poles&lt;/li&gt;
+&lt;li&gt;Plot plane axis and/or hinge line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;generate-random-focal-mechanisms&#34;&gt;Generate random focal mechanisms&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-rand_p&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;data-table-view-and-selection&#34;&gt;Data table view and selection&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-rand_p&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;import-and-plot-imported-data&#34;&gt;Import and plot imported data&lt;/h3&gt;
+&lt;h2 id=&#34;planned-features&#34;&gt;Planned features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faults&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better selection options&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better import functions&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Statistics module&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3D viewer for plotted structures&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Electronic Compass</title>
+      <link>https://gabri.xyz/project/ec/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/project/ec/</guid>
+      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
+&lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
+A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.
+This project has the aim to create a low-cost, open-source electronic geological compass that reduces the time needed to take a measurement, write it down and afterwards rewrite in a txt to be used in other programs (Stereonet, wintensor&amp;hellip;) by creating a tool that works as a normal compass but can save the measurements locally in the appropriate files for different softwares.&lt;/p&gt;
+&lt;p&gt;The planned compass features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Measure dip and dip direction of a plane&lt;/li&gt;
+&lt;li&gt;Measure strike slip, trend and plunge&lt;/li&gt;
+&lt;li&gt;Quick profile switch (direction/dip, trend/plunge etc..)&lt;/li&gt;
+&lt;li&gt;Automatic txt files save&lt;/li&gt;
+&lt;li&gt;Calibration features&lt;/li&gt;
+&lt;li&gt;Data elaboration software (pydip)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;components-list&#34;&gt;Components list&lt;/h2&gt;
+&lt;p&gt;The Electronic Compass components are searched to be the most cost-effective and easy to solder available that I could find. I provide the links from where the components are purchased but some are europe based (mostly Germany) so check if worldwide shipping is convenient or not.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Component Name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Quantity&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Price&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Adafruit adalogger M0&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;26€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ThePiHut&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;GY-61 ADXL335 acceletometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.79€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-61-adxl335-beschleunigungssensor-3-axis-neigungswinkel-modul-1?variant=20332875546720&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;128x32 Oled display&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.29€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;GY-271 QMC5883L magnetometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.79€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-271-kompassmodul-kompass-magnet-sensor-fuer-arduino-und-raspberry-pi?variant=18912984432736&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;SD card&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;may vary&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1200mAh 3.7V LiPo battery&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.36€&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.welectron.com/LiPo-Pouch-Battery-503562-37V-1200mAh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Welectron&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Potentiometer&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Buttons&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;x?&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;software-used&#34;&gt;Software used&lt;/h2&gt;
+&lt;p&gt;To have a truly open-source project the software used is 100% free and open-source from the CAD project files to the software used to code and flash the code on the adalogger chip.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Software program&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CAD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;FreeCAD&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.freecadweb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FreeCAD&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Electronics&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;KiCad EDA&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://kicad.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KiCad&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Code environment and upload&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;ArduinoIDE&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.arduino.cc/en/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arduino&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;licences&#34;&gt;Licences&lt;/h2&gt;
+&lt;p&gt;Since the E.C. project covers hardware and software licences that cover both are necessary. You can find the choosen licences in the &amp;ldquo;Licences folder&amp;rdquo; in PDF and .txt format.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;License name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Software&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;GNU General Public License v3.0 or later&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://spdx.org/licenses/GPL-3.0-or-later.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPDX&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Hardware&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;CERN-OHL-S-2.0 or any later version&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://ohwr.org/cern_ohl_s_v2.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OHWR&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The copyrights to both hardware and software are explicited in the copyright.pdf and copyright.md files and the original copies are stored in the License folder. If you want to apply any kind of change you &lt;strong&gt;always need to log it in the changes.md file&lt;/strong&gt; and include all the original source and copyright files as per licences.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
