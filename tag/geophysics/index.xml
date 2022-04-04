@@ -7,16 +7,16 @@
     <description>Geophysics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>Geophysics</title>
       <link>https://gabri.xyz/tag/geophysics/</link>
     </image>
     
     <item>
       <title>Pyseismic</title>
-      <link>https://gabri.xyz/project/pyseismic/</link>
+      <link>https://gabri.xyz/projects/pyseismic/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/pyseismic/</guid>
+      <guid>https://gabri.xyz/projects/pyseismic/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly &lt;a href=&#34;http://www.wgeosoft.ch/PDF/Visual_SUNT_Pro_Data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual SUNT&lt;/a&gt; that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;

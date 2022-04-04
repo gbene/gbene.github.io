@@ -5,18 +5,348 @@
     <link>https://gabri.xyz/</link>
       <atom:link href="https://gabri.xyz/index.xml" rel="self" type="application/rss+xml" />
     <description>Gabriele Benedetti</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>Gabriele Benedetti</title>
       <link>https://gabri.xyz/</link>
     </image>
     
     <item>
+      <title>3D viewer</title>
+      <link>https://gabri.xyz/documentations/pzero/viewers/3dview/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/viewers/3dview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generate random planes</title>
+      <link>https://gabri.xyz/documentations/pydip/planes/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pydip/planes/</guid>
+      <description>&lt;h2 id=&#34;generate-random-planes&#34;&gt;Generate random planes&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Pydip is able to generate n sets of random planes composed by a set number of planes. The program chooses a random dip direction and angle for every set and depending on that plane the planes will be generated with a normal distribuition with a random std value.&lt;/p&gt;
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of sets&lt;/li&gt;
+&lt;li&gt;Number of planes&lt;/li&gt;
+&lt;li&gt;Plot planes and/or poles&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Map viewer</title>
+      <link>https://gabri.xyz/documentations/pzero/viewers/mapview/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/viewers/mapview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross section viewer</title>
+      <link>https://gabri.xyz/documentations/pzero/viewers/xsection/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/viewers/xsection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generate random folds</title>
+      <link>https://gabri.xyz/documentations/pydip/folds/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pydip/folds/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Pydip is able to generate n sets of random planes that follow random cilindrical fold parameters (axial plane and hinge line inclination etcetc).&lt;/p&gt;
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of sets of folds&lt;/li&gt;
+&lt;li&gt;Number of planes for every fold limb&lt;/li&gt;
+&lt;li&gt;Plot limb planes and/or poles&lt;/li&gt;
+&lt;li&gt;Plot plane axis and/or hinge line&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generate random folds</title>
+      <link>https://gabri.xyz/documentations/rocpy/folds/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/rocpy/folds/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Pydip is able to generate n sets of random planes that follow random cilindrical fold parameters (axial plane and hinge line inclination etcetc).&lt;/p&gt;
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of sets of folds&lt;/li&gt;
+&lt;li&gt;Number of planes for every fold limb&lt;/li&gt;
+&lt;li&gt;Plot limb planes and/or poles&lt;/li&gt;
+&lt;li&gt;Plot plane axis and/or hinge line&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generate random focal mechanisms</title>
+      <link>https://gabri.xyz/documentations/pydip/focal/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pydip/focal/</guid>
+      <description>&lt;p&gt;Pydip is able to generate 4 sets of random focal mechanisms plots (beach balls).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generate random focal mechanisms</title>
+      <link>https://gabri.xyz/documentations/rocpy/focal/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/rocpy/focal/</guid>
+      <description>&lt;p&gt;Pydip is able to generate 4 sets of random focal mechanisms plots (beach balls).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import Gocad</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/gocad/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/gocad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import Gocad Xsection</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/gocadx/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/gocadx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import Gocad boudary</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/gocadb/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/gocadb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Explicit modelling</title>
+      <link>https://gabri.xyz/documentations/pzero/interpolation/explicit/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/interpolation/explicit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implicit modelling</title>
+      <link>https://gabri.xyz/documentations/pzero/interpolation/implicit/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/interpolation/implicit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import PyVista</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/pyvista/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/pyvista/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import point cloud data</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/pc/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/pc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import Vedo</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/vedo/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/vedo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import DEM</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/dem/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/dem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import OrthoImage</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/ortho/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/ortho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import SHP</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/shp/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/shp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import SEGY</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/segy/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/segy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List of planned features</title>
+      <link>https://gabri.xyz/documentations/pydip/plan/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pydip/plan/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faults&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better selection options&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better import functions&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Statistics module&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3D viewer for plotted structures&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tslist converter</title>
-      <link>https://gabri.xyz/project/tslist/</link>
+      <link>https://gabri.xyz/projects/tslist/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/tslist/</guid>
+      <guid>https://gabri.xyz/projects/tslist/</guid>
       <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates.
 The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;
 &lt;p&gt;This converter uses javascript to import and manipulate the data. Everything is done locally so it works even offline if the page is saved.&lt;/p&gt;
@@ -489,9 +819,9 @@ plane_plot(random_set)
     
     <item>
       <title>Pydip</title>
-      <link>https://gabri.xyz/project/pydip/</link>
+      <link>https://gabri.xyz/projects/pydip/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/pydip/</guid>
+      <guid>https://gabri.xyz/projects/pydip/</guid>
       <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;
 &lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The plots are generated with &lt;a href=&#34;https://github.com/joferkington/mplstereonet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mplstereonet library&lt;/a&gt;.&lt;/p&gt;
@@ -601,9 +931,9 @@ plane_plot(random_set)
     
     <item>
       <title>Rocpy</title>
-      <link>https://gabri.xyz/project/rocpy/</link>
+      <link>https://gabri.xyz/projects/rocpy/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/rocpy/</guid>
+      <guid>https://gabri.xyz/projects/rocpy/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab&amp;rsquo;s using python to increase the overall accessibility of the program and improve the plot&amp;rsquo;s interfaces (thanks to matplotlib).&lt;/p&gt;
 &lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
@@ -687,9 +1017,9 @@ plane_plot(random_set)
     
     <item>
       <title>Pyseismic</title>
-      <link>https://gabri.xyz/project/pyseismic/</link>
+      <link>https://gabri.xyz/projects/pyseismic/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/pyseismic/</guid>
+      <guid>https://gabri.xyz/projects/pyseismic/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly &lt;a href=&#34;http://www.wgeosoft.ch/PDF/Visual_SUNT_Pro_Data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual SUNT&lt;/a&gt; that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;
@@ -807,9 +1137,9 @@ plane_plot(random_set)
     
     <item>
       <title>Automatic processing for referenced slopes</title>
-      <link>https://gabri.xyz/project/auto-slope/</link>
+      <link>https://gabri.xyz/projects/auto-slope/</link>
       <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/auto-slope/</guid>
+      <guid>https://gabri.xyz/projects/auto-slope/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;This project was a request aimed to find a way to prepare different 3D models, in particular artificial slopes, and calculate the difference between two reconstructions after a given event directly in metashape &lt;strong&gt;without&lt;/strong&gt; using external programs.&lt;/p&gt;
 &lt;p&gt;In particular the set of scripts needed to achive the following tasks:&lt;/p&gt;
@@ -992,9 +1322,9 @@ plane_plot(random_set)
     
     <item>
       <title>Electronic Compass</title>
-      <link>https://gabri.xyz/project/ec/</link>
+      <link>https://gabri.xyz/projects/ec/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/ec/</guid>
+      <guid>https://gabri.xyz/projects/ec/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
 A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.
@@ -1127,9 +1457,9 @@ This project has the aim to create a low-cost, open-source electronic geological
     
     <item>
       <title>3D paleontological objects</title>
-      <link>https://gabri.xyz/project/fossils/</link>
+      <link>https://gabri.xyz/projects/fossils/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/fossils/</guid>
+      <guid>https://gabri.xyz/projects/fossils/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;The computing power of modern technologies and their rapid development gave the possibility to reconstruct 3D digital objects precisely and rapidly from the real world, increasing the possibility of their conservation and sharing. There are three different types of reconstruction techniques: photogrammetry, 3D scan and CT scan or tomography. These three methods are based on the fundamental concept of obtaining, interpreting, and measuring surface and objects properties without needing a direct contact with the object.
 This project gives a more in-depth look of photogrammetry, in particular the modern technique defined as Structure from Motion, applied to centimetric macroinvertebrate fossils. Photogrammetry is the most accessible and cost-effective method of the three. The project was entirely developed during the COVID-19 sanitary emergency using already available or easily obtainable equipment. As a second aim and long-term objective, the thesis works as a guide for further experimentation and automation of the process of data capture and processing and to create a digital palaeontological archive that can be used for online accurate analysis of specimens.&lt;/p&gt;

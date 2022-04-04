@@ -1,0 +1,1284 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gabriele Benedetti" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="An open source 3D geological modelling software." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://gabri.xyz/documentations/pzero/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.101333be2c4fb529664ace116163c014.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/documentations/pzero/index.xml" type="application/rss+xml" title="Gabriele Benedetti" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubd5b5ce366c931b40680da4234bbf48d_38168_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubd5b5ce366c931b40680da4234bbf48d_38168_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gabri.xyz/documentations/pzero/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Gabriele Benedetti" />
+  <meta property="og:url" content="https://gabri.xyz/documentations/pzero/" />
+  <meta property="og:title" content="PZero | Gabriele Benedetti" />
+  <meta property="og:description" content="An open source 3D geological modelling software." /><meta property="og:image" content="https://gabri.xyz/documentations/pzero/featured.png" />
+    <meta property="twitter:image" content="https://gabri.xyz/documentations/pzero/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2022-04-03T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+
+  
+
+
+
+
+
+  <title>PZero | Gabriele Benedetti</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="00a41748d0af3d7a3565a1cf65a48f31" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu312e21b8c12cc84f55d82388245af230_90026_0x70_resize_lanczos_3.png" alt="Gabriele Benedetti"
+          
+          ></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu312e21b8c12cc84f55d82388245af230_90026_0x70_resize_lanczos_3.png" alt="Gabriele Benedetti"
+        
+        ></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/documentations/"><span>Documentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects/tslist/"><span>Tslist converter</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Documetations
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/documentations/"><i class="fas fa-arrow-left pr-1"></i>Documetations</a></li>
+      </ul>
+
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link  active" href="/documentations/pzero/">PZero</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/documentations/pzero/interface/">Interface overview</a>
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/documentations/pzero/interpolation/">Interpolation</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/documentations/pzero/interpolation/explicit/">Explicit modelling</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/interpolation/implicit/">Implicit modelling</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/documentations/pzero/viewers/">Viewers</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/documentations/pzero/viewers/3dview/">3D viewer</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/viewers/mapview/">Map viewer</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/viewers/xsection/">Cross section viewer</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/documentations/pzero/functions/">Function list</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/documentations/pzero/functions/gocad/">Import Gocad</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/gocadx/">Import Gocad Xsection</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/gocadb/">Import Gocad boudary</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/pyvista/">Import PyVista</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/pc/">Import point cloud data</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/vedo/">Import Vedo</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/dem/">Import DEM</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/ortho/">Import OrthoImage</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/shp/">Import SHP</a></li>
+
+
+
+  <li class=""><a href="/documentations/pzero/functions/segy/">Import SEGY</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#about"><strong>About</strong></a></li>
+    <li><a href="#where-to-download"><strong>Where to download</strong></a></li>
+    <li><a href="#how-to-install"><strong>How to install</strong></a>
+      <ul>
+        <li><a href="#windows">Windows</a></li>
+        <li><a href="#macos">MacOS</a></li>
+        <li><a href="#linux">Linux</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/documentations/">
+      
+        Documetations
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        PZero
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>PZero</h1>
+
+          <div class="article-style">
+            <h2 id="about"><strong>About</strong></h2>
+<p><em><strong>PZero</strong></em> is a Python open-source 3D geological modelling application, leveraging various libraries, with a user-friendly graphical user interface allowing to perform most standard geomodelling data management and analysis tasks, explicit surface interpolation, and advanced implicit interpolation.</p>
+<p>To build <em><strong>PZero</strong></em> we use several open-source libraries. <strong><a href="https://vtk.org/" target="_blank" rel="noopener">VTK</a></strong> provides classes for all 3D objects, in addition to 3D visualization and basic analysis and modelling tools. The <em><strong>PZero</strong></em> graphical user interface is built with <strong><a href="https://www.qt.io/qt-for-python" target="_blank" rel="noopener">Qt</a></strong>. All objects in a <em><strong>PZero</strong></em> project and their metadata are collected and managed in <strong><a href="https://pandas.pydata.org/" target="_blank" rel="noopener">pandas</a></strong> dataframes. We use a VTK-Numpy interface that allows performing most mathematical processing with simple <strong><a href="https://numpy.org/" target="_blank" rel="noopener">NumPy</a></strong> syntax, while 2D plotting is performed with <strong><a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a></strong>. <strong><a href="https://www.pyvista.org/" target="_blank" rel="noopener">PyVista</a></strong> and <strong><a href="https://vedo.embl.es/" target="_blank" rel="noopener">vedo</a></strong> provide simplified access to <strong><a href="https://vtk.org/" target="_blank" rel="noopener">VTK</a></strong> visualization and I/O tools. Various 2D graphical and topological editing tools in <em><strong>PZero</strong></em> are based on <strong><a href="https://shapely.readthedocs.io" target="_blank" rel="noopener">Shapely</a></strong>, while <strong><a href="https://geopandas.org/en/stable/" target="_blank" rel="noopener">GeoPandas</a></strong>, <strong><a href="https://rasterio.readthedocs.io" target="_blank" rel="noopener">Rasterio</a></strong>, <strong><a href="https://xarray.pydata.org" target="_blank" rel="noopener">Xarray</a></strong>, and <strong><a href="https://ezdxf.readthedocs.io" target="_blank" rel="noopener">EzDxf</a></strong> provide I/O tools for GIS and CAD data. <strong><a href="https://github.com/Loop3D/LoopStructural" target="_blank" rel="noopener">LoopStructural</a></strong> provides three different implicit surface interpolation algorithms.</p>
+<p>All the developers of these libraries are warmly thanked!</p>
+<p>The <em><strong>PZero</strong></em> project started in spring 2020 thanks to a research project funded by <strong><a href="https://www.proiter.it/" target="_blank" rel="noopener">Pro Iter Tunnelling &amp; Geotechnical Department</a></strong> and lead by <strong>Andrea Bistacchi</strong> and <strong>Luca Soldo</strong>.</p>
+<p>The <em><strong>PZero</strong></em> developers are:</p>
+<ul>
+<li>Andrea Bistacchi (since the beginning)</li>
+<li>Gloria Arienti (since December 2020)</li>
+<li>Gabriele Benedetti (since January 2022)</li>
+</ul>
+<p><em><strong>PZero</strong></em> © 2020 by Andrea Bistacchi, released under <a href="LICENSE.txt">GNU AGPLv3 license</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/pzero/mosaic.jpg" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>The name of <em><strong>PZero</strong></em> was inspired by the zeroth element in Emile Argand&rsquo;s 3D model of the Pennine Alps nappe stack - possibly the first quantitative 3D geological model in the history of geological sciences (<em>Argand E., 1911. Les Nappes de recouvrement des Alpes pennines et leurs prolongements structuraux. Mat. Carte géol. Suisse, 31, 1-26</em>).</p>
+<h2 id="where-to-download"><strong>Where to download</strong></h2>
+<p><em><strong>PZero</strong></em> can be downloaded from it&rsquo;s official github repository:  <a href="https://github.com/andrea-bistacchi/PZero" target="_blank" rel="noopener">https://github.com/andrea-bistacchi/PZero</a></p>
+<h2 id="how-to-install"><strong>How to install</strong></h2>
+<p><em><strong>PZero</strong></em> runs on <strong>Linux</strong>, <strong>macOS</strong> and <strong>Windows</strong>.</p>
+<h3 id="windows">Windows</h3>
+<p>At the moment the easiest way to run and develop new code for <em><strong>PZero</strong></em> is to have a suitable <strong><a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a></strong> environment.</p>
+<p>In the <code>conda terminal</code>, navigate to the <em><strong>PZero</strong></em> folder that you have cloned with <strong>Git</strong> or simply downloaded and import the environment with:</p>
+<pre><code>conda env create -n pzero -f environment.yml
+conda activate pzero
+</code></pre>
+<p>Then you can start PZero with:</p>
+<pre><code>python pzero_run.py
+</code></pre>
+<p>To activate and deactivate the pzero environment, and in case you want to remove it completely, use respectively (in <code>conda terminal</code>):</p>
+<pre><code>conda activate pzero
+conda deactivate
+</code></pre>
+<h3 id="macos">MacOS</h3>
+<p>It is also possible to install <em><strong>PZero</strong></em> on <strong>macOS</strong> without <strong><a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a></strong>. For this <strong><a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a></strong> is needed and, in order not to alter the base <strong>Python</strong> environment, we strongly suggest to create a dedicated virtual environment using <strong><a href="https://virtualenvwrapper.readthedocs.io/" target="_blank" rel="noopener">virtualenvwrapper</a></strong>.</p>
+<p>All the following commands must be entered in the <strong>macOS Terminal</strong>. First <strong>Homebrew</strong>, <strong>Python 3</strong> (needed because the default Python on macOS is Python 2) and <strong>virtualenvwrapper</strong> are installed:</p>
+<pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+brew install python3
+brew install virtualenvwrapper
+</code></pre>
+<p>Then to be able to use <strong>virtualenvwrapper</strong>, some lines must be added to the options file of the <strong>zsh shell</strong> (the shell that runs in the <strong>macOS Terminal</strong>). The options file can be opened with:</p>
+<pre><code>nano ~/.zshrc
+</code></pre>
+<p>Then the following lines must be pasted and the file saved with <em>control+X</em>.</p>
+<pre><code># lines needed by virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+</code></pre>
+<p>After restarting the Terminal, a virtual environment called <code>pzero</code> based on <strong>Python 3.8</strong> can be created and activated:</p>
+<pre><code>mkvirtualenv --python=3.8 pzero
+workon pzero
+</code></pre>
+<p>When the <code>pzero</code> environment is active, it will be highlighted within brackets at the command prompt, as in:</p>
+<pre><code>(pzero) &lt;user&gt;@&lt;machine&gt; &lt;directory&gt; %
+</code></pre>
+<p>To activate and deactivate the <code>pzero</code> environment, and in case you want to remove it completely, use respectively:</p>
+<pre><code>workon pzero
+deactivate
+rmvirtualenv pzero
+</code></pre>
+<p>All the lines above, from <code>brew install virtualenvwrapper</code>, can be skipped in case a virtual environment is not being created, or created using a different virtual environment manager.</p>
+<p>Now the <strong>Python</strong> modules required by <em><strong>PZero</strong></em> can be automatically installed using <code>pip3</code> (not <code>pip</code> that will point to Python 2) within the <em><strong>PZero</strong></em> directory downloaded from <strong>GitHub</strong>.</p>
+<pre><code>pip3 install -r requirements.txt
+</code></pre>
+<p>And finally <em><strong>PZero</strong></em> can be run with:</p>
+<pre><code>python3 pzero_run.py
+</code></pre>
+<h3 id="linux">Linux</h3>
+<h4 id="pip-installaton">Pip installaton</h4>
+<p>For Debian based Linux distros pip can be installed using the apt package manager.</p>
+<ol>
+<li><strong>Check if packages and dependencies need to be upgraded (routine check):</strong></li>
+</ol>
+<pre><code>sudo apt update
+sudo apt upgrade
+</code></pre>
+<ol start="2">
+<li><strong>Install pip3:</strong></li>
+</ol>
+<pre><code>sudo apt install python3-pip
+</code></pre>
+<h4 id="install-requirements-with-pip">Install requirements with pip</h4>
+<p>To install the required python3 modules we can just run:</p>
+<pre><code>pip3 install -r /path/to/requirements.txt
+</code></pre>
+<p>After the required packages are installed <strong>PZero</strong> can be run with:</p>
+<pre><code>python3 pzero_run.py
+</code></pre>
+<h4 id="conda-installation-optional">Conda installation (optional):</h4>
+<p>Conda can also be installed on Linux by following <strong><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html" target="_blank" rel="noopener">this quick guide</a></strong>. After installing conda a <em>pzero</em> environment can be created and activated in the same way as in the other OSs. To install the required packages in a given environment follow the steps above after activating the environment.</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 3, 2022</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  <p class="powered-by">
+      Powered by the <a href="https://github.com/wowchemy/starter-hugo-academic" target="_blank" rel="noopener">Academic theme</a> for <a href="https://gohugo.io/" rel="noopener">Hugo</a>.
+    
+  </p>
+    <p class="powered-by">
+    
+	© 2021 Gabriele Benedetti 
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.7cd6ec29d281a73c92a2958a1584aadc.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

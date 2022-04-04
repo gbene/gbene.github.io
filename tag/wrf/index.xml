@@ -7,16 +7,16 @@
     <description>WRF</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>WRF</title>
       <link>https://gabri.xyz/tag/wrf/</link>
     </image>
     
     <item>
       <title>Tslist converter</title>
-      <link>https://gabri.xyz/project/tslist/</link>
+      <link>https://gabri.xyz/projects/tslist/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/tslist/</guid>
+      <guid>https://gabri.xyz/projects/tslist/</guid>
       <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates.
 The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;
 &lt;p&gt;This converter uses javascript to import and manipulate the data. Everything is done locally so it works even offline if the page is saved.&lt;/p&gt;

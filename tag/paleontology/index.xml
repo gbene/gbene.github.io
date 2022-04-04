@@ -7,16 +7,16 @@
     <description>Paleontology</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>Paleontology</title>
       <link>https://gabri.xyz/tag/paleontology/</link>
     </image>
     
     <item>
       <title>3D paleontological objects</title>
-      <link>https://gabri.xyz/project/fossils/</link>
+      <link>https://gabri.xyz/projects/fossils/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/fossils/</guid>
+      <guid>https://gabri.xyz/projects/fossils/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;The computing power of modern technologies and their rapid development gave the possibility to reconstruct 3D digital objects precisely and rapidly from the real world, increasing the possibility of their conservation and sharing. There are three different types of reconstruction techniques: photogrammetry, 3D scan and CT scan or tomography. These three methods are based on the fundamental concept of obtaining, interpreting, and measuring surface and objects properties without needing a direct contact with the object.
 This project gives a more in-depth look of photogrammetry, in particular the modern technique defined as Structure from Motion, applied to centimetric macroinvertebrate fossils. Photogrammetry is the most accessible and cost-effective method of the three. The project was entirely developed during the COVID-19 sanitary emergency using already available or easily obtainable equipment. As a second aim and long-term objective, the thesis works as a guide for further experimentation and automation of the process of data capture and processing and to create a digital palaeontological archive that can be used for online accurate analysis of specimens.&lt;/p&gt;

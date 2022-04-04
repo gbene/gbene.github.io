@@ -7,7 +7,7 @@
     <description>Structural geology</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>Structural geology</title>
       <link>https://gabri.xyz/tag/structural-geology/</link>
     </image>
@@ -268,9 +268,9 @@ plane_plot(random_set)
     
     <item>
       <title>Pydip</title>
-      <link>https://gabri.xyz/project/pydip/</link>
+      <link>https://gabri.xyz/projects/pydip/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/pydip/</guid>
+      <guid>https://gabri.xyz/projects/pydip/</guid>
       <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;
 &lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The plots are generated with &lt;a href=&#34;https://github.com/joferkington/mplstereonet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mplstereonet library&lt;/a&gt;.&lt;/p&gt;
@@ -380,9 +380,9 @@ plane_plot(random_set)
     
     <item>
       <title>Electronic Compass</title>
-      <link>https://gabri.xyz/project/ec/</link>
+      <link>https://gabri.xyz/projects/ec/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/ec/</guid>
+      <guid>https://gabri.xyz/projects/ec/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
 A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.

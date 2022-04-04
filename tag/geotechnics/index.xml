@@ -7,16 +7,16 @@
     <description>Geotechnics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://gabri.xyz/media/icon_hue64b927e283e3cc4150b7acc0bc85ec6_1154_512x512_fill_lanczos_center_3.png</url>
+      <url>https://gabri.xyz/media/sharing.png</url>
       <title>Geotechnics</title>
       <link>https://gabri.xyz/tag/geotechnics/</link>
     </image>
     
     <item>
       <title>Rocpy</title>
-      <link>https://gabri.xyz/project/rocpy/</link>
+      <link>https://gabri.xyz/projects/rocpy/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/rocpy/</guid>
+      <guid>https://gabri.xyz/projects/rocpy/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab&amp;rsquo;s using python to increase the overall accessibility of the program and improve the plot&amp;rsquo;s interfaces (thanks to matplotlib).&lt;/p&gt;
 &lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
@@ -100,9 +100,9 @@
     
     <item>
       <title>Electronic Compass</title>
-      <link>https://gabri.xyz/project/ec/</link>
+      <link>https://gabri.xyz/projects/ec/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/project/ec/</guid>
+      <guid>https://gabri.xyz/projects/ec/</guid>
       <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
 &lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
 A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.

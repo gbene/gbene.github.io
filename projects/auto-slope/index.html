@@ -1,0 +1,1325 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gabriele Benedetti" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Compute the difference between two referenced slopes reconstructed in Metashape Professional." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://gabri.xyz/projects/auto-slope/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.101333be2c4fb529664ace116163c014.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubd5b5ce366c931b40680da4234bbf48d_38168_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubd5b5ce366c931b40680da4234bbf48d_38168_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gabri.xyz/projects/auto-slope/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Gabriele Benedetti" />
+  <meta property="og:url" content="https://gabri.xyz/projects/auto-slope/" />
+  <meta property="og:title" content="Automatic processing for referenced slopes | Gabriele Benedetti" />
+  <meta property="og:description" content="Compute the difference between two referenced slopes reconstructed in Metashape Professional." /><meta property="og:image" content="https://gabri.xyz/projects/auto-slope/featured.png" />
+    <meta property="twitter:image" content="https://gabri.xyz/projects/auto-slope/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-11-25T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-11-25T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Automatic processing for referenced slopes | Gabriele Benedetti</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="63ee11348e5c5f03ac8968abd63f4c71" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu312e21b8c12cc84f55d82388245af230_90026_0x70_resize_lanczos_3.png" alt="Gabriele Benedetti"
+          
+          ></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu312e21b8c12cc84f55d82388245af230_90026_0x70_resize_lanczos_3.png" alt="Gabriele Benedetti"
+        
+        ></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/documentations/"><span>Documentations</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects/tslist/"><span>Tslist converter</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Automatic processing for referenced slopes</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 25, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="https://github.com/gbene/Python-orders/tree/main/25_11_2020" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>Repository</a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header container-fluid featured-image-wrapper mt-4 mb-4" style="max-width: 1427px; max-height: 593px;">
+  <div style="position: relative">
+    <img src="/projects/auto-slope/featured.png" width="1427" height="593" alt="" class="featured-image">
+    <span class="article-header-caption">DEM of the reconstructed slope</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="the-premise">The premise</h1>
+<p>This project was a request aimed to find a way to prepare different 3D models, in particular artificial slopes, and calculate the difference between two reconstructions after a given event directly in metashape <strong>without</strong> using external programs.</p>
+<p>In particular the set of scripts needed to achive the following tasks:</p>
+<ul>
+<li>Apply different masks for different sets of photos.</li>
+<li>Count the total number of markers detected in all of the uploaded photos. The number of markers needed to be in total always 135.</li>
+<li>Cut the resulting point clouds with constant dimensions and automatically apply a rotatation to make the plane horizontal.</li>
+<li>Calculate the difference between two meshes. To make sure that the difference operation was applied properly the two chunks need to be aligned and the models need to be rotated flat and cropped.</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-input-image-example">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/og_img.png" alt="Input image example" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Input image example
+    </figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/slope_a2.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-reconstructed-slope-before-and-after-the-event">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/slope_b2.png" alt="Reconstructed slope before and after the event" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Reconstructed slope before and after the event
+    </figcaption></figure></p>
+<hr>
+<h2 id="summary"><strong>Summary</strong></h2>
+<h3 id="mask-application">Mask application</h3>
+<p>The model is constructed using photos that capture a different angle of the artificial plane. The first step is to isolate the relevant slope information by masking the parts of the slope that are not needed for the reconstruction (e.g. the container). To do this different masks were created to mask specific parts present in different sets of photos. The pairing is as follows:</p>
+<ul>
+<li>photo 1 $\rightarrow$ '' Links_Initial.jpg ''</li>
+<li>photo 2 to 21 $\rightarrow$ '' Links_Regular.jpg ''</li>
+<li>photo 22 $\rightarrow$ '' Midden_Initial.jpg ''</li>
+<li>photo 23 to 42 $\rightarrow$ '' Midden_Regular.jpg ''</li>
+<li>photo 43 $\rightarrow$ '' Rechts_Initial.jpg ''</li>
+<li>photo 44 to 63 $\rightarrow$ &lsquo;&lsquo;Rechts_Regular.jpg '&rsquo;</li>
+</ul>
+<p>This process was accomplished by writing the <strong>mask.py</strong> script.</p>
+<h3 id="marker-count">Marker count</h3>
+<p>For each model there is a known fixed number of total markers that need to be detected (135). The objective of this script is to count the total amount of markers detected in the model and print if there are less than 135. This check is done to see if the automatic markers present for each markers are somehow cropped or masked out.</p>
+<p>The check process was automated using the <strong>check_markers.py</strong> script</p>
+<h3 id="cut-and-rotate-the-model-point-cloud">Cut and rotate the model point cloud</h3>
+<p>To apply correctly the difference between the two models they both need to have the same size, position and rotation. To do this it was decided to rotate first the psarse cloud model and then resize the bounding box to a determined size. To do this the following process was defined:</p>
+<ol>
+<li>Define the region size</li>
+<li>Find the minimum and maximum (for both x and y) points inside the bounding box and calculate the center (as the midpoint of points at opposite corners).</li>
+<li>Translate the points on the same height of the center point</li>
+<li>Set these points as tranform reference</li>
+<li>Update transform (and so rotate the points)</li>
+<li>Resize the bounding box</li>
+</ol>
+<p>To accurately rotate the model the plane needs to fit in the bounding box as tightly as possibile and so the z value need to be low. Too low z values can crop too much of the plane (since the plane has a certain inclination angle) and so the rotation won&rsquo;t be as precise.</p>
+<p>This process is archived by using the <strong>region_size.py</strong> script.</p>
+<h3 id="mesh-difference">Mesh difference</h3>
+<p>Instead of caluclating the difference of the two meshes a quicker is to convert the meshes in Digital Elevation Models and then apply a per pixel difference.</p>
+<hr>
+<h2 id="final-workflow"><strong>Final workflow</strong></h2>
+<p>We can summarize the developed metashape workflow as follows:</p>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/auto_slope_processing.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure></center>
+<p>This workflow is resonably fast and has the possibility to batch the processes to further automate the workflow.</p>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/dem_a.png" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure></center>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-reconstructed-dem-of-the-slope-before-and-after-the-event">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/dem_b.png" alt="Reconstructed DEM of the slope before and after the event" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Reconstructed DEM of the slope before and after the event
+    </figcaption></figure></center>
+<center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-dem-difference">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/media/auto_slope_img/diff2.png" alt="DEM difference" loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      DEM difference
+    </figcaption></figure></center>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/photogrammetry/">Photogrammetry</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Automatic%20processing%20for%20referenced%20slopes&amp;body=https://gabri.xyz/projects/auto-slope/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://reddit.com/submit?url=https://gabri.xyz/projects/auto-slope/&amp;title=Automatic%20processing%20for%20referenced%20slopes" target="_blank" rel="noopener" class="share-btn-reddit" aria-label="reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://gabri.xyz/projects/auto-slope/&amp;title=Automatic%20processing%20for%20referenced%20slopes" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://gabri.xyz/projects/auto-slope/&amp;text=Automatic%20processing%20for%20referenced%20slopes" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://gabri.xyz/projects/auto-slope/&amp;t=Automatic%20processing%20for%20referenced%20slopes" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://gabri.xyz"><img class="avatar mr-3 avatar-circle" src="/author/gabriele-benedetti/avatar_hu39a1860b7e975276ba6916a3df73bbcc_817132_270x270_fill_lanczos_center_3.png" alt="Gabriele Benedetti"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://gabri.xyz">Gabriele Benedetti</a></h5>
+      <h6 class="card-subtitle">Student</h6>
+      <p class="card-text">MSc student in Geology and Geodinamics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/gbene" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/Gabriele_Benedetti_CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  <p class="powered-by">
+      Powered by the <a href="https://github.com/wowchemy/starter-hugo-academic" target="_blank" rel="noopener">Academic theme</a> for <a href="https://gohugo.io/" rel="noopener">Hugo</a>.
+    
+  </p>
+    <p class="powered-by">
+    
+	© 2021 Gabriele Benedetti 
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.7cd6ec29d281a73c92a2958a1584aadc.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

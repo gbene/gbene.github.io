@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interface overview | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/documentations/pzero/interface/</link>
+      <atom:link href="https://gabri.xyz/documentations/pzero/interface/index.xml" rel="self" type="application/rss+xml" />
+    <description>Interface overview</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/sharing.png</url>
+      <title>Interface overview</title>
+      <link>https://gabri.xyz/documentations/pzero/interface/</link>
+    </image>
+    
+  </channel>
+</rss>
