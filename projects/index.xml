@@ -26,7 +26,7 @@ The raw output format of these files is not universal and it makes importing thi
 &lt;h3 id=&#34;todo&#34;&gt;Todo&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Batch conversions&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mean caluclations over time&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mean calculations over time&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; User defined separator&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;

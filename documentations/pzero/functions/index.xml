@@ -1,96 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Function list | Gabriele Benedetti</title>
+    <title>• Function list | Gabriele Benedetti</title>
     <link>https://gabri.xyz/documentations/pzero/functions/</link>
       <atom:link href="https://gabri.xyz/documentations/pzero/functions/index.xml" rel="self" type="application/rss+xml" />
-    <description>Function list</description>
+    <description>• Function list</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gabri.xyz/media/sharing.png</url>
-      <title>Function list</title>
+      <title>• Function list</title>
       <link>https://gabri.xyz/documentations/pzero/functions/</link>
     </image>
-    
-    <item>
-      <title>Import Gocad</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/gocad/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/gocad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import Gocad Xsection</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/gocadx/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/gocadx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import Gocad boudary</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/gocadb/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/gocadb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import PyVista</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/pyvista/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/pyvista/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import point cloud data</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/pc/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/pc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import Vedo</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/vedo/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/vedo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import DEM</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/dem/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/dem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import OrthoImage</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/ortho/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/ortho/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import SHP</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/shp/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/shp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Import SEGY</title>
-      <link>https://gabri.xyz/documentations/pzero/functions/segy/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/documentations/pzero/functions/segy/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Viewers | Gabriele Benedetti</title>
+    <title>• Viewers | Gabriele Benedetti</title>
     <link>https://gabri.xyz/documentations/pzero/viewers/</link>
       <atom:link href="https://gabri.xyz/documentations/pzero/viewers/index.xml" rel="self" type="application/rss+xml" />
-    <description>Viewers</description>
+    <description>• Viewers</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gabri.xyz/media/sharing.png</url>
-      <title>Viewers</title>
+      <title>• Viewers</title>
       <link>https://gabri.xyz/documentations/pzero/viewers/</link>
     </image>
     

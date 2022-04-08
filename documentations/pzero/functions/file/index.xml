@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. File | Gabriele Benedetti</title>
+    <link>https://gabri.xyz/documentations/pzero/functions/file/</link>
+      <atom:link href="https://gabri.xyz/documentations/pzero/functions/file/index.xml" rel="self" type="application/rss+xml" />
+    <description>1. File</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gabri.xyz/media/sharing.png</url>
+      <title>1. File</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/</link>
+    </image>
+    
+    <item>
+      <title>Import Gocad</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/gocad/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/gocad/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/import_gocad.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To import any type of gocad object the Import Gocad function can be used. By clicking the import button the file explorer menu is opened and the imported file can be selected.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/open_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;After choosing the file a series of prompts are asked to set the:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Default scenario: Geological scenario of the object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/scenario.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Default [geological type]: What does the object represent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/geo_type.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Geological feature: Get the [geological feature] name from the object&amp;rsquo;s name if not defined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/feat_name.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;At the end of the prompts the file will be read and the object/objects will be imported and visible in the &lt;a href=&#34;https://gabri.xyz/documentations/pzero/interface&#34;&gt;geology tab&lt;/a&gt; in the project explorer.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/gocad_imported.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import Gocad Xsection</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/gocadx/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/gocadx/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/import_gocadx.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To import any GoCAD polyline directly on an XSection the Import Gocad Xsection function can be used.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;NOTE&lt;/strong&gt;: This operation requires that the project already contains sections (see &lt;a href=&#34;https://gabri.xyz/documentations/pzero/functions/window/#section-and-boundaries&#34;&gt;Sections and boundaries&lt;/a&gt;)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;By clicking the import button the file explorer menu is opened and the imported file can be selected.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/open_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;After choosing the file a series of prompts are asked:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Which section to use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/xsec_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Default scenario: Geological scenario of the object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/scenario.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Default [geological type]: What does the object represent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/geo_type.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Geological feature: Get the [geological feature] name from the object&amp;rsquo;s name if not defined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/feat_name.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;At the end of the procedure the objects will be visible in the &lt;a href=&#34;https://gabri.xyz/documentations/pzero/interface&#34;&gt;geology tab&lt;/a&gt; in the project explorer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/xsec_imported.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import Gocad boudary</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/gocadb/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/gocadb/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/import_gocadb.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The import Gocad boundary function can be used to import a boundary line object in PZero that can be used to define the domain extension for implicit modelling.
+By clicking the import button the file explorer menu is opened and the imported file can be selected.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;NOTE&lt;/strong&gt;: Due to limitations of the LoopStructural library the boundary must have a rectangular print.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/open_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;After importing the boudary object will be visible in the Boundaries tab in the project explorer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/gocadb_imported.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import PyVista</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/pyvista/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/pyvista/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import point cloud data</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/pc/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/pc/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/import_pc.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The Import point cloud data function can be used to import point clouds files in different formats such as: &lt;strong&gt;.txt&lt;/strong&gt;, &lt;strong&gt;.csv&lt;/strong&gt;, &lt;strong&gt;.xyz&lt;/strong&gt;, &lt;strong&gt;.asc&lt;/strong&gt;, &lt;strong&gt;.ply&lt;/strong&gt;, &lt;strong&gt;.las&lt;/strong&gt; and &lt;strong&gt;.laz&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When the import action is clicked the data preview interface is presented. This window is divided in:&lt;/p&gt;
+&lt;ol type=&#34;A&#34;&gt;
+  &lt;li&gt;File selection.&lt;/li&gt;
+  &lt;li&gt;File import options.&lt;/li&gt;
+  &lt;li&gt;Preview, assign and confirm buttons.&lt;/li&gt;
+  &lt;li&gt;Preview panel&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/pc_window_mod.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;file-selection&#34;&gt;File selection&lt;/h3&gt;
+&lt;p&gt;In the file selection section the file path can be copied or directly selected using the &lt;i class=&#34;fas fa-ellipsis-h&#34;&gt;&lt;/i&gt; button. If clicked the file explorer menu is opened and the imported file can be selected.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/open_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;NOTE&lt;/strong&gt;: When importing the first 50 lines of the file are read to avoid long wait times for large datasets
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;After choosing the file the &lt;a href=&#34;#assign&#34;&gt;assign dialogue&lt;/a&gt; is automatically opened.&lt;/p&gt;
+&lt;h3 id=&#34;read-import-options&#34;&gt;Read import options&lt;/h3&gt;
+&lt;p&gt;Once imported the following import options can be defined:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Start from column&lt;/strong&gt;: column index from which the import starts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;End on column&lt;/strong&gt;: column index on which the import ends.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Header line&lt;/strong&gt;: line in which the data header is contained.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start from line&lt;/strong&gt;: row index from which the import starts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;End on line&lt;/strong&gt;: row index on which the import ends.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Separator&lt;/strong&gt;: type of separator used in the input data file. The following separators are supported:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Space&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tab&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comma&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Semicolumn&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;TIP&lt;/strong&gt;: To import the whole file (all of the rows) set the end row index to -1.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;preview-assign-and-confirm-buttons&#34;&gt;Preview, assign and confirm buttons&lt;/h3&gt;
+&lt;h4 id=&#34;preview&#34;&gt;Preview&lt;/h4&gt;
+&lt;p&gt;The preview function can be used to visualize the input data. When clicked the preview panel will be populated with the first 50 data lines present in the file following the chosen import options.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;assign&#34;&gt;Assign&lt;/h4&gt;
+&lt;p&gt;A specific property can be assigned for every column of the imported dataset. This is accomplished using the assign dialogue accessed through the assign button or automatically opened when importing for the first time a file.&lt;/p&gt;
+&lt;p&gt;The dialogue is composed of three columns:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Column name&lt;/strong&gt;: The column name in the input dataset&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Property&lt;/strong&gt;: The assigned property name used when importing the data in PZero.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom property name&lt;/strong&gt;: Custom property name.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/assign_menu.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;A series of options are possible:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For common properties such as XYZ, RGB or Intensity values, PZero tries to automatically match and set the column to an appropriate property name. To manually set a property select the appropriate name from the menu in the &lt;strong&gt;Properties&lt;/strong&gt; column.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;NOTE&lt;/strong&gt;: If there is no match or the default name is considered fitting the property name is/can be left untouched (As is).
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;For custom properties names the &lt;strong&gt;User defined&lt;/strong&gt; option can be selected. This activates the text box in the corresponding row and &lt;strong&gt;Property name&lt;/strong&gt; column.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;NOTE&lt;/strong&gt;: The &lt;em&gt;&lt;strong&gt;user_&lt;/strong&gt;&lt;/em&gt; prefix is always appended to the input name
+(custom_data $\rightarrow$ &lt;strong&gt;user_&lt;/strong&gt; custom_data)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;To ignore a property the &lt;strong&gt;N.a.&lt;/strong&gt; name can be set. In this case the column(s) corresponding to the &lt;strong&gt;N.a.&lt;/strong&gt; name will not be imported.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;BE AWARE&lt;/strong&gt;: &lt;strong&gt;N.a.&lt;/strong&gt; column(s) will not be imported even if they are included in the selected column range (start-end index)
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;When done the &lt;strong&gt;Ok&lt;/strong&gt; button can be clicked and the options will be saved.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;&lt;strong&gt;NOTE&lt;/strong&gt;&lt;/strong&gt;: The changes will not be visible in the preview table but the assign window can be opened to view the changes made.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;confirm&#34;&gt;Confirm&lt;/h4&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pzero/assign_menu_opt.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Once everything is set the data can be imported in PZero using the selected options by clicking the &lt;strong&gt;Ok&lt;/strong&gt; button. The imported object will be visible in the &lt;a href=&#34;https://gabri.xyz/documentations/pzero/interface&#34;&gt;DEMs and DOMs tab&lt;/a&gt; in the project explorer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import Vedo</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/vedo/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/vedo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import DEM</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/dem/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/dem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import OrthoImage</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/ortho/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/ortho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import SHP</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/shp/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/shp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import SEGY</title>
+      <link>https://gabri.xyz/documentations/pzero/functions/file/segy/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/documentations/pzero/functions/file/segy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
