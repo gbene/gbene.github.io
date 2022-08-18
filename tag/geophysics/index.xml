@@ -5,12 +5,104 @@
     <link>https://gabri.xyz/tag/geophysics/</link>
       <atom:link href="https://gabri.xyz/tag/geophysics/index.xml" rel="self" type="application/rss+xml" />
     <description>Geophysics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Wed, 22 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://gabri.xyz/media/sharing.png</url>
       <title>Geophysics</title>
       <link>https://gabri.xyz/tag/geophysics/</link>
     </image>
+    
+    <item>
+      <title>GPR 3D volume</title>
+      <link>https://gabri.xyz/projects/gpr/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/projects/gpr/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;
+&lt;p&gt;This project has the main objective to create an open-source compatible processing pipeline to automatically elaborate Ground Penetrating Radar (&lt;strong&gt;GPR&lt;/strong&gt;) data to output a GPR volume in VTK format. Once ready, the volume then can be used to intuitively localize, identify and analyze in 3D space buried objects in the top most layer of soil (in this case up to a depth of 1m).&lt;/p&gt;
+&lt;h2 id=&#34;gpr-data&#34;&gt;GPR Data&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;GPR&lt;/strong&gt; is a relatively new indirect non-invasive geophysical exploration method that can be used to acquire subsurface data up to a depth of 50m&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This technique is based on the capture of reflected high frequency electromagnetic signals emitted from a controlled source. The contrast of electrical properties in the soil given by presence of anomalous objects, cavities, sedimentary structures, change in lithology or in water contents induce a variation in the signal&amp;rsquo;s propagation velocity thus producing a return pulse that is recorded. By visualizing the acquired data it is then possible to define the presence of perturbations across the medium and carry out different interpretations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_1&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/gpr.jpg&#34; alt=&#34;Schematic representation on how the GPR works ([image soruce](https://medium.com/@provacmelbourne/what-is-ground-penetrating-radar-provac-australia-7d6a43e986ca)).&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Schematic representation on how the GPR works (&lt;a href=&#34;https://medium.com/@provacmelbourne/what-is-ground-penetrating-radar-provac-australia-7d6a43e986ca&#34;&gt;image soruce&lt;/a&gt;).
+    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;GPR data is recorded in traces grouped and organized in segments saved as SEGY files, every trace represents a point in space where the pulse has been emitted and the return signals recorded. A segment can be comprised of multiple sub-segments where the start and end (markers) can be defined during the recording or manually in the pre-processing phase. Markers can also be used to highlight points of interest encountered during the acquisition. These and any many other types of information are stored in the SEGY file header of both the segment and the single trace.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_2&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/segments.png&#34; alt=&#34;Example image of a typical GPR recording.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Example image of a typical GPR recording.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;processing-pipeline&#34;&gt;Processing pipeline&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-fig_3&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/pipeline.png&#34; alt=&#34;Schematic processing pipeline.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
+      Schematic processing pipeline.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The processing pipline adopted to elaborate and visualize the data is composed by a pre-processing and processing phase. Once the data is downloaded the user needs to take in to account a series of characteristics. Firstly it is necessary to read the header to define the geometry of the survey using the trace position information and the presence of markers. If these types of information are present or not required, the pre-processing step can be skipped and the data directly used.&lt;/p&gt;
+&lt;p&gt;For every segment/sub-segment the returning signal data needs to be read and every trace has to be processed to a certain degree. It is better not to use the raw data or heavily processed data since the interpretation of both can result difficult. Signal noise can hide the objects or lead to wrong object geometry reconstruction and on the other hand too much processing/filtering can mask some objects or create artifacts also causing interpretation problems.&lt;/p&gt;
+&lt;p&gt;Once the header information is gathered and the signal data processed it is possible to create a uniform 3D point cloud. This is achieved by dividing the traces in multiple intervals (integration depth) and linearly interpolating on a 2D depth slice the mean trace intensities in the given depth interval&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+Although this approach effectively reduces the number of samples along the Z axis, thus lowering the vertical resolution of the model, it improves the overall quality of the data and highlights the presence of anomalies.&lt;/p&gt;
+&lt;p&gt;The intensity value of each point is then assigned to a cell (voxel) creating a GPR volume.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;This pipeline was applied to data acquired in Piazza della Scienza (Milan) to identify objects in the first meter of soil, important to the square&amp;rsquo;s future &lt;a href=&#34;https://vivaiobicocca.unimib.it/6-passi-nel-verde-6-steps-towards-green-changes/#step3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depaving and redesign project&lt;/a&gt;. The final computed GPR volume is 1m deep with a resolution of 600x600 cells giving a final grid resolution of 600x600x100. The grid, volume creation and final analysis were achieved using Pyvista. The code and data used to apply the different steps is available as a &lt;a href=&#34;https://gabri.xyz/uploads/GPR_scripts.zip&#34;&gt;jupyter notebook&lt;/a&gt;. For a more in depth review of the process and more images a report in PDF format is &lt;a href=&#34;https://gabri.xyz/uploads/GPR_Report_2022.pdf&#34;&gt;available&lt;/a&gt;.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Best case scenario&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The depth slice is an &amp;ldquo;image&amp;rdquo; of (nx;ny) pixels where for each pixel the respective calculated value is assigned. The absolute interpolated value was used, but squaring too is a viable option.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>Pyseismic</title>
