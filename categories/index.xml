@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on gabri.xyz</title>
-    <link>https://gbene.github.io/categories/</link>
+    <link>https://gabri.xyz/categories/</link>
     <description>Recent content in Categories on gabri.xyz</description>
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>© Gabriele Benedetti</copyright>
-    <atom:link href="https://gbene.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gabri.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
