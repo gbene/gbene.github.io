@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>First Author on gabri.xyz</title>
+    <link>https://gabri.xyz/tags/first-author/</link>
+    <description>Recent content in First Author on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gabri.xyz/tags/first-author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications</title>
+      <link>https://gabri.xyz/publications/fracability/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/fracability/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;A proper quantitative statistical characterization of fracture length or height is of paramount importance when analysing outcrops of fractured rocks. Past literature suggests adopting a non-parametric approach, such as circular scanlines, for the unbiased estimation of the fracture-length mean value. This is due to the fact that, in the past, estimating any type of statistical distribution was difficult and there was no real interest in defining precise parametrical models. However, due to the recent rise in popularity of digital outcrop models (DOMs) and of stochastic discrete fracture networks (DFNs), there is an increasing demand for distribution-based solutions that output a correct estimation of parameters for a given proposed model (e.g. mean and standard deviation). This change in demand highlights in the geological literature the absence of properly structured theoretical works on this topic. Our methodology, presented for the first time in this contribution, represents a powerful alternative to non-parametrical methods, aimed at specifically treating censoring bias and obtaining an unbiased trace-length statistical model. As our first objective, we propose to tackle the censoring bias by applying survival analysis techniques: a branch of statistics focused on modelling time-to-event data and correctly estimating model parameters with data affected by censoring. As a second objective, we propose a novel approach for selecting the most representative parametric model. We combine a direct visual approach and the calculation of four statistics to quantify how well proposed models reflect the data. We apply survival analysis to correctly estimate statistical parameters of a censored length dataset in three different case studies and show the effects of the censoring percentage on parametrical estimations that do not use this paradigm. The presented analyses are carried out using an open-source Python package called FracAbility, which we purposefully created to carry out the described workflow (&lt;a href=&#34;https://github.com/gecos-lab/FracAbility&#34;&gt;https://github.com/gecos-lab/FracAbility&lt;/a&gt;, last access: 8 September 2024).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

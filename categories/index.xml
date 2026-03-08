@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories | Gabriele Benedetti</title>
+    <title>Categories on gabri.xyz</title>
     <link>https://gabri.xyz/categories/</link>
-      <atom:link href="https://gabri.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
-    <description>Categories</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright>
-    <image>
-      <url>https://gabri.xyz/media/sharing.png</url>
-      <title>Categories</title>
-      <link>https://gabri.xyz/categories/</link>
-    </image>
-    
+    <description>Recent content in Categories on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <atom:link href="https://gabri.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

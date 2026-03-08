@@ -1,1274 +1,146 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gabriele Benedetti</title>
+    <title>gabri.xyz</title>
     <link>https://gabri.xyz/</link>
-      <atom:link href="https://gabri.xyz/index.xml" rel="self" type="application/rss+xml" />
-    <description>Gabriele Benedetti</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Gabriele Benedetti</copyright><lastBuildDate>Wed, 22 Jun 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://gabri.xyz/media/sharing.png</url>
-      <title>Gabriele Benedetti</title>
-      <link>https://gabri.xyz/</link>
-    </image>
-    
+    <description>Recent content on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://gabri.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An integrated workflow for parametrization of fracture network geometry in digital outcrop models</title>
+      <link>https://gabri.xyz/publications/doms/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/doms/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Mesoscale fractures, with lengths between meters and tens of meters, cannot be effectively characterized in the subsurface, due to limitations of borehole and geophysical datasets. On the other hand, large quantitative structural datasets can be collected on outcrops by combining direct observations and remote sensing (digital outcrop models – DOMs). These data can be used to constrain geometrical models of subsurface fracture networks with the outcrop analogue approach.&lt;/p&gt;&#xA;&lt;p&gt;In this contribution we present a workflow that leverages DOMs with at least two perpendicular faces and combines multiple types of input data (point cloud, textured surfaces and orthophoto DOMs), to collect a suite of statistical parameters to be used as input in current stochastic 3D DFN (Discrete Fracture Network) models.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications</title>
+      <link>https://gabri.xyz/publications/fracability/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/fracability/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;A proper quantitative statistical characterization of fracture length or height is of paramount importance when analysing outcrops of fractured rocks. Past literature suggests adopting a non-parametric approach, such as circular scanlines, for the unbiased estimation of the fracture-length mean value. This is due to the fact that, in the past, estimating any type of statistical distribution was difficult and there was no real interest in defining precise parametrical models. However, due to the recent rise in popularity of digital outcrop models (DOMs) and of stochastic discrete fracture networks (DFNs), there is an increasing demand for distribution-based solutions that output a correct estimation of parameters for a given proposed model (e.g. mean and standard deviation). This change in demand highlights in the geological literature the absence of properly structured theoretical works on this topic. Our methodology, presented for the first time in this contribution, represents a powerful alternative to non-parametrical methods, aimed at specifically treating censoring bias and obtaining an unbiased trace-length statistical model. As our first objective, we propose to tackle the censoring bias by applying survival analysis techniques: a branch of statistics focused on modelling time-to-event data and correctly estimating model parameters with data affected by censoring. As a second objective, we propose a novel approach for selecting the most representative parametric model. We combine a direct visual approach and the calculation of four statistics to quantify how well proposed models reflect the data. We apply survival analysis to correctly estimate statistical parameters of a censored length dataset in three different case studies and show the effects of the censoring percentage on parametrical estimations that do not use this paradigm. The presented analyses are carried out using an open-source Python package called FracAbility, which we purposefully created to carry out the described workflow (&lt;a href=&#34;https://github.com/gecos-lab/FracAbility&#34;&gt;https://github.com/gecos-lab/FracAbility&lt;/a&gt;, last access: 8 September 2024).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hydrogeological parameterisation of the Daruvar thermal aquifer: integration of fracture network analysis and well testing</title>
+      <link>https://gabri.xyz/publications/daruvar/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/daruvar/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Highly fractured Mesozoic carbonate rocks are the main reservoir of many geothermal resources in northern Croatia, being of environmental, cultural, and economic value for the local and regional communities. The Daruvar thermal springs (temperatures &amp;lt; 50°C) represent the outflow area of an intermediate scale, tectonically controlled, hydrothermal system hosted in Triassic carbonate rocks. Several investigations have been conducted in the Daruvar area detailing the architecture of regional and local fracture networks and quantifying the hydrogeological parameters of the thermal aquifer. In this work, an integrated approach based on structural and hydrogeological investigations was employed to model the network of fractures in the reservoir and quantify its impact on the hydraulic properties. Structural investigations were conducted in the Batinjska Rijeka quarry, considered as an outcrop analogue of the thermal aquifer, employing both a classical field approach and the virtual quantitative analysis of a 3D digital outcrop model. Structural analysis of the digital outcrop model allowed identification of two sub-vertical systems of discontinuities, dipping to the NW and the WSW respectively, in accordance with the data collected through direct field measurements. The main geometric features of the discontinuity network and their statistical distributions were employed to construct discrete fracture network models at both the outcrop scale (approximately 100 m) and the aquifer scale in Daruvar (approximately 700 m). Calibration of the input parameters allowed modelling of porosity and permeability values that reproduce the field values assessed through pumping tests, well tests, and well logging. This work highlights the importance of integrating geological and hydrogeological investigations to obtain a more reliable reconstruction and quantification of the processes driving the fluid flow in fractured aquifers and affecting the spatial distribution of their hydraulic properties.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Asperity cycle simulation using observed seismicity: Applications to the Bárðarbunga caldera</title>
+      <link>https://gabri.xyz/publications/asperity_cycles/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/asperity_cycles/</guid>
+      <description>&lt;p&gt;Repeating earthquakes most often occur as frequent small magnitude events, with repeating time increasing with magnitude. The Bárðarbunga caldera however is a rare example where moderate magnitudes (Mw ≥ 5) repeat frequently. During the 6 months caldera collapse event (2014-2015), 77 Mw ≥ 5 earthquakes were recorded and, in the years following the collapse, observations show quasi-periodic Mw ≥ 5 events. Recent seismological field campaigns have provided further constraints on the caldera’s geometry, mapping out a ring fault structure and offering excellent depth constraints. The repetitive nature of the earthquake sequences and good structural controls, make this case especially suitable to investigate using Sequences of Earthquakes and Aseismic Slip (SEAS) models. Furthermore, the periodicity of the ring fault is well captured to the first order by adopting a Spectral Boundary Integral approach. To mimic the observed data, we project relatively relocated seismic events to a mesh representation of the ring fault; we then convert the projected point clusters into frictional parameter maps that define the distribution of the rate weakening and rate strengthening asperities in the simulation. Finally, we quantify the differences between the simulated results and the observed seismic data by comparing for example reoccurrence time, magnitudes and partial rupture characteristics. We use the JAX Python library to achieve well resolved simulations, realistic frictional parameters and domain size. This library provides tools such as Just-In-Time (JIT) and Ahead-Of-Time (AOT) compilation, automatic differentiation and vectorization, all of which significantly speed up runtime. Moreover, JAX provides a flexible framework for running code on different accelerators such as GPUs, drastically reducing code runtime for parallelizable operations such as FFT computations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FracAbility: A python toolbox for survival analysis in fractured rock systems</title>
+      <link>https://gabri.xyz/publications/fracability_press/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/fracability_press/</guid>
+      <description>&lt;p&gt;Here are the talks and poster that I gave in 2024 regarding the publication: &lt;a href=&#34;https://gabri.xyz/publications/fracability&#34;&gt;Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications&lt;/a&gt;. The TSG and EGU abstracts are identical as they were submitted one after the other.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tectonic-study-group-2024--st-andrews-uk&#34;&gt;Tectonic Study Group 2024 | St. Andrews, UK&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;https://gabri.xyz/fracability/presentation_tsg.pdf&#34;&gt;⟶ Presentation&lt;/a&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;When analysing fractured rock outcrops, the fracture network&amp;rsquo;s topology and length statistics are of fundamental importance. Past literature focused on adopting a non-parametric approach for the unbiased estimation of fracture length data mean, and with some additional steps, the variance of a population. However, technology improved, and necessities shifted. Now it is possible to quickly obtain dense length datasets with thousands of measurements and the emergence of stochastic DFNs increased the demand for parametric solutions to correctly fit several types of distributions. These conditions highlighted an absence of works on these topics. Of particular interest is the right censoring bias effect of the interpretational boundary on the fracture length statistics. We tackle this problem by applying survival analysis techniques, a branch of statistics that includes methods for modelling time to event data and correctly estimating the model’s parameters with data affected by censoring. Synthetic testing has been carried out, showing a reliable estimate of the distribution parameters with up to 80% of the total measurements being censored. Moreover, it is shown that the correction is independent from the orientation of the fracture set or boundary geometry. We propose FracAbility, a new open-source Python package capable to both analyse the topology of fracture networks and, by using the latest SciPy version, correctly fit different parametrical distributions on length data with right-censored measurements. The library and the proposed approach have been applied to real world data, successfully correcting length distributions affected by censoring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Methods for merging fragmented facets obtained from point cloud segmentation algorithms.</title>
+      <link>https://gabri.xyz/publications/point_segm/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/point_segm/</guid>
+      <description>&lt;a class=&#34;linkto&#34; href=&#34;https://gabri.xyz/point_segm/presentation.pdf&#34;&gt;⟶ Presentation&lt;/a&gt;&#xA;&lt;p&gt;With the new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (Bistacchi et al., 2021), it is now possible to import and analyse digital Outcrop Models (DOMs). Furthermore, the users are now enabled to carry out geological, and in particular structural, analysis on DOMs and replicate a working segmentation workflow, already tested in CloudCompare, to extrapolate fracture facets (i.e. the morphological expression of planar discontinuities on an outcrop face, Dewez et al., 2016). Our pipeline can be used to analyse fracture networks on outcrops with arbitrary orientation, but unfortunately, as an inevitable by-product of the segmentation procedure, continuous fracture facets are usually fragmented in multiple adjacent smaller polygons. This effect ultimately leads to skewing towards smaller values the estimation of statistical distributions of many important fracture network parameters, such as spacing, length, and height. Moreover, the results of topological analysis of fracture connectivity are completely distorted by this kind of problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Point cloud analysis and segmentation procedures in the PZero software</title>
+      <link>https://gabri.xyz/publications/pointcloud_segmentation/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/publications/pointcloud_segmentation/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;https://gabri.xyz/pointcloud_segmentation/poster.pdf&#34;&gt;⟶ Poster&lt;/a&gt;&#xA;&lt;p&gt;With the rapid increase in computing power, 3D modelling and efficient visualization of complex geological features has become more common and accessible. We propose a new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (&lt;a href=&#34;https://github.com/andrea-bistacchi/PZero&#34;&gt;https://github.com/andrea-bistacchi/PZero&lt;/a&gt;) with the goal to carry out geological, and in particular structural, analysis on Digital Outcrop Models (DOMs). A solid codebase was implemented in PZero to import and analyse DOM data enabling the users to:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fractalizer</title>
+      <link>https://gabri.xyz/libraries/fractalizer/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/libraries/fractalizer/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/fractalizer/logo.svg&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fractalize the edges of any given curve or closed ring using either a template or random noise!&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/Fractalizer.jl&#34;&gt;https://github.com/gbene/Fractalizer.jl&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SirGridsAlot</title>
+      <link>https://gabri.xyz/libraries/sirgridsalot/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/libraries/sirgridsalot/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/sirgridsalot/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Rapidly create and plot in 2D/3D regular Euclidean tilings with Python.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/SirGridsAlot&#34;&gt;https://github.com/gbene/SirGridsAlot&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fracability</title>
+      <link>https://gabri.xyz/libraries/fracability/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/libraries/fracability/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/fracability/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fracture networks are essential for the analysis and modelling of mechanical and hydraulic properties of rock masses. Recently, the use of Digital Outcrop Models (DOMs) provided a solid framework for the collection of large and quantitative datasets from which different properties can be extracted. Because of the complex nature of exposed rock outcrops, statistical model fitting can sometimes be challenging. Areas covered by rock debree, vegetation patches or simply the outer boundaries of the outcrop can introduce right-censoring bias and can often lead to parameter underestimation. Tools are needed to correct for estimating the correct distribution parameters while taking into account this bias. Survival analysis techniques, although usually applied in function of time and not length, accomplishes exactly this.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GPR 3D volume</title>
-      <link>https://gabri.xyz/projects/gpr/</link>
+      <link>https://gabri.xyz/projects/gprpyvista/</link>
       <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/projects/gpr/</guid>
-      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;
-&lt;p&gt;This project has the main objective to create an open-source compatible processing pipeline to automatically elaborate Ground Penetrating Radar (&lt;strong&gt;GPR&lt;/strong&gt;) data to output a GPR volume in VTK format. Once ready, the volume then can be used to intuitively localize, identify and analyze in 3D space buried objects in the top most layer of soil (in this case up to a depth of 1m).&lt;/p&gt;
-&lt;h2 id=&#34;gpr-data&#34;&gt;GPR Data&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;GPR&lt;/strong&gt; is a relatively new indirect non-invasive geophysical exploration method that can be used to acquire subsurface data up to a depth of 50m&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This technique is based on the capture of reflected high frequency electromagnetic signals emitted from a controlled source. The contrast of electrical properties in the soil given by presence of anomalous objects, cavities, sedimentary structures, change in lithology or in water contents induce a variation in the signal&amp;rsquo;s propagation velocity thus producing a return pulse that is recorded. By visualizing the acquired data it is then possible to define the presence of perturbations across the medium and carry out different interpretations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_1&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/gpr.jpg&#34; alt=&#34;Schematic representation on how the GPR works ([image soruce](https://medium.com/@provacmelbourne/what-is-ground-penetrating-radar-provac-australia-7d6a43e986ca)).&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Schematic representation on how the GPR works (&lt;a href=&#34;https://medium.com/@provacmelbourne/what-is-ground-penetrating-radar-provac-australia-7d6a43e986ca&#34;&gt;image soruce&lt;/a&gt;).
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;GPR data is recorded in traces grouped and organized in segments saved as SEGY files, every trace represents a point in space where the pulse has been emitted and the return signals recorded. A segment can be comprised of multiple sub-segments where the start and end (markers) can be defined during the recording or manually in the pre-processing phase. Markers can also be used to highlight points of interest encountered during the acquisition. These and any many other types of information are stored in the SEGY file header of both the segment and the single trace.&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_2&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/segments.png&#34; alt=&#34;Example image of a typical GPR recording.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Example image of a typical GPR recording.
-    &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;processing-pipeline&#34;&gt;Processing pipeline&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_3&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/gpr/pipeline.png&#34; alt=&#34;Schematic processing pipeline.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Schematic processing pipeline.
-    &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;The processing pipline adopted to elaborate and visualize the data is composed by a pre-processing and processing phase. Once the data is downloaded the user needs to take in to account a series of characteristics. Firstly it is necessary to read the header to define the geometry of the survey using the trace position information and the presence of markers. If these types of information are present or not required, the pre-processing step can be skipped and the data directly used.&lt;/p&gt;
-&lt;p&gt;For every segment/sub-segment the returning signal data needs to be read and every trace has to be processed to a certain degree. It is better not to use the raw data or heavily processed data since the interpretation of both can result difficult. Signal noise can hide the objects or lead to wrong object geometry reconstruction and on the other hand too much processing/filtering can mask some objects or create artifacts also causing interpretation problems.&lt;/p&gt;
-&lt;p&gt;Once the header information is gathered and the signal data processed it is possible to create a uniform 3D point cloud. This is achieved by dividing the traces in multiple intervals (integration depth) and linearly interpolating on a 2D depth slice the mean trace intensities in the given depth interval&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
-Although this approach effectively reduces the number of samples along the Z axis, thus lowering the vertical resolution of the model, it improves the overall quality of the data and highlights the presence of anomalies.&lt;/p&gt;
-&lt;p&gt;The intensity value of each point is then assigned to a cell (voxel) creating a GPR volume.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;This pipeline was applied to data acquired in Piazza della Scienza (Milan) to identify objects in the first meter of soil, important to the square&amp;rsquo;s future &lt;a href=&#34;https://vivaiobicocca.unimib.it/6-passi-nel-verde-6-steps-towards-green-changes/#step3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;depaving and redesign project&lt;/a&gt;. The final computed GPR volume is 1m deep with a resolution of 600x600 cells giving a final grid resolution of 600x600x100. The grid, volume creation and final analysis were achieved using Pyvista. The code and data used to apply the different steps is available as a &lt;a href=&#34;https://gabri.xyz/uploads/GPR_volume_viewer.7z&#34;&gt;jupyter notebook&lt;/a&gt;. For a more in depth review of the process and more images a report in PDF format is &lt;a href=&#34;https://gabri.xyz/uploads/GPR_Report_2022.pdf&#34;&gt;available&lt;/a&gt;.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Best case scenario&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The depth slice is an &amp;ldquo;image&amp;rdquo; of (nx;ny) pixels where for each pixel the respective calculated value is assigned. The absolute interpolated value was used, but squaring too is a viable option.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
+      <guid>https://gabri.xyz/projects/gprpyvista/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;This project has the main objective to create an open-source compatible processing pipeline to automatically elaborate Ground Penetrating Radar (GPR) data to output a GPR volume in VTK format. Once ready, the volume then can be used to intuitively localize, identify and analyze in 3D space buried objects in the top most layer of soil (in this case up to a depth of 1m).&lt;/p&gt;&#xA;&lt;h2 id=&#34;gpr-data&#34;&gt;GPR Data&lt;/h2&gt;&#xA;&lt;p&gt;GPR is a relatively new indirect non-invasive geophysical exploration method that can be used to acquire subsurface data up to a depth of 50m&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This technique is based on the capture of reflected high frequency electromagnetic signals emitted from a controlled source. The contrast of electrical properties in the soil given by presence of anomalous objects, cavities, sedimentary structures, change in lithology or in water contents induce a variation in the signal’s propagation velocity thus producing a return pulse that is recorded. By visualizing the acquired data it is then possible to define the presence of perturbations across the medium and carry out different interpretations.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tslist converter</title>
       <link>https://gabri.xyz/projects/tslist/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://gabri.xyz/projects/tslist/</guid>
-      <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates.
-The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;
-&lt;p&gt;This converter uses javascript to import and manipulate the data. Everything is done locally so it works even offline if the page is saved.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: For now batch conversion is not supported. You need to convert one file at a time.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;todo&#34;&gt;Todo&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Batch conversions&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Mean calculations over time&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; User defined separator&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;converter&#34;&gt;Converter&lt;/h1&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34;&gt;
-  &lt;title&gt;File(s) size&lt;/title&gt;
-  &lt;style&gt;
-    html {
-        font-family: sans-serif;
-    }
-    div#drop_box {
-          height: 400px;
-          width: 400px;
-          border: 3px solid;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-          border-radius: 4px;
-      }
-      input[type=&#39;file&#39;] {
-  color: transparent;
-}
-      button, input[type=&#39;file&#39;]::file-selector-button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 10px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        border-radius: 3px;
-      }
-      pre {
-        display: -webkit-box;
-        -webkit-line-clamp: 10;
-        -webkit-box-orient: vertical;
-      }
-      .dropBox{
-        font-size: 1.15em;
-      }
-      .formCtrl{
-          font-size: 1.15em;
-          font-weight: normal;
-          line-height: 1.1;
-          display: grid;
-          grid-template-columns: 1em auto;
-          gap: 0.5em;
-      }
-      input[type=&#39;radio&#39;]{
-        width: 1em;
-        height: 1em;
-      }
-    &lt;/style&gt;
-&lt;/head&gt;
-  &lt;h2&gt;Input options&lt;/h2&gt;
-    &lt;input type=&#34;file&#34; id=&#34;file-selector&#34;  multiple&gt;
-   &lt;br&gt;
-   &lt;br&gt;
-    or
-    &lt;h4&gt; Drop to upload &lt;/h4&gt;
-      &lt;div id=&#34;drop_box&#34;&gt;
-        &lt;label class=&#34;dropBox&#34;&gt;Drop here&lt;/label&gt;
-      &lt;/div&gt;
-      &lt;h5&gt;Chosen file/s&lt;/h5&gt;
-      &lt;pre id=&#39;fileBox&#39;&gt; &lt;/pre&gt;
-      &lt;h2&gt;Conversion options&lt;/h2&gt;
-      &lt;h3&gt;Time options&lt;/h3&gt;
-      &lt;label for=&#34;convertTimeDay&#34; class=&#34;formCtrl&#34;&gt;
-        &lt;input type=&#34;radio&#34; id=&#34;convertTimeDay&#34; value=&#34;td&#34; name=&#39;timeopt&#39;&gt;
-        Convert hours in days
-      &lt;/label&gt;
-      &lt;label for=&#34;convertTimeMin&#34; class=&#34;formCtrl&#34;&gt;
-        &lt;input type=&#34;radio&#34; id=&#34;convertTimeMin&#34; value=&#34;tm&#34; name=&#39;timeopt&#39;&gt;
-        Convert hours in minutes
-      &lt;/label&gt;
-      &lt;label for=&#34;convertTimeSec&#34; class= &#34;formCtrl&#34;&gt;
-        &lt;input type=&#34;radio&#34; id=&#34;convertTimeSec&#34; value=&#34;ts&#34; name=&#39;timeopt&#39;&gt;
-         Convert hours in seconds
-       &lt;/label&gt;
-       &lt;label for=&#34;convertNone&#34; class= &#34;formCtrl&#34;&gt;
-         &lt;input type=&#34;radio&#34; id=&#34;convertNone&#34; value=&#34;ts&#34; name=&#39;timeopt&#39; checked=&#34;checked&#34;&gt;
-          Leave as is
-        &lt;/label&gt;
-       &lt;br&gt;
-      &lt;button type=&#34;button&#34; id=&#34;convert_button&#34;&gt;&lt;i class=&#34;fas fa-exchange-alt&#34;&gt;&lt;/i&gt; Convert!&lt;/button&gt;
-      &lt;hr&gt;
-      &lt;h4&gt;Output&lt;/h4&gt;
-      &lt;pre id=&#39;output&#39;&gt; &lt;/pre&gt;
-      &lt;button type=&#34;button&#34; id=&#34;save_button&#34; onclick=&#34;saveCSV()&#34;&gt;&lt;i class=&#34;fa fa-save&#34;&gt;&lt;/i&gt; Save&lt;/button&gt;
-      &lt;script&gt;
-        function displayOutput(text){
-          const outBox = document.getElementById(&#39;output&#39;);
-          outBox.textContent = &#39;&#39;;
-          outBox.textContent = text;
-        }
-        function saveCSV(){
-          // console.log(newCSV)
-          const  blob = new Blob([newCSV], {type: &#39;text/plain&#39;});
-          const inFileName = fileList[0].name
-          const fileName = inFileName + &#39;_toCSV.csv&#39;;
-          let newLink = document.createElement(&#39;a&#39;);
-          newLink.download = fileName;
-          newLink.href = window.webkitURL.createObjectURL(blob);
-          // newLink.style.display = &#39;none&#39;;
-          // document.body.appendChild(newLink);
-          newLink.click();
-        }
-        const tdCheckBox = document.getElementById(&#39;convertTimeDay&#39;);
-        const tmCheckBox = document.getElementById(&#39;convertTimeMin&#39;);
-        const tsCheckBox = document.getElementById(&#39;convertTimeSec&#39;);
-        const fileSelector = document.getElementById(&#39;file-selector&#39;);
-        const fileNameBox = document.getElementById(&#39;fileBox&#39;);
-        fileSelector.addEventListener(&#39;change&#39;, (event) =&gt; {
-          window.fileList = event.target.files;
-          fileNameBox.textContent = event.target.files[0].name
-        });
-        const convertButton = document.getElementById(&#39;convert_button&#39;)
-        convertButton.addEventListener(&#39;click&#39;,(event)=&gt;{
-          var reader = new FileReader();
-          var header = &#39;id;ts_hour;id_tsloc;ix;iy;t;q;u;v;psfc;glw;gsw;hfx;lh;tsk;tslb(1);rainc;rainnc;clw\n&#39;;
-          reader.onload = function(){
-              var infileName = window.fileList[0].name;
-              var text = reader.result;
-              var csv = header+text.split(&#39;\n&#39;).slice(1).join(&#39;\n&#39;).replace(/ \s+/g,&#39;;&#39;);
-              // CSV and data manipulation
-              var lines = csv.split(&#39;\n&#39;);
-              var result = [];
-              var headers = lines[0].split(&#39;;&#39;);
-              for(var i=1; i&lt;lines.length;i++){
-                var obj = {};
-                var currentline = lines[i].split(&#39;;&#39;);
-                // console.log(currentline)
-                for(var j=0;j&lt;headers.length;j++){
-                  obj[headers[j]] = currentline[j];
-                }
-                result.push(obj);
-              }
-              var jString = JSON.stringify(result);
-              var jDF = JSON.parse(jString);
-              // console.log(Object.values(jDF[0]));
-              // DO stuff here
-              for (i=0;i&lt;jDF.length;i++){
-                if (tdCheckBox.checked == true){
-                  jDF[i][&#39;ts_days&#39;] = jDF[i][&#39;ts_hour&#39;]/24;
-                }
-                else if (tmCheckBox.checked == true){
-                  jDF[i][&#39;ts_minutes&#39;] = jDF[i][&#39;ts_hour&#39;]*60;
-                }
-                else if (tsCheckBox.checked == true){
-                  jDF[i][&#39;ts_seconds&#39;] = jDF[i][&#39;ts_hour&#39;]*3600;
-                }
-              }
-              // for(var k=0;j&lt; jDF.length;k++){
-              //   console.log(jDF[k]);
-              // }
-              // console.log(jDF.length);
-              // Save stuff
-              // var keys = Object.keys(jDF[0]);
-              window.newCSV = Object.keys(jDF[0]).join(&#39;;&#39;).trim()+&#39;\n&#39;;
-              for (i=0;i&lt;jDF.length;i++){
-                var line = Object.values(jDF[i]).join(&#39;;&#39;).trim()+&#39;\n&#39;;
-                newCSV = newCSV+line
-              }
-              displayOutput(newCSV)
-            }
-            var files = window.fileList;
-            reader.readAsText(files[0]);
-          // console.log(reader.readAsDataURL(window.fileList[0]));
-        });
-        const dropZone = document.getElementById(&#39;drop_box&#39;);
-        dropZone.addEventListener(&#39;dragover&#39;,(event)=&gt;{
-          event.stopPropagation();
-          event.preventDefault();
-          // Style the drag-and-drop as a &#34;copy file&#34; operation.
-          event.target.style.border = &#34;4px solid teal&#34;;
-          event.target.style.color = &#34;teal&#34;;
-          event.target.style.fontWeight = &#34;bold&#34;;
-          event.dataTransfer.dropEffect = &#39;copy&#39;;
-        });
-        dropZone.addEventListener(&#39;dragleave&#39;,(event)=&gt;{
-          event.stopPropagation();
-          event.preventDefault();
-          // Style the drag-and-drop as a &#34;copy file&#34; operation.
-          event.target.style.border = &#34;3px solid&#34;;
-          event.target.style.color = &#34;&#34;;
-          event.target.style.fontWeight = &#34;normal&#34;;
-        });
-        dropZone.addEventListener(&#39;drop&#39;, (event) =&gt; {
-          event.stopPropagation();
-          event.preventDefault();
-          event.target.style.border = &#34;3px solid&#34;;
-          event.target.style.fontWeight = &#34;normal&#34;;
-          event.target.style.color = &#34;&#34;;
-          window.fileList = event.dataTransfer.files;
-          fileNameBox.textContent = fileList[0].name
-        });
-      &lt;/script&gt;
-&lt;/html&gt;
-</description>
+      <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates. The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Generate and plot random planes using python</title>
-      <link>https://gabri.xyz/post/pydip/random-planes/</link>
-      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/post/pydip/random-planes/</guid>
-      <description>&lt;h2 id=&#34;general-introduction-to-planes-and-plotting&#34;&gt;&lt;strong&gt;General introduction to planes and plotting&lt;/strong&gt;&lt;/h2&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    To know more about planes and plotting read &lt;a href=&#34;https://www.cambridge.org/core/books/stereographic-projection-techniques-for-geologists-and-civil-engineers/3462D8306346A41ADE5667A3B0A3E82F&#34;&gt;Stereographic Projection Techniques for Geologists and Civil Engineers&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;In geology a basic plane can be rappresented by different parameters linked to the orentation of the plane in respect to the cardinal points and the inclination of the plane in respect to the horizontal. The first parameter can be expressed in different ways but the main two are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Strike&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dip direction&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The second parameter on the other hand is defined only by one value defined as the &lt;strong&gt;Dip angle&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The strike and dip direction of a plane are strictly linked.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The &lt;strong&gt;strike&lt;/strong&gt; is defined as the direction given by the intersection line between the given plane and a horizontal plane. The &lt;strong&gt;dip direction&lt;/strong&gt; is the angle orthogonal to the strike.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;As an example a plane with 90° of strike has a dip direction of 180°. To visualize this relationship we can use the right hand rule:&lt;/p&gt;
-&lt;p&gt;the thumb coincides with the direction while the direction of fingers (palm facing downward) the dip direction of the plane.&lt;/p&gt;
-&lt;p&gt;This way with a value of strike = 90° we can extrapolate that the plane has a direction of 90° and it is dipping South (180°).&lt;/p&gt;
-&lt;p&gt;These basic parameters can be very usefull in geology to understand the general orientation of rock strata encountered on the field and so their overall geometry.&lt;/p&gt;
-&lt;h2 id=&#34;plotting-planes&#34;&gt;&lt;strong&gt;Plotting planes&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;To efficiently analyze the gathered data we can use stereoplots. These kind of plot are obtained as the equatorial projection of the intersection of a plane or line typically with the southern hemisphere of a sphere. In this way planes are rappresented as curves while lines as dots.
-When we have a high number of planes some patterns can emerge such as planes dipping in the same general direction and with similar inclination angles. This grouping is called a set of planes. On stereoplots defining sets can be very difficult especially if there are lots of sets and planes with different orientation. To semplify the view usually poles are used&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;mplstereonet&#34;&gt;mplstereonet&lt;/h1&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    To know more about mplstereonet go to &lt;a href=&#34;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&#34;&gt;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Using the mplstereonet library we can plot geological data as lines or poles by giving the appropriate strike and dip measurements of the given plane. The process to generate random planes is not that complex since the values that need to be generated are only two.&lt;/p&gt;
-&lt;p&gt;First we need to install the two main libraries: mplstereonet and numpy using pip:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;pip install mplstereonet numpy
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now we can start scripting. Let&amp;rsquo;s plot a simple plane with 90° strike and 60° dip angle.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-import mplstereonet as mpl
-import matplotlib.pyplot as plt
-
-
-strike = 90 #strike value
-dip = 60 #dip value
-
-fig = plt.figure(&#39;Stereoplot&#39;) #initialize a figure with the name &#39;Stereoplot&#39;
-
-ax = fig.add_subplot(111,projection=&#39;stereonet&#39;) #add plot in the figure with the stereonet projection
-ax.grid() #add a grid
-
-ax.plane(strike,dip,&#39;k-&#39;) #plot the plane data as a black line
-ax.pole(strike,dip,&#39;kx&#39;) #plot the corresponding pole of the plane as a black x
-
-
-plt.show() #show the plot
-
-&lt;/code&gt;&lt;/pre&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-ex_1&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_1.png&#34; alt=&#34;Example 1 result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Example 1 result
-    &lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;Adding random measurements can be archived using numpy random library&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-import numpy.random as r 
-import mplstereonet as mpl
-import matplotlib.pyplot as plt
-
-
-strike = r.randint(0,361) #random strike value (range from min to max-1)
-dip = r.randint(0,91) #random dip value
-
-print(f&#39;strike:{strike}, dip dir:{(strike+90)%360}, dip:{dip}&#39;) #print string to display the strike, dip dir and dip values. 
-
-&#39;&#39;&#39;
-The dip direction can be calculated by adding 90°and
-applying the reminder operator % to constrain the result to max 360.
-For example if the strike is 300 the dip direction will be 30° 
-because 390%360 = 30. 
-
-&#39;&#39;&#39;
-
-fig = plt.figure(&#39;Stereoplot&#39;) #initialize a figure with the name &#39;Stereoplot&#39;
-
-ax = fig.add_subplot(111,projection=&#39;stereonet&#39;) #add plot in the figure with the stereonet projection
-ax.grid() #add a grid
-
-ax.plane(strike,dip,&#39;k-&#39;) #plot the plane data as a black line
-ax.pole(strike,dip,&#39;kx&#39;) #plot the corresponding pole of the plane as a black x
-
-
-plt.show() #show the plot
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The plot will be similar to the &lt;a href=&#34;#figure-ex_1&#34;&gt;figure of the first examlpe&lt;/a&gt; but with a random value of strike and dip angle.&lt;/p&gt;
-&lt;p&gt;If we want more than one plane we can create a numpy array of random values that can be plotted. This can be accomplished by modifying the lines&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;strike = r.randint(0,361,5) #5 random strike values (range from min to max-1)
-dip = r.randint(0,91,5) #5 random dip values
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;matplotlib is able to unpack and plot the different strike;dip pairs from the two lists.&lt;/p&gt;
-&lt;p&gt;A more complex approach is by introducing the concept of plane set. We need a number of planes with the same general orientation and inclination. To do this we can:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Define a random &amp;ldquo;generator&amp;rdquo; plane. This will define the direction and dip of the set&lt;/li&gt;
-&lt;li&gt;Generate random data based on the generator direction and dip&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To give the set a more &amp;ldquo;natural feeling&amp;rdquo; we can use a random number given by a normal distribuition with:&lt;/p&gt;
-&lt;p&gt;$$\mu = \text{strike} \text{ or } \mu = \text{dip} $$&lt;/p&gt;
-&lt;p&gt;and random $\sigma^2$.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-import numpy as np
-import matplotlib.pyplot as plt
-import mplstereonet as mpl
-
-
-
-
-
-def random_plane_gen(sets=1, n_planes=10):
-
-	r_s = np.random.randint(0,361,sets) #random strike
-
-	r_dip = np.random.randint(0,91,sets) #random dip
-
-	r_std = np.random.randint(5,20,sets) #random sigma^2
-	
-	planes_dict = {x:{&#39;s&#39;:0,&#39;d&#39;:0} for x in range(sets)} 
-	&#39;&#39;&#39;
-	We can use dictionaries to be more tidy. 
-	For every set there is an entry
-	
-	0: 
-	 + s: 0
-	 + d: 0 
-	1:
-	 + s: 0
-	 + d: 0
-	
-	that then can be filled:
-		
-	0: 
-	 + s: 120
-	 + d: 20
-	1:
-	 + s: 200
-	 + d: 33
-	 
-	&#39;&#39;&#39;
-	for nset,s,d,std in zip(list(range(sets)),r_s,r_dip,r_std):
-	
-		#take only the absolute values of n_planes random values with center s and given sigma^2 rounded to 2 decimals
-		planes_dict[nset][&#39;s&#39;] = np.abs(np.round(np.random.normal(s,std,n_planes),2)) 
-		planes_dict[nset][&#39;d&#39;] = np.abs(np.round(np.random.normal(d,std,n_planes),2))
-
-		
-	return planes_dict
-	
-	
-random_set = random_plane_gen()
-print(random_set) #print dict
-
-
-	
-def plane_plot(planes_dict,show_planes=1,show_poles=0):
-
-	#plot with different colors depending on the set (0:red, 1:green, ...)
-	set_color = [&#39;r&#39;,&#39;g&#39;,&#39;b&#39;,&#39;k&#39;,&#39;m&#39;,&#39;c&#39;] 
-	
-	fig = plt.figure(&#39;Stereonet&#39;)
-	ax = fig.add_subplot(111, projection=&#39;stereonet&#39;)
-	
-	
-	for sets in planes_dict: #for every set present in the dict
-		for i in range(len(planes_dict[sets][&#39;s&#39;])):
-			if show_planes:
-				ax.plane(planes_dict[sets][&#39;s&#39;][i],
-					 planes_dict[sets][&#39;d&#39;][i],
-					 f&#39;{set_color[sets]}-&#39;)
-			if show_poles:
-				ax.pole(planes_dict[sets][&#39;s&#39;][i],
-					planes_dict[sets][&#39;d&#39;][i],
-					f&#39;{set_color[sets]}o&#39;)
-
-		
-	ax.grid()
-	plt.show()
-	
-plane_plot(random_set)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-ex_4a&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-ex_4b&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/ex_4_2.png&#34; alt=&#34;Example 4 results. Below plotted 2 sets of different planes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Example 4 results. Below plotted 2 sets of different planes
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Poles are artificial lines normal to the surface of a given plane.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
+      <title>Pzero</title>
+      <link>https://gabri.xyz/libraries/pzero/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/libraries/pzero/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/pzero/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;PZero is a Python open-source 3D geological modelling application, leveraging various libraries, with a user-friendly graphical user interface allowing to perform most standard geomodelling data management and analysis tasks, explicit surface interpolation, and advanced implicit interpolation.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gecos-lab/PZero&#34;&gt;https://github.com/gecos-lab/PZero&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pydip</title>
       <link>https://gabri.xyz/projects/pydip/</link>
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       <guid>https://gabri.xyz/projects/pydip/</guid>
-      <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;
-&lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;The plots are generated with &lt;a href=&#34;https://github.com/joferkington/mplstereonet/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mplstereonet library&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;capabilities&#34;&gt;Capabilities:&lt;/h2&gt;
-&lt;h3 id=&#34;generate-multiple-random-sets-of-planes&#34;&gt;Generate multiple random sets of planes&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-ex_1&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;The program chooses a random dip direction and angle for every set and depending on that plane the planes will be generated with a normal distribuition with a random std value.&lt;/p&gt;
-&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Number of sets&lt;/li&gt;
-&lt;li&gt;Number of planes&lt;/li&gt;
-&lt;li&gt;Plot planes and/or poles&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;generate-multiple-random-sets-of-folds&#34;&gt;Generate multiple random sets of folds&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-rand_p&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;The program can generate n sets of random planes that follow random cilindrical fold parameters (axial plane and hinge line inclination etcetc).&lt;/p&gt;
-&lt;p&gt;The parameters that can be tweaked are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Number of sets of folds&lt;/li&gt;
-&lt;li&gt;Number of planes for every fold limb&lt;/li&gt;
-&lt;li&gt;Plot limb planes and/or poles&lt;/li&gt;
-&lt;li&gt;Plot plane axis and/or hinge line&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;generate-random-focal-mechanisms&#34;&gt;Generate random focal mechanisms&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-rand_p&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;data-table-view-and-selection&#34;&gt;Data table view and selection&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-rand_p&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pydip/4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;import-and-plot-imported-data&#34;&gt;Import and plot imported data&lt;/h3&gt;
-&lt;h2 id=&#34;planned-features&#34;&gt;Planned features:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Faults&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better selection options&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Better import functions&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Statistics module&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3D viewer for plotted structures&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;&#xA;&lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;The plots are generated with &lt;a href=&#34;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&#34;&gt;mplstereonet&lt;/a&gt; library.&lt;/p&gt;&#xA;&lt;h2 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h2&gt;&#xA;&lt;h3 id=&#34;generate-multiple-random-sets-of-planes&#34;&gt;Generate multiple random sets of planes&lt;/h3&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://gabri.xyz/pydip/1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;The program chooses a random dip direction and angle for every set and depending on that plane the planes will be generated with a normal distribuition with a random std value.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rocpy</title>
       <link>https://gabri.xyz/projects/rocpy/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://gabri.xyz/projects/rocpy/</guid>
-      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
-&lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab&amp;rsquo;s using python to increase the overall accessibility of the program and improve the plot&amp;rsquo;s interfaces (thanks to matplotlib).&lt;/p&gt;
-&lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Calculate Hoek-Brown criterion parameters&lt;/li&gt;
-&lt;li&gt;Calculate Rock mass parameters ($\sigma_t$, $\sigma_c$, $\sigma_{cm}$, $E_{rm}$)&lt;/li&gt;
-&lt;li&gt;Calculate $\sigma_{3}^{max}$ based on different applications (e.g tunnels)&lt;/li&gt;
-&lt;li&gt;Calculate Mohr-Coulomb parameters (c and $\phi$)&lt;/li&gt;
-&lt;li&gt;Plot H-B and M-C envelope.&lt;/li&gt;
-&lt;li&gt;Plot failure mohr circle and calculate the $\sigma_{1}^{max}$ value.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_1&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/HB.png&#34; alt=&#34;Main view with the HB crit plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Main view with the HB crit plot
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_2&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/HB_MC.png&#34; alt=&#34;Main view with the HB and MC crit plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Main view with the HB and MC crit plot
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-fig_3&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/rocpy/Mohr.png&#34; alt=&#34;Secondary veiw with the Mohr-Coulomb failure circle&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Secondary veiw with the Mohr-Coulomb failure circle
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h1 id=&#34;future-additions&#34;&gt;Future additions:&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tabulated list values for D&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Tabulated list values for $m_i$&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Import data&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Export data&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab’s using python to increase the overall accessibility of the program and improve the plot’s interfaces (thanks to matplotlib).&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>About</title>
+      <link>https://gabri.xyz/about/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://gabri.xyz/about/</guid>
+      <description>&lt;figure class=&#34;float-left&#34;&gt;&lt;img src=&#34;https://gabri.xyz/about/me.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Me trying pottery for the first time :)&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I am &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    27&#xA;&#xA;&#xA;&#xA; years old with a passion for science, technology, nature, photography and all trades that involve getting my hands dirty! I love coding and I love geosciences so I do both! I am a avid supporter and advocate for open-source and open-science, we would not be here without both!&lt;/p&gt;&#xA;&lt;p&gt;Currently I am pursuing a PhD in Geophysics at the University of Iceland. My work focuses on simulating sequences of repeating earthquakes observed at the &lt;a href=&#34;https://www.openstreetmap.org/node/1800762754#map=7/65.158/-17.628&amp;amp;layers=P&#34;&gt;Bárðarbunga&lt;/a&gt; volcano using Sequences of Earthquakes and Aesismic Slip (SEAS) simulations (in particular using the Structural Boundary Integral Method).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Pyseismic</title>
       <link>https://gabri.xyz/projects/pyseismic/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://gabri.xyz/projects/pyseismic/</guid>
-      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
-&lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy package&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly &lt;a href=&#34;http://www.wgeosoft.ch/PDF/Visual_SUNT_Pro_Data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual SUNT&lt;/a&gt; that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;
-&lt;h1 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h1&gt;
-&lt;p&gt;For now there are very few functions available (the essentials). In particular seispy can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Read and plot with matplotlib seismic traces from files supported on &lt;a href=&#34;https://docs.obspy.org/packages/autogen/obspy.core.stream.read.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Obspy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/1.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Apply FFT analysis on single or multiple traces&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Basic filtering (band pass, low and high pass)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;First break picking with options of live dromochrome plot.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/pyseismic_images/4.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;h1 id=&#34;future-capabilities&#34;&gt;Future capabilities&lt;/h1&gt;
-&lt;p&gt;As it is this software is very bare bones but I have plans to expand it with more features such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Automatic first break&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Trace muting&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; More precise import options (as for now it relies on the autodetect features of Obspy)&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Simple stratigraphic model reconstruction (from dromochrome elaboration)&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Delaytime and GRM applications&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; SRCS&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Focal mechanism reconstruction&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34;&gt;Obspy&lt;/a&gt; package.&lt;/p&gt;&#xA;&lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly Visual SUNT that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>Automatic processing for referenced slopes</title>
-      <link>https://gabri.xyz/projects/auto-slope/</link>
-      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/projects/auto-slope/</guid>
-      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
-&lt;p&gt;This project was a request aimed to find a way to prepare different 3D models, in particular artificial slopes, and calculate the difference between two reconstructions after a given event directly in metashape &lt;strong&gt;without&lt;/strong&gt; using external programs.&lt;/p&gt;
-&lt;p&gt;In particular the set of scripts needed to achive the following tasks:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Apply different masks for different sets of photos.&lt;/li&gt;
-&lt;li&gt;Count the total number of markers detected in all of the uploaded photos. The number of markers needed to be in total always 135.&lt;/li&gt;
-&lt;li&gt;Cut the resulting point clouds with constant dimensions and automatically apply a rotatation to make the plane horizontal.&lt;/li&gt;
-&lt;li&gt;Calculate the difference between two meshes. To make sure that the difference operation was applied properly the two chunks need to be aligned and the models need to be rotated flat and cropped.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-input-image-example&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/og_img.png&#34; alt=&#34;Input image example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Input image example
-    &lt;/figcaption&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/slope_a2.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-reconstructed-slope-before-and-after-the-event&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/slope_b2.png&#34; alt=&#34;Reconstructed slope before and after the event&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Reconstructed slope before and after the event
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;summary&#34;&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;mask-application&#34;&gt;Mask application&lt;/h3&gt;
-&lt;p&gt;The model is constructed using photos that capture a different angle of the artificial plane. The first step is to isolate the relevant slope information by masking the parts of the slope that are not needed for the reconstruction (e.g. the container). To do this different masks were created to mask specific parts present in different sets of photos. The pairing is as follows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;photo 1 $\rightarrow$ &#39;&#39; Links_Initial.jpg &#39;&#39;&lt;/li&gt;
-&lt;li&gt;photo 2 to 21 $\rightarrow$ &#39;&#39; Links_Regular.jpg &#39;&#39;&lt;/li&gt;
-&lt;li&gt;photo 22 $\rightarrow$ &#39;&#39; Midden_Initial.jpg &#39;&#39;&lt;/li&gt;
-&lt;li&gt;photo 23 to 42 $\rightarrow$ &#39;&#39; Midden_Regular.jpg &#39;&#39;&lt;/li&gt;
-&lt;li&gt;photo 43 $\rightarrow$ &#39;&#39; Rechts_Initial.jpg &#39;&#39;&lt;/li&gt;
-&lt;li&gt;photo 44 to 63 $\rightarrow$ &amp;lsquo;&amp;lsquo;Rechts_Regular.jpg &#39;&amp;rsquo;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This process was accomplished by writing the &lt;strong&gt;mask.py&lt;/strong&gt; script.&lt;/p&gt;
-&lt;h3 id=&#34;marker-count&#34;&gt;Marker count&lt;/h3&gt;
-&lt;p&gt;For each model there is a known fixed number of total markers that need to be detected (135). The objective of this script is to count the total amount of markers detected in the model and print if there are less than 135. This check is done to see if the automatic markers present for each markers are somehow cropped or masked out.&lt;/p&gt;
-&lt;p&gt;The check process was automated using the &lt;strong&gt;check_markers.py&lt;/strong&gt; script&lt;/p&gt;
-&lt;h3 id=&#34;cut-and-rotate-the-model-point-cloud&#34;&gt;Cut and rotate the model point cloud&lt;/h3&gt;
-&lt;p&gt;To apply correctly the difference between the two models they both need to have the same size, position and rotation. To do this it was decided to rotate first the psarse cloud model and then resize the bounding box to a determined size. To do this the following process was defined:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Define the region size&lt;/li&gt;
-&lt;li&gt;Find the minimum and maximum (for both x and y) points inside the bounding box and calculate the center (as the midpoint of points at opposite corners).&lt;/li&gt;
-&lt;li&gt;Translate the points on the same height of the center point&lt;/li&gt;
-&lt;li&gt;Set these points as tranform reference&lt;/li&gt;
-&lt;li&gt;Update transform (and so rotate the points)&lt;/li&gt;
-&lt;li&gt;Resize the bounding box&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To accurately rotate the model the plane needs to fit in the bounding box as tightly as possibile and so the z value need to be low. Too low z values can crop too much of the plane (since the plane has a certain inclination angle) and so the rotation won&amp;rsquo;t be as precise.&lt;/p&gt;
-&lt;p&gt;This process is archived by using the &lt;strong&gt;region_size.py&lt;/strong&gt; script.&lt;/p&gt;
-&lt;h3 id=&#34;mesh-difference&#34;&gt;Mesh difference&lt;/h3&gt;
-&lt;p&gt;Instead of caluclating the difference of the two meshes a quicker is to convert the meshes in Digital Elevation Models and then apply a per pixel difference.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-workflow&#34;&gt;&lt;strong&gt;Final workflow&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;We can summarize the developed metashape workflow as follows:&lt;/p&gt;
-&lt;center&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/auto_slope_processing.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;&lt;/center&gt;
-&lt;p&gt;This workflow is resonably fast and has the possibility to batch the processes to further automate the workflow.&lt;/p&gt;
-&lt;center&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/dem_a.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;&lt;/center&gt;
-&lt;center&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-reconstructed-dem-of-the-slope-before-and-after-the-event&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/dem_b.png&#34; alt=&#34;Reconstructed DEM of the slope before and after the event&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      Reconstructed DEM of the slope before and after the event
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/center&gt;
-&lt;center&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  id=&#34;figure-dem-difference&#34;&gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://gabri.xyz/media/auto_slope_img/diff2.png&#34; alt=&#34;DEM difference&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;figcaption data-pre=&#34;Figure&amp;nbsp;&#34; data-post=&#34;:&amp;nbsp;&#34; class=&#34;numbered&#34;&gt;
-      DEM difference
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/center&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Electronic Compass</title>
+      <title>Electronic compass</title>
       <link>https://gabri.xyz/projects/ec/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://gabri.xyz/projects/ec/</guid>
-      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
-&lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc..
-A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation.
-This project has the aim to create a low-cost, open-source electronic geological compass that reduces the time needed to take a measurement, write it down and afterwards rewrite in a txt to be used in other programs (Stereonet, wintensor&amp;hellip;) by creating a tool that works as a normal compass but can save the measurements locally in the appropriate files for different softwares.&lt;/p&gt;
-&lt;p&gt;The planned compass features are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Measure dip and dip direction of a plane&lt;/li&gt;
-&lt;li&gt;Measure strike slip, trend and plunge&lt;/li&gt;
-&lt;li&gt;Quick profile switch (direction/dip, trend/plunge etc..)&lt;/li&gt;
-&lt;li&gt;Automatic txt files save&lt;/li&gt;
-&lt;li&gt;Calibration features&lt;/li&gt;
-&lt;li&gt;Data elaboration software (pydip)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;components-list&#34;&gt;Components list&lt;/h2&gt;
-&lt;p&gt;The Electronic Compass components are searched to be the most cost-effective and easy to solder available that I could find. I provide the links from where the components are purchased but some are europe based (mostly Germany) so check if worldwide shipping is convenient or not.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;Component Name&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Quantity&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Price&lt;/th&gt;
-&lt;th style=&#34;text-align:right&#34;&gt;Link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Adafruit adalogger M0&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;26€&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ThePiHut&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;GY-61 ADXL335 acceletometer&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;6.79€&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-61-adxl335-beschleunigungssensor-3-axis-neigungswinkel-modul-1?variant=20332875546720&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;128x32 Oled display&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;6.29€&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://thepihut.com/products/adafruit-feather-m0-adalogger&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;GY-271 QMC5883L magnetometer&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;5.79€&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.az-delivery.de/en/products/gy-271-kompassmodul-kompass-magnet-sensor-fuer-arduino-und-raspberry-pi?variant=18912984432736&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AZ-Delivery&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;SD card&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;may vary&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;1200mAh 3.7V LiPo battery&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;5.36€&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.welectron.com/LiPo-Pouch-Battery-503562-37V-1200mAh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Welectron&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Potentiometer&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x1&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Buttons&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;x?&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;?&lt;/td&gt;
-&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.amazon.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;software-used&#34;&gt;Software used&lt;/h2&gt;
-&lt;p&gt;To have a truly open-source project the software used is 100% free and open-source from the CAD project files to the software used to code and flash the code on the adalogger chip.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Software program&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;CAD&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;FreeCAD&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.freecadweb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FreeCAD&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Electronics&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;KiCad EDA&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://kicad.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KiCad&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Code environment and upload&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;ArduinoIDE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://www.arduino.cc/en/software&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arduino&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;licences&#34;&gt;Licences&lt;/h2&gt;
-&lt;p&gt;Since the E.C. project covers hardware and software licences that cover both are necessary. You can find the choosen licences in the &amp;ldquo;Licences folder&amp;rdquo; in PDF and .txt format.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Type&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;License name&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Source link&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Software&lt;/strong&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;GNU General Public License v3.0 or later&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://spdx.org/licenses/GPL-3.0-or-later.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPDX&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;Hardware&lt;/strong&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;CERN-OHL-S-2.0 or any later version&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;https://ohwr.org/cern_ohl_s_v2.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OHWR&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;The copyrights to both hardware and software are explicited in the copyright.pdf and copyright.md files and the original copies are stored in the License folder. If you want to apply any kind of change you &lt;strong&gt;always need to log it in the changes.md file&lt;/strong&gt; and include all the original source and copyright files as per licences.&lt;/p&gt;
-</description>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc.. A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation. This project has the aim to create a low-cost, open-source electronic geological compass that reduces the time needed to take a measurement, write it down and afterwards rewrite in a txt to be used in other programs (Stereonet, wintensor…) by creating a tool that works as a normal compass but can save the measurements locally in the appropriate files for different softwares.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>3D paleontological objects</title>
-      <link>https://gabri.xyz/projects/fossils/</link>
+      <title>3D fossils</title>
+      <link>https://gabri.xyz/projects/3d_fossils/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/projects/fossils/</guid>
-      <description>&lt;h1 id=&#34;the-premise&#34;&gt;The premise&lt;/h1&gt;
-&lt;p&gt;The computing power of modern technologies and their rapid development gave the possibility to reconstruct 3D digital objects precisely and rapidly from the real world, increasing the possibility of their conservation and sharing. There are three different types of reconstruction techniques: photogrammetry, 3D scan and CT scan or tomography. These three methods are based on the fundamental concept of obtaining, interpreting, and measuring surface and objects properties without needing a direct contact with the object.
-This project gives a more in-depth look of photogrammetry, in particular the modern technique defined as Structure from Motion, applied to centimetric macroinvertebrate fossils. Photogrammetry is the most accessible and cost-effective method of the three. The project was entirely developed during the COVID-19 sanitary emergency using already available or easily obtainable equipment. As a second aim and long-term objective, the thesis works as a guide for further experimentation and automation of the process of data capture and processing and to create a digital palaeontological archive that can be used for online accurate analysis of specimens.&lt;/p&gt;
-&lt;h1 id=&#34;procedures&#34;&gt;Procedures&lt;/h1&gt;
-&lt;p&gt;In photogrammetry the digital reconstruction of an object is given by specialized software that can approximate the position of the photos relative to the object and its structure by capturing photos of different perspectives of the object. Since image capturing can be done with a passive sensor, photogrammetry is the most popular and diffused method of reconstruction. Furthermore, it can produce a textured model, process not always possible in 3D and CT scans. The software used in this project is Agisoft Metashape Professional because it has many tools, and it is efficiently optimized.
-Two main steps compose the reconstruction process:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Image capture&lt;/li&gt;
-&lt;li&gt;Computer processing.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The first step consists in a preliminary phase in which lights, camera and the specimen are positioned and the distance between the camera and the specimen is measured. Then, only when the user is certain that the specimen is in a stable fixed position the capturing process starts. The simplest capturing procedure consists in fixing the position of the camera and rotate the specimen on one axis. The angle of rotation needs to be small enough to have an 80% overlap between images. Lighting of the specimen needs to be diffused and multidirectional to avoid sharp shadows. The background needs to be featureless to avoid reconstruction errors.&lt;/p&gt;
-&lt;p&gt;The second step consists in importing the images into the software, process them and construct the final model. The processing in the software is divided in five main phases:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Image masking&lt;/li&gt;
-&lt;li&gt;Image alignment&lt;/li&gt;
-&lt;li&gt;Formation of a dense cloud&lt;/li&gt;
-&lt;li&gt;Meshing&lt;/li&gt;
-&lt;li&gt;Texturing.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When the model is complete, it can be scaled to the real-world equivalent. In this way the measures taken on the model correspond to the real-world equivalent. For the processes that cannot be done inside the Agisoft Metashape software we proposed python codes precisely written for automatically completing some tasks (e.g. conversion of raw image files in jpg).&lt;/p&gt;
-&lt;p&gt;For the process of image capture, a Nikon D3100 reflex camera was used, in order to better control the focus, ISO and focal ratio parameters and used macro rings, in particular the 12+20mm combination, to capture the most minute details of the specimen.
-In order to avoid sharp shadows and give a homogeneous lighting to the specimens, we used two table lamps with diffused light. The background was black to increment the contrast with the specimen and help to differentiate the background from the object. To maintain the specimens in a fixed position crocodile-clips were used for a constant and strong grip. Each model was composed by 200 photos and took from 2 to 3 hours to complete.
-The model reconstruction process was applied to six specimens. Five of them were extracted from recent and Pleistocenic sediments in Solanto (Palermo, Italy), the former belonging to the Sintema di Marsala, precisely to the lithofacies of Calcareniti di Palermo. The sixth one was collected from recent sediments in California (USA). The classification was done by observing the macroscopic characteristics of the specimens and was aided by different texts.&lt;/p&gt;
-&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
-&lt;h2 id=&#34;spondylus-gaederopus-linnaeus-1758&#34;&gt;Spondylus gaederopus Linnaeus 1758&lt;/h2&gt;
-&lt;div class=&#34;sketchfab-embed-wrapper&#34;&gt; &lt;iframe title=&#34;Spondylus gaedropus Linnaeus, 1758&#34; frameborder=&#34;0&#34; allowfullscreen mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; allow=&#34;autoplay; fullscreen; xr-spatial-tracking&#34; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://sketchfab.com/models/584903c4d4784c8babc3f3ecd5ef3e87/embed?ui_theme=dark&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;
-&lt;h2 id=&#34;venus-verrucosa-linnaeus-1758&#34;&gt;Venus verrucosa Linnaeus 1758&lt;/h2&gt;
-&lt;div class=&#34;sketchfab-embed-wrapper&#34;&gt; &lt;iframe title=&#34;Venus verrucosa Linnaeus, 1758&#34; frameborder=&#34;0&#34; allowfullscreen mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; allow=&#34;autoplay; fullscreen; xr-spatial-tracking&#34; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://sketchfab.com/models/e89ba09d34524d58ae30e41cfa89934c/embed?ui_theme=dark&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;
-&lt;h2 id=&#34;pseudochama-gryphina-lamarck-1819&#34;&gt;Pseudochama gryphina (Lamarck, 1819)&lt;/h2&gt;
-&lt;div class=&#34;sketchfab-embed-wrapper&#34;&gt; &lt;iframe title=&#34;Pseudochama gryphina (Lamarck, 1819)&#34; frameborder=&#34;0&#34; allowfullscreen mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; allow=&#34;autoplay; fullscreen; xr-spatial-tracking&#34; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://sketchfab.com/models/504d073d93f24aa1ab1ce0ae6f0b0f9c/embed?ui_theme=dark&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;
-&lt;h2 id=&#34;haliotis-tuberculata-linnaeus-1758&#34;&gt;Haliotis tuberculata Linnaeus 1758&lt;/h2&gt;
-&lt;div class=&#34;sketchfab-embed-wrapper&#34;&gt; &lt;iframe title=&#34;Haliotis tubercolata Linnaeus, 1758&#34; frameborder=&#34;0&#34; allowfullscreen mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; allow=&#34;autoplay; fullscreen; xr-spatial-tracking&#34; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://sketchfab.com/models/aeda69fe209346c9abb06bdd3678996c/embed?ui_theme=dark&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;
-&lt;h2 id=&#34;dendraster-excentricus-eschscholtz-1831&#34;&gt;Dendraster excentricus (Eschscholtz, 1831)&lt;/h2&gt;
-&lt;div class=&#34;sketchfab-embed-wrapper&#34;&gt; &lt;iframe title=&#34;Dendraster excentricus (Eschscholtz, 1831)&#34; frameborder=&#34;0&#34; allowfullscreen mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; allow=&#34;autoplay; fullscreen; xr-spatial-tracking&#34; xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://sketchfab.com/models/8fc81dcc71a14aadb96a9b47e99a6850/embed?ui_theme=dark&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;
-&lt;h1 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h1&gt;
-&lt;p&gt;In general, photogrammetric programs have their limitations and cannot reconstruct smooth, reflective, and transparent surfaces. There were in fact some difficulties in reconstructing some characteristics of the studied specimens. The pallial line for example is not present in the models because it is hardly detectable also in the photos. The internal parts for some specimens also were not completely reconstructed because they were smooth and reflective. On the other hand, problems linked to the geometry of a particular specimen were easily resolved by modifying the alignment options.
-In the end, the results obtained from the application of photogrammetry on these six fossils demonstrate that this is a valid and accessible technique that can give accurate models. I hope in the future that this method of obtaining precise models very quickly can overcome the difficulties encountered and that it can be adopted as a standard to create an always-accessible repository where models can be shared and possibly 3D printed.&lt;/p&gt;
-</description>
+      <guid>https://gabri.xyz/projects/3d_fossils/</guid>
+      <description>&lt;h2 id=&#34;premise&#34;&gt;Premise&lt;/h2&gt;&#xA;&lt;p&gt;The computing power of modern technologies and their rapid development gave the possibility to reconstruct 3D digital objects precisely and rapidly from the real world, increasing the possibility of their conservation and sharing. There are three different types of reconstruction techniques: photogrammetry, 3D scan and CT scan or tomography. These three methods are based on the fundamental concept of obtaining, interpreting, and measuring surface and objects properties without needing a direct contact with the object. This project gives a more in-depth look of photogrammetry, in particular the modern technique defined as Structure from Motion, applied to centimetric macroinvertebrate fossils. Photogrammetry is the most accessible and cost-effective method of the three. The project was entirely developed during the COVID-19 sanitary emergency using already available or easily obtainable equipment. As a second aim and long-term objective, the thesis works as a guide for further experimentation and automation of the process of data capture and processing and to create a digital palaeontological archive that can be used for online accurate analysis of specimens.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://gabri.xyz/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
