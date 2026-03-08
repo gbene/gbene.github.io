@@ -1,0 +1,21 @@
+<ul class="pagination">
+	<div class="page-link">
+		<div class="left-item">
+		
+		{{ if .PrevInSection }}
+		<a {{ if .PrevInSection }}href="{{ .PrevInSection.Permalink }}"{{ end }} class="page-link-prev" aria-label="Previous"><span aria-hidden="true">← Previous</span></a>
+		{{ end }}
+		</div>
+
+		<div class="right-item">
+		{{ if .NextInSection }}
+
+		<a {{ if .NextInSection }}href="{{ .NextInSection.Permalink }}"{{ end }} class="page-link-next" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+
+		{{ end }}
+		</div>
+
+
+	</div>
+
+</ul>

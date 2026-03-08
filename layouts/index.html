@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+			
+			<main class="list">
+				<div class="center">
+					<body>
+					{{- if isset .Site.Params "subtitle" -}}
+					~ {{ .Site.Params.Subtitle | .Page.RenderString }} ~ 
+					{{- end -}}
+				</body>
+				</div>
+				<div>
+					<section class="body-justify">
+						Look in projects for all my projects, in libraries and software for all the codes that I have developed/contributed to develop and/or are actively maintaining and in publications for a list of publications, conference abstracts and posters/presentations.
+					</section>
+				</div>
+				
+
+
+				{{range .Site.Sections.ByWeight}}
+					{{ $pages := where .Site.RegularPages "Section" .Section}}
+					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+					<h1>Recent {{lower .LinkTitle}} <a href="{{ .RelPermalink }}" title="See all" style="font-size: 1rem">⤷</a></h1><hr>
+					{{range $paginator.Pages}}
+						<section class="list-item">
+							<h2 class="title">{{.Title}}</h2>
+							<time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+							<section class="body-justify">{{ .Description }}</section>
+							<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+						</section>
+					{{end}}
+
+				{{ end }}
+				<!-- {{ template "partials/paginator.html" . }} -->
+
+
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>

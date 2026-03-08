@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Second Author on gabri.xyz</title>
+    <link>http://localhost:1313/tags/second-author/</link>
+    <description>Recent content in Second Author on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/second-author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An integrated workflow for parametrization of fracture network geometry in digital outcrop models</title>
+      <link>http://localhost:1313/publications/doms/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/doms/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Mesoscale fractures, with lengths between meters and tens of meters, cannot be effectively characterized in the subsurface, due to limitations of borehole and geophysical datasets. On the other hand, large quantitative structural datasets can be collected on outcrops by combining direct observations and remote sensing (digital outcrop models – DOMs). These data can be used to constrain geometrical models of subsurface fracture networks with the outcrop analogue approach.&lt;/p&gt;&#xA;&lt;p&gt;In this contribution we present a workflow that leverages DOMs with at least two perpendicular faces and combines multiple types of input data (point cloud, textured surfaces and orthophoto DOMs), to collect a suite of statistical parameters to be used as input in current stochastic 3D DFN (Discrete Fracture Network) models.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poster on gabri.xyz</title>
+    <link>http://localhost:1313/tags/poster/</link>
+    <description>Recent content in Poster on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/poster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FracAbility: A python toolbox for survival analysis in fractured rock systems</title>
+      <link>http://localhost:1313/publications/fracability_press/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/fracability_press/</guid>
+      <description>&lt;p&gt;Here are the talks and poster that I gave in 2024 regarding the publication: &lt;a href=&#34;http://localhost:1313/publications/fracability&#34;&gt;Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications&lt;/a&gt;. The TSG and EGU abstracts are identical as they were submitted one after the other.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tectonic-study-group-2024--st-andrews-uk&#34;&gt;Tectonic Study Group 2024 | St. Andrews, UK&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;http://localhost:1313/fracability/presentation_tsg.pdf&#34;&gt;⟶ Presentation&lt;/a&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;When analysing fractured rock outcrops, the fracture network&amp;rsquo;s topology and length statistics are of fundamental importance. Past literature focused on adopting a non-parametric approach for the unbiased estimation of fracture length data mean, and with some additional steps, the variance of a population. However, technology improved, and necessities shifted. Now it is possible to quickly obtain dense length datasets with thousands of measurements and the emergence of stochastic DFNs increased the demand for parametric solutions to correctly fit several types of distributions. These conditions highlighted an absence of works on these topics. Of particular interest is the right censoring bias effect of the interpretational boundary on the fracture length statistics. We tackle this problem by applying survival analysis techniques, a branch of statistics that includes methods for modelling time to event data and correctly estimating the model’s parameters with data affected by censoring. Synthetic testing has been carried out, showing a reliable estimate of the distribution parameters with up to 80% of the total measurements being censored. Moreover, it is shown that the correction is independent from the orientation of the fracture set or boundary geometry. We propose FracAbility, a new open-source Python package capable to both analyse the topology of fracture networks and, by using the latest SciPy version, correctly fit different parametrical distributions on length data with right-censored measurements. The library and the proposed approach have been applied to real world data, successfully correcting length distributions affected by censoring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Point cloud analysis and segmentation procedures in the PZero software</title>
+      <link>http://localhost:1313/publications/pointcloud_segmentation/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/pointcloud_segmentation/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;http://localhost:1313/pointcloud_segmentation/poster.pdf&#34;&gt;⟶ Poster&lt;/a&gt;&#xA;&lt;p&gt;With the rapid increase in computing power, 3D modelling and efficient visualization of complex geological features has become more common and accessible. We propose a new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (&lt;a href=&#34;https://github.com/andrea-bistacchi/PZero&#34;&gt;https://github.com/andrea-bistacchi/PZero&lt;/a&gt;) with the goal to carry out geological, and in particular structural, analysis on Digital Outcrop Models (DOMs). A solid codebase was implemented in PZero to import and analyse DOM data enabling the users to:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

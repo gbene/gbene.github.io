@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gabri.xyz</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on gabri.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-uk</language>
+    <copyright>© Gabriele Benedetti</copyright>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An integrated workflow for parametrization of fracture network geometry in digital outcrop models</title>
+      <link>http://localhost:1313/publications/doms/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/doms/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Mesoscale fractures, with lengths between meters and tens of meters, cannot be effectively characterized in the subsurface, due to limitations of borehole and geophysical datasets. On the other hand, large quantitative structural datasets can be collected on outcrops by combining direct observations and remote sensing (digital outcrop models – DOMs). These data can be used to constrain geometrical models of subsurface fracture networks with the outcrop analogue approach.&lt;/p&gt;&#xA;&lt;p&gt;In this contribution we present a workflow that leverages DOMs with at least two perpendicular faces and combines multiple types of input data (point cloud, textured surfaces and orthophoto DOMs), to collect a suite of statistical parameters to be used as input in current stochastic 3D DFN (Discrete Fracture Network) models.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications</title>
+      <link>http://localhost:1313/publications/fracability/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/fracability/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;A proper quantitative statistical characterization of fracture length or height is of paramount importance when analysing outcrops of fractured rocks. Past literature suggests adopting a non-parametric approach, such as circular scanlines, for the unbiased estimation of the fracture-length mean value. This is due to the fact that, in the past, estimating any type of statistical distribution was difficult and there was no real interest in defining precise parametrical models. However, due to the recent rise in popularity of digital outcrop models (DOMs) and of stochastic discrete fracture networks (DFNs), there is an increasing demand for distribution-based solutions that output a correct estimation of parameters for a given proposed model (e.g. mean and standard deviation). This change in demand highlights in the geological literature the absence of properly structured theoretical works on this topic. Our methodology, presented for the first time in this contribution, represents a powerful alternative to non-parametrical methods, aimed at specifically treating censoring bias and obtaining an unbiased trace-length statistical model. As our first objective, we propose to tackle the censoring bias by applying survival analysis techniques: a branch of statistics focused on modelling time-to-event data and correctly estimating model parameters with data affected by censoring. As a second objective, we propose a novel approach for selecting the most representative parametric model. We combine a direct visual approach and the calculation of four statistics to quantify how well proposed models reflect the data. We apply survival analysis to correctly estimate statistical parameters of a censored length dataset in three different case studies and show the effects of the censoring percentage on parametrical estimations that do not use this paradigm. The presented analyses are carried out using an open-source Python package called FracAbility, which we purposefully created to carry out the described workflow (&lt;a href=&#34;https://github.com/gecos-lab/FracAbility&#34;&gt;https://github.com/gecos-lab/FracAbility&lt;/a&gt;, last access: 8 September 2024).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hydrogeological parameterisation of the Daruvar thermal aquifer: integration of fracture network analysis and well testing</title>
+      <link>http://localhost:1313/publications/daruvar/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/daruvar/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Highly fractured Mesozoic carbonate rocks are the main reservoir of many geothermal resources in northern Croatia, being of environmental, cultural, and economic value for the local and regional communities. The Daruvar thermal springs (temperatures &amp;lt; 50°C) represent the outflow area of an intermediate scale, tectonically controlled, hydrothermal system hosted in Triassic carbonate rocks. Several investigations have been conducted in the Daruvar area detailing the architecture of regional and local fracture networks and quantifying the hydrogeological parameters of the thermal aquifer. In this work, an integrated approach based on structural and hydrogeological investigations was employed to model the network of fractures in the reservoir and quantify its impact on the hydraulic properties. Structural investigations were conducted in the Batinjska Rijeka quarry, considered as an outcrop analogue of the thermal aquifer, employing both a classical field approach and the virtual quantitative analysis of a 3D digital outcrop model. Structural analysis of the digital outcrop model allowed identification of two sub-vertical systems of discontinuities, dipping to the NW and the WSW respectively, in accordance with the data collected through direct field measurements. The main geometric features of the discontinuity network and their statistical distributions were employed to construct discrete fracture network models at both the outcrop scale (approximately 100 m) and the aquifer scale in Daruvar (approximately 700 m). Calibration of the input parameters allowed modelling of porosity and permeability values that reproduce the field values assessed through pumping tests, well tests, and well logging. This work highlights the importance of integrating geological and hydrogeological investigations to obtain a more reliable reconstruction and quantification of the processes driving the fluid flow in fractured aquifers and affecting the spatial distribution of their hydraulic properties.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Asperity cycle simulation using observed seismicity: Applications to the Bárðarbunga caldera</title>
+      <link>http://localhost:1313/publications/asperity_cycles/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/asperity_cycles/</guid>
+      <description>&lt;p&gt;Repeating earthquakes most often occur as frequent small magnitude events, with repeating time increasing with magnitude. The Bárðarbunga caldera however is a rare example where moderate magnitudes (Mw ≥ 5) repeat frequently. During the 6 months caldera collapse event (2014-2015), 77 Mw ≥ 5 earthquakes were recorded and, in the years following the collapse, observations show quasi-periodic Mw ≥ 5 events. Recent seismological field campaigns have provided further constraints on the caldera’s geometry, mapping out a ring fault structure and offering excellent depth constraints. The repetitive nature of the earthquake sequences and good structural controls, make this case especially suitable to investigate using Sequences of Earthquakes and Aseismic Slip (SEAS) models. Furthermore, the periodicity of the ring fault is well captured to the first order by adopting a Spectral Boundary Integral approach. To mimic the observed data, we project relatively relocated seismic events to a mesh representation of the ring fault; we then convert the projected point clusters into frictional parameter maps that define the distribution of the rate weakening and rate strengthening asperities in the simulation. Finally, we quantify the differences between the simulated results and the observed seismic data by comparing for example reoccurrence time, magnitudes and partial rupture characteristics. We use the JAX Python library to achieve well resolved simulations, realistic frictional parameters and domain size. This library provides tools such as Just-In-Time (JIT) and Ahead-Of-Time (AOT) compilation, automatic differentiation and vectorization, all of which significantly speed up runtime. Moreover, JAX provides a flexible framework for running code on different accelerators such as GPUs, drastically reducing code runtime for parallelizable operations such as FFT computations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FracAbility: A python toolbox for survival analysis in fractured rock systems</title>
+      <link>http://localhost:1313/publications/fracability_press/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/fracability_press/</guid>
+      <description>&lt;p&gt;Here are the talks and poster that I gave in 2024 regarding the publication: &lt;a href=&#34;http://localhost:1313/publications/fracability&#34;&gt;Unbiased statistical length analysis of linear features: adapting survival analysis to geological applications&lt;/a&gt;. The TSG and EGU abstracts are identical as they were submitted one after the other.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tectonic-study-group-2024--st-andrews-uk&#34;&gt;Tectonic Study Group 2024 | St. Andrews, UK&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;http://localhost:1313/fracability/presentation_tsg.pdf&#34;&gt;⟶ Presentation&lt;/a&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;When analysing fractured rock outcrops, the fracture network&amp;rsquo;s topology and length statistics are of fundamental importance. Past literature focused on adopting a non-parametric approach for the unbiased estimation of fracture length data mean, and with some additional steps, the variance of a population. However, technology improved, and necessities shifted. Now it is possible to quickly obtain dense length datasets with thousands of measurements and the emergence of stochastic DFNs increased the demand for parametric solutions to correctly fit several types of distributions. These conditions highlighted an absence of works on these topics. Of particular interest is the right censoring bias effect of the interpretational boundary on the fracture length statistics. We tackle this problem by applying survival analysis techniques, a branch of statistics that includes methods for modelling time to event data and correctly estimating the model’s parameters with data affected by censoring. Synthetic testing has been carried out, showing a reliable estimate of the distribution parameters with up to 80% of the total measurements being censored. Moreover, it is shown that the correction is independent from the orientation of the fracture set or boundary geometry. We propose FracAbility, a new open-source Python package capable to both analyse the topology of fracture networks and, by using the latest SciPy version, correctly fit different parametrical distributions on length data with right-censored measurements. The library and the proposed approach have been applied to real world data, successfully correcting length distributions affected by censoring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Methods for merging fragmented facets obtained from point cloud segmentation algorithms.</title>
+      <link>http://localhost:1313/publications/point_segm/</link>
+      <pubDate>Thu, 21 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/point_segm/</guid>
+      <description>&lt;a class=&#34;linkto&#34; href=&#34;http://localhost:1313/point_segm/presentation.pdf&#34;&gt;⟶ Presentation&lt;/a&gt;&#xA;&lt;p&gt;With the new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (Bistacchi et al., 2021), it is now possible to import and analyse digital Outcrop Models (DOMs). Furthermore, the users are now enabled to carry out geological, and in particular structural, analysis on DOMs and replicate a working segmentation workflow, already tested in CloudCompare, to extrapolate fracture facets (i.e. the morphological expression of planar discontinuities on an outcrop face, Dewez et al., 2016). Our pipeline can be used to analyse fracture networks on outcrops with arbitrary orientation, but unfortunately, as an inevitable by-product of the segmentation procedure, continuous fracture facets are usually fragmented in multiple adjacent smaller polygons. This effect ultimately leads to skewing towards smaller values the estimation of statistical distributions of many important fracture network parameters, such as spacing, length, and height. Moreover, the results of topological analysis of fracture connectivity are completely distorted by this kind of problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Point cloud analysis and segmentation procedures in the PZero software</title>
+      <link>http://localhost:1313/publications/pointcloud_segmentation/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/pointcloud_segmentation/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;a class=&#34;linkto&#34; href=&#34;http://localhost:1313/pointcloud_segmentation/poster.pdf&#34;&gt;⟶ Poster&lt;/a&gt;&#xA;&lt;p&gt;With the rapid increase in computing power, 3D modelling and efficient visualization of complex geological features has become more common and accessible. We propose a new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (&lt;a href=&#34;https://github.com/andrea-bistacchi/PZero&#34;&gt;https://github.com/andrea-bistacchi/PZero&lt;/a&gt;) with the goal to carry out geological, and in particular structural, analysis on Digital Outcrop Models (DOMs). A solid codebase was implemented in PZero to import and analyse DOM data enabling the users to:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fractalizer</title>
+      <link>http://localhost:1313/libraries/fractalizer/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libraries/fractalizer/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/fractalizer/logo.svg&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fractalize the edges of any given curve or closed ring using either a template or random noise!&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/Fractalizer.jl&#34;&gt;https://github.com/gbene/Fractalizer.jl&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SirGridsAlot</title>
+      <link>http://localhost:1313/libraries/sirgridsalot/</link>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libraries/sirgridsalot/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/sirgridsalot/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Rapidly create and plot in 2D/3D regular Euclidean tilings with Python.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/SirGridsAlot&#34;&gt;https://github.com/gbene/SirGridsAlot&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fracability</title>
+      <link>http://localhost:1313/libraries/fracability/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libraries/fracability/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/fracability/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fracture networks are essential for the analysis and modelling of mechanical and hydraulic properties of rock masses. Recently, the use of Digital Outcrop Models (DOMs) provided a solid framework for the collection of large and quantitative datasets from which different properties can be extracted. Because of the complex nature of exposed rock outcrops, statistical model fitting can sometimes be challenging. Areas covered by rock debree, vegetation patches or simply the outer boundaries of the outcrop can introduce right-censoring bias and can often lead to parameter underestimation. Tools are needed to correct for estimating the correct distribution parameters while taking into account this bias. Survival analysis techniques, although usually applied in function of time and not length, accomplishes exactly this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GPR 3D volume</title>
+      <link>http://localhost:1313/projects/gprpyvista/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/gprpyvista/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;This project has the main objective to create an open-source compatible processing pipeline to automatically elaborate Ground Penetrating Radar (GPR) data to output a GPR volume in VTK format. Once ready, the volume then can be used to intuitively localize, identify and analyze in 3D space buried objects in the top most layer of soil (in this case up to a depth of 1m).&lt;/p&gt;&#xA;&lt;h2 id=&#34;gpr-data&#34;&gt;GPR Data&lt;/h2&gt;&#xA;&lt;p&gt;GPR is a relatively new indirect non-invasive geophysical exploration method that can be used to acquire subsurface data up to a depth of 50m&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. This technique is based on the capture of reflected high frequency electromagnetic signals emitted from a controlled source. The contrast of electrical properties in the soil given by presence of anomalous objects, cavities, sedimentary structures, change in lithology or in water contents induce a variation in the signal’s propagation velocity thus producing a return pulse that is recorded. By visualizing the acquired data it is then possible to define the presence of perturbations across the medium and carry out different interpretations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tslist converter</title>
+      <link>http://localhost:1313/projects/tslist/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tslist/</guid>
+      <description>&lt;p&gt;TS lists are a type of output files that are produced by WRF during a simulation to register the calculated values in specific coordinates. The raw output format of these files is not universal and it makes importing this kind of data a big hassle in other programs (such as excel). To contrast this problem I created this page that can be used to convert any TSLISTS in a properly formatted csv file and if necessary do some simple conversion and calculations (such as converting the time column from hours to days).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pzero</title>
+      <link>http://localhost:1313/libraries/pzero/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/libraries/pzero/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/pzero/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;PZero is a Python open-source 3D geological modelling application, leveraging various libraries, with a user-friendly graphical user interface allowing to perform most standard geomodelling data management and analysis tasks, explicit surface interpolation, and advanced implicit interpolation.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gecos-lab/PZero&#34;&gt;https://github.com/gecos-lab/PZero&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pydip</title>
+      <link>http://localhost:1313/projects/pydip/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/pydip/</guid>
+      <description>&lt;p&gt;Pydip is a python program with the main objective to give a stereoplot reading practice platform by generating random planes, folds, faults and focal mechanisms.&lt;/p&gt;&#xA;&lt;p&gt;As a secondary future objective, for now not implemented, the software will be able to plot and elaborate structural measurements obtained on the field (similar to &lt;a href=&#34;https://www.rickallmendinger.net/stereonet&#34;&gt;Stereonet&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;The plots are generated with &lt;a href=&#34;https://mplstereonet.readthedocs.io/en/latest/mplstereonet.html&#34;&gt;mplstereonet&lt;/a&gt; library.&lt;/p&gt;&#xA;&lt;h2 id=&#34;capabilities&#34;&gt;Capabilities&lt;/h2&gt;&#xA;&lt;h3 id=&#34;generate-multiple-random-sets-of-planes&#34;&gt;Generate multiple random sets of planes&lt;/h3&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/pydip/1.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;The program chooses a random dip direction and angle for every set and depending on that plane the planes will be generated with a normal distribuition with a random std value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rocpy</title>
+      <link>http://localhost:1313/projects/rocpy/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/rocpy/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;RocLab is a very useful piece of free software written in 2011 for determining rock mass strength parameters, based on the generalized Hoek-Brown failure criterion (Hoek et al. 2002). The main problem is that it is discontinued and the only version is available for windows. With this project I want to archive the same objective as RocLab’s using python to increase the overall accessibility of the program and improve the plot’s interfaces (thanks to matplotlib).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;figure class=&#34;float-left&#34;&gt;&lt;img src=&#34;http://localhost:1313/about/me.jpeg&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Me trying pottery for the first time :)&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;I am &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    27&#xA;&#xA;&#xA;&#xA; years old with a passion for science, technology, nature, photography and all trades that involve getting my hands dirty! I love coding and I love geosciences so I do both! I am a avid supporter and advocate for open-source and open-science, we would not be here without both!&lt;/p&gt;&#xA;&lt;p&gt;Currently I am pursuing a PhD in Geophysics at the University of Iceland. My work focuses on simulating sequences of repeating earthquakes observed at the &lt;a href=&#34;https://www.openstreetmap.org/node/1800762754#map=7/65.158/-17.628&amp;amp;layers=P&#34;&gt;Bárðarbunga&lt;/a&gt; volcano using Sequences of Earthquakes and Aesismic Slip (SEAS) simulations (in particular using the Structural Boundary Integral Method).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pyseismic</title>
+      <link>http://localhost:1313/projects/pyseismic/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/pyseismic/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;Pyseismic is a simple python interface created to visualize and process seismic traces based on the &lt;a href=&#34;https://docs.obspy.org/&#34;&gt;Obspy&lt;/a&gt; package.&lt;/p&gt;&#xA;&lt;p&gt;The aim of this project is to create a simple alternative to the more complex and costly Visual SUNT that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automatic processing for referenced slopes</title>
+      <link>http://localhost:1313/projects/autoslopes/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/autoslopes/</guid>
+      <description>&lt;h2 id=&#34;automatic-processing-for-referenced-slopes&#34;&gt;Automatic processing for referenced slopes&lt;/h2&gt;&#xA;&lt;p&gt;The premise&lt;/p&gt;&#xA;&lt;p&gt;This project was a request aimed to find a way to prepare different 3D models, in particular artificial slopes, and calculate the difference between two reconstructions after a given event directly in metashape without using external programs.&lt;/p&gt;&#xA;&lt;p&gt;In particular the set of scripts needed to achive the following tasks:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apply different masks for different sets of photos.&lt;/li&gt;&#xA;&lt;li&gt;Count the total number of markers detected in all of the uploaded photos. The number of markers needed to be in total always 135.&lt;/li&gt;&#xA;&lt;li&gt;Cut the resulting point clouds with constant dimensions and automatically apply a rotatation to make the plane horizontal.&lt;/li&gt;&#xA;&lt;li&gt;Calculate the difference between two meshes. To make sure that the difference operation was applied properly the two chunks need to be aligned and the models need to be rotated flat and cropped.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/autoslope/og_img.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt; Input image example &lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/autoslope/slope_a2.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/autoslope/slope_b2.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;  Reconstructed slope before and after the event &lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mask-application&#34;&gt;Mask application&lt;/h3&gt;&#xA;&lt;p&gt;The model is constructed using photos that capture a different angle of the artificial plane. The first step is to isolate the relevant slope information by masking the parts of the slope that are not needed for the reconstruction (e.g. the container). To do this different masks were created to mask specific parts present in different sets of photos. The pairing is as follows:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Electronic compass</title>
+      <link>http://localhost:1313/projects/ec/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ec/</guid>
+      <description>&lt;h2 id=&#34;the-premise&#34;&gt;The premise&lt;/h2&gt;&#xA;&lt;p&gt;This idea came to mind while doing university field trips in which we learned how to use a geological compass and how to take measurements (e.g. dip direction/dip) needed for geological interpretation and reconstruction of planes, folds etc.. A lot of time is lost, and error is introduced, in saving the appropriate txt file with the appropriate format and tabulation. This project has the aim to create a low-cost, open-source electronic geological compass that reduces the time needed to take a measurement, write it down and afterwards rewrite in a txt to be used in other programs (Stereonet, wintensor…) by creating a tool that works as a normal compass but can save the measurements locally in the appropriate files for different softwares.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3D fossils</title>
+      <link>http://localhost:1313/projects/3d_fossils/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/3d_fossils/</guid>
+      <description>&lt;h2 id=&#34;premise&#34;&gt;Premise&lt;/h2&gt;&#xA;&lt;p&gt;The computing power of modern technologies and their rapid development gave the possibility to reconstruct 3D digital objects precisely and rapidly from the real world, increasing the possibility of their conservation and sharing. There are three different types of reconstruction techniques: photogrammetry, 3D scan and CT scan or tomography. These three methods are based on the fundamental concept of obtaining, interpreting, and measuring surface and objects properties without needing a direct contact with the object. This project gives a more in-depth look of photogrammetry, in particular the modern technique defined as Structure from Motion, applied to centimetric macroinvertebrate fossils. Photogrammetry is the most accessible and cost-effective method of the three. The project was entirely developed during the COVID-19 sanitary emergency using already available or easily obtainable equipment. As a second aim and long-term objective, the thesis works as a guide for further experimentation and automation of the process of data capture and processing and to create a digital palaeontological archive that can be used for online accurate analysis of specimens.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
