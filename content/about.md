@@ -6,7 +6,7 @@ title = 'About'
 
 {{< figure src="/about/me.jpeg" class="float-left" title="Me trying pottery for the first time :)">}}
 
-I am {{< myAge >}} years old with a passion for science, technology, nature, photography and all trades that involve getting my hands dirty! I love coding and I love geosciences so I do both! I am a avid supporter and advocate for open-source and open-science, we would not be here without both!
+I am {{< myAge >}} years old with a passion for science, technology, nature, photography and all trades that involve getting my hands dirty! I love coding and I love geosciences so I do both! I am a avid supporter and advocate for open-source and open-science, we would not be here without both (in the good and in the bad, take it as you want to)!
  
 Currently I am pursuing a PhD in Geophysics at the University of Iceland. My work focuses on simulating sequences of repeating earthquakes observed at the [Bárðarbunga](https://www.openstreetmap.org/node/1800762754#map=7/65.158/-17.628&layers=P) volcano using Sequences of Earthquakes and Aesismic Slip (SEAS) simulations (in particular using the Structural Boundary Integral Method).
 
