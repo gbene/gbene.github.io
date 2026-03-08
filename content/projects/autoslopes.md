@@ -1,6 +1,5 @@
 +++
 date = '2020-10-25'
-draft = true
 title = 'Automatic processing for referenced slopes'
 tags = ["project"]
 description = "Compute the difference between two referenced slopes reconstructed in Metashape Professional."

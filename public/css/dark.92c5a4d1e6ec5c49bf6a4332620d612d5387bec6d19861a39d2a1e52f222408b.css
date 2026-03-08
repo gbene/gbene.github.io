@@ -21,26 +21,6 @@ body {
   text-shadow: none;
 }
 
-
-/* Lists */
-ul {
-  list-style: none;
-  /* Fallback for older browsers */
-  padding-left: 2ch;
-  /* Modern logical properties */
-  padding-inline-start: 2ch;
-}
-
-ul li {
-  text-indent: -2ch;
-}
-
-ul > li::before {
-  content: '* ';
-  font-weight: bold;
-  color: #50fa7b;
-}
-
 hr {
   border-block-start: 2px solid var(--color-border-dark, #0066ff);
 }

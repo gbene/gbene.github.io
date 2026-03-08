@@ -2,6 +2,9 @@
 title= "3D fossils"
 date= 2020-04-23
 description= "Creating 3D models of fossils using photogrammetry."
+tags = ["project"]
+showdate = true
+showtags = false
 +++
 
 ## Premise
