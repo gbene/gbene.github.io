@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Automatic processing for referenced slopes - gabri.xyz</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Compute the difference between two referenced slopes reconstructed in Metashape Professional." />
+	<meta property="og:image" content="http://localhost:1313/"/>
+	<meta property="og:url" content="http://localhost:1313/projects/autoslopes/">
+  <meta property="og:site_name" content="gabri.xyz">
+  <meta property="og:title" content="Automatic processing for referenced slopes">
+  <meta property="og:description" content="Compute the difference between two referenced slopes reconstructed in Metashape Professional.">
+  <meta property="og:locale" content="en_uk">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2020-10-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-10-25T00:00:00+00:00">
+    <meta property="article:tag" content="Project">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Automatic processing for referenced slopes">
+  <meta name="twitter:description" content="Compute the difference between two referenced slopes reconstructed in Metashape Professional.">
+<link rel="stylesheet" href="http://localhost:1313/css/simple-icons.cc125cfd7958efc8dc27b5dfa6e2a9bbab933ce50b754f77e669e587c16ce857.css" type="text/css">
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.d2fe7f30703ab4f9a6a46d0d4c85cf4cf6ff09b1bea06f6fdba6281079202f1d.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.f163b79c6de51d14a766ff9f0563053de7f06a4d1bf7b85a59608bf96e566710.css"  disabled /><script type="text/javascript"
+		src="http://localhost:1313/js/MathJax.js"></script>
+		
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script><link rel="stylesheet" href="http://localhost:1313/katex/katex.min.css ">
+		<script defer src="http://localhost:1313/katex/katex.min.js"></script>
+		<script defer src="http://localhost:1313/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+		</script>
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">gabri.xyz</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/projects">Projects</a>
+		
+		<a href="/libraries">Libraries and software</a>
+		
+		<a href="/publications">Publications</a>
+		
+		<a href="/about">About</a>
+		
+		<button id="dark-mode-toggle" class="nav-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button"><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg></button>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+           <h1 class="title">Automatic processing for referenced slopes</h1>
+          <div class="meta">Posted on Oct 25, 2020 <span class="draft-label">DRAFT</span>  
+        
+        <a href=https://github.com/gbene/Python-orders/tree/main/25_11_2020>
+          https://github.com/gbene/Python-orders/tree/main/25_11_2020
+        </a>
+        
+        
+        
+      </div>
+        </div><hr>
+        
+        
+        <section class="body-justify">
+          <h2 id="automatic-processing-for-referenced-slopes">Automatic processing for referenced slopes</h2>
+<p>The premise</p>
+<p>This project was a request aimed to find a way to prepare different 3D models, in particular artificial slopes, and calculate the difference between two reconstructions after a given event directly in metashape without using external programs.</p>
+<p>In particular the set of scripts needed to achive the following tasks:</p>
+<ul>
+<li>Apply different masks for different sets of photos.</li>
+<li>Count the total number of markers detected in all of the uploaded photos. The number of markers needed to be in total always 135.</li>
+<li>Cut the resulting point clouds with constant dimensions and automatically apply a rotatation to make the plane horizontal.</li>
+<li>Calculate the difference between two meshes. To make sure that the difference operation was applied properly the two chunks need to be aligned and the models need to be rotated flat and cropped.</li>
+</ul>
+<figure><img src="/autoslope/og_img.png"><figcaption>
+      <h4> Input image example </h4>
+    </figcaption>
+</figure>
+<figure><img src="/autoslope/slope_a2.png">
+</figure>
+<figure><img src="/autoslope/slope_b2.png"><figcaption>
+      <h4>  Reconstructed slope before and after the event </h4>
+    </figcaption>
+</figure>
+<h2 id="summary">Summary</h2>
+<h3 id="mask-application">Mask application</h3>
+<p>The model is constructed using photos that capture a different angle of the artificial plane. The first step is to isolate the relevant slope information by masking the parts of the slope that are not needed for the reconstruction (e.g. the container). To do this different masks were created to mask specific parts present in different sets of photos. The pairing is as follows:</p>
+<ul>
+<li>photo 1 &ldquo;Links_Initial.jpg&rdquo;</li>
+<li>photo 2 to 21 &ldquo;Links_Regular.jpg&rdquo;</li>
+<li>photo 22 &ldquo;Midden_Initial.jpg&rdquo;</li>
+<li>photo 23 to 42 &ldquo;Midden_Regular.jpg&rdquo;</li>
+<li>photo 43 &ldquo;Rechts_Initial.jpg&rdquo;</li>
+<li>photo 44 to 63 &ldquo;Rechts_Regular.jpg&rdquo;</li>
+</ul>
+<p>This process was accomplished by writing the <code>mask.py</code> script.</p>
+<h3 id="marker-count">Marker count</h3>
+<p>For each model there is a known fixed number of total markers that need to be detected (135). The objective of this script is to count the total amount of markers detected in the model and print if there are less than 135. This check is done to see if the automatic markers present for each markers are somehow cropped or masked out.</p>
+<p>The check process was automated using the <code>check_markers.py</code> script</p>
+<h3 id="cut-and-rotate-the-model-point-cloud">Cut and rotate the model point cloud</h3>
+<p>To apply correctly the difference between the two models they both need to have the same size, position and rotation. To do this it was decided to rotate first the psarse cloud model and then resize the bounding box to a determined size. To do this the following process was defined:</p>
+<ul>
+<li>Define the region size</li>
+<li>Find the minimum and maximum (for both x and y) points inside the bounding box and calculate the center (as the midpoint of points at opposite corners).</li>
+<li>Translate the points on the same height of the center point</li>
+<li>Set these points as tranform reference</li>
+<li>Update transform (and so rotate the points)</li>
+<li>Resize the bounding box</li>
+</ul>
+<p>To accurately rotate the model the plane needs to fit in the bounding box as tightly as possibile and so the z value need to be low. Too low z values can crop too much of the plane (since the plane has a certain inclination angle) and so the rotation won’t be as precise.</p>
+<p>This process is archived by using the <code>region_size.py</code> script.</p>
+<h3 id="mesh-difference">Mesh difference</h3>
+<p>Instead of caluclating the difference of the two meshes a quicker is to convert the meshes in Digital Elevation Models and then apply a per pixel difference.</p>
+<h2 id="final-results-and-pipeline">Final results and pipeline</h2>
+<figure><img src="/autoslope/dem_a.png">
+</figure>
+<figure><img src="/autoslope/dem_b.png"><figcaption>
+      <h4>Reconstructed DEM of the slope before and after the event</h4>
+    </figcaption>
+</figure>
+<figure><img src="/autoslope/diff2.png"><figcaption>
+      <h4>DEM difference</h4>
+    </figcaption>
+</figure>
+<p><img src="/autoslope/auto_slope_processing.png" alt="Pipeline"></p>
+
+        </section>
+        
+      </div>
+
+      
+      
+    </div>
+    <ul class="pagination">
+	<div class="page-link">
+		<div class="left-item">
+		
+		
+		<a href="http://localhost:1313/projects/ec/" class="page-link-prev" aria-label="Previous"><span aria-hidden="true">← Previous</span></a>
+		
+		</div>
+
+		<div class="right-item">
+		
+
+		<a href="http://localhost:1313/projects/pyseismic/" class="page-link-next" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+
+		
+		</div>
+
+
+	</div>
+
+</ul>
+
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="mailto:mail@gabri.xyz" rel="me" title="Email"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail" />
+    </svg></a><a class="border"></a><a class="soc" href="https://github.com/gbene" rel="me" title="GitHub"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+    </svg></a><a class="border"></a><a class="soc" href="https://scholar.google.com/citations?user=y5yOUnsAAAAJ&amp;hl=en&amp;oi=ao" rel="me" title="Google scholar"><i class="si si-googlescholar"></i></a><a class="border"></a><a class="soc" href="https://www.linkedin.com/in/gabriele-b-a6b16bb1/" rel="me" title="Linkedin"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin" />
+    </svg></a><a class="border"></a></div>
+  <div class="footer-info">
+    2026  © Gabriele Benedetti |  A modified <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

@@ -1,41 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Library on gabri.xyz</title>
-    <link>https://gabri.xyz/tags/library/</link>
-    <description>Recent content in Library on gabri.xyz</description>
-    <generator>Hugo</generator>
-    <language>en-uk</language>
-    <copyright>© Gabriele Benedetti</copyright>
-    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://gabri.xyz/tags/library/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fractalizer</title>
-      <link>https://gabri.xyz/libraries/fractalizer/</link>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/libraries/fractalizer/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/fractalizer/logo.svg&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fractalize the edges of any given curve or closed ring using either a template or random noise!&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/Fractalizer.jl&#34;&gt;https://github.com/gbene/Fractalizer.jl&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SirGridsAlot</title>
-      <link>https://gabri.xyz/libraries/sirgridsalot/</link>
-      <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/libraries/sirgridsalot/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/sirgridsalot/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Rapidly create and plot in 2D/3D regular Euclidean tilings with Python.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gbene/SirGridsAlot&#34;&gt;https://github.com/gbene/SirGridsAlot&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Fracability</title>
-      <link>https://gabri.xyz/libraries/fracability/</link>
-      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/libraries/fracability/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/fracability/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fracture networks are essential for the analysis and modelling of mechanical and hydraulic properties of rock masses. Recently, the use of Digital Outcrop Models (DOMs) provided a solid framework for the collection of large and quantitative datasets from which different properties can be extracted. Because of the complex nature of exposed rock outcrops, statistical model fitting can sometimes be challenging. Areas covered by rock debree, vegetation patches or simply the outer boundaries of the outcrop can introduce right-censoring bias and can often lead to parameter underestimation. Tools are needed to correct for estimating the correct distribution parameters while taking into account this bias. Survival analysis techniques, although usually applied in function of time and not length, accomplishes exactly this.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pzero</title>
-      <link>https://gabri.xyz/libraries/pzero/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://gabri.xyz/libraries/pzero/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://gabri.xyz/pzero/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;PZero is a Python open-source 3D geological modelling application, leveraging various libraries, with a user-friendly graphical user interface allowing to perform most standard geomodelling data management and analysis tasks, explicit surface interpolation, and advanced implicit interpolation.&lt;/p&gt;&#xA;&lt;p&gt;Check it out on github! &lt;a href=&#34;https://github.com/gecos-lab/PZero&#34;&gt;https://github.com/gecos-lab/PZero&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Library on gabri.xyz</title><link>https://gabri.xyz/tags/library/</link><description>Recent content in Library on gabri.xyz</description><generator>Hugo</generator><language>en-uk</language><copyright>© Gabriele Benedetti</copyright><lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://gabri.xyz/tags/library/index.xml" rel="self" type="application/rss+xml"/><item><title>Fractalizer</title><link>https://gabri.xyz/libraries/fractalizer/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate><guid>https://gabri.xyz/libraries/fractalizer/</guid><description>&lt;p&gt;&lt;img src="https://gabri.xyz/fractalizer/logo.svg" alt="logo"&gt;&lt;/p&gt;
+&lt;p&gt;Fractalize the edges of any given curve or closed ring using either a template or random noise!&lt;/p&gt;
+&lt;p&gt;Check it out on github! &lt;a href="https://github.com/gbene/Fractalizer.jl"&gt;https://github.com/gbene/Fractalizer.jl&lt;/a&gt;&lt;/p&gt;</description></item><item><title>SirGridsAlot</title><link>https://gabri.xyz/libraries/sirgridsalot/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://gabri.xyz/libraries/sirgridsalot/</guid><description>&lt;p&gt;&lt;img src="https://gabri.xyz/sirgridsalot/logo.png" alt="logo"&gt;&lt;/p&gt;
+&lt;p&gt;Rapidly create and plot in 2D/3D regular Euclidean tilings with Python.&lt;/p&gt;
+&lt;p&gt;Check it out on github! &lt;a href="https://github.com/gbene/SirGridsAlot"&gt;https://github.com/gbene/SirGridsAlot&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Fracability</title><link>https://gabri.xyz/libraries/fracability/</link><pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate><guid>https://gabri.xyz/libraries/fracability/</guid><description>&lt;p&gt;&lt;img src="https://gabri.xyz/fracability/logo.png" alt="logo"&gt;&lt;/p&gt;
+&lt;p&gt;Fracture networks are essential for the analysis and modelling of mechanical and hydraulic properties of rock masses. Recently, the use of Digital Outcrop Models (DOMs) provided a solid framework for the collection of large and quantitative datasets from which different properties can be extracted. Because of the complex nature of exposed rock outcrops, statistical model fitting can sometimes be challenging. Areas covered by rock debree, vegetation patches or simply the outer boundaries of the outcrop can introduce right-censoring bias and can often lead to parameter underestimation. Tools are needed to correct for estimating the correct distribution parameters while taking into account this bias. Survival analysis techniques, although usually applied in function of time and not length, accomplishes exactly this.&lt;/p&gt;</description></item><item><title>Pzero</title><link>https://gabri.xyz/libraries/pzero/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://gabri.xyz/libraries/pzero/</guid><description>&lt;p&gt;&lt;img src="https://gabri.xyz/pzero/logo.png" alt="logo"&gt;&lt;/p&gt;
+&lt;p&gt;PZero is a Python open-source 3D geological modelling application, leveraging various libraries, with a user-friendly graphical user interface allowing to perform most standard geomodelling data management and analysis tasks, explicit surface interpolation, and advanced implicit interpolation.&lt;/p&gt;
+&lt;p&gt;Check it out on github! &lt;a href="https://github.com/gecos-lab/PZero"&gt;https://github.com/gecos-lab/PZero&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
