@@ -59,8 +59,23 @@ body {
   margin: 8px;
   background-color: var(--color-background, #ffffff);
   transition: background-color 0.2s ease, color 0.2s ease;
+  text-align: left;
+  text-justify: inter-word;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+.body-justify {
+  margin: 8px;
+  background-color: var(--color-background, #ffffff);
+  transition: background-color 0.2s ease, color 0.2s ease;
   text-align: justify;
   text-justify: inter-word;
+  /* display: flex;
+  flex-wrap: wrap; */
+  
+  
 }
 
 * {
