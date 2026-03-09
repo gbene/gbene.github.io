@@ -1,0 +1,50 @@
+<!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>New tools for Digital Outcrop Models analysis: Implementation for the PZero software - gabri.xyz</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Masters thesis"><meta property="og:image" content="https://gabri.xyz/"><meta property="og:url" content="https://gabri.xyz/publications/msc/"><meta property="og:site_name" content="gabri.xyz"><meta property="og:title" content="New tools for Digital Outcrop Models analysis: Implementation for the PZero software"><meta property="og:description" content="Masters thesis"><meta property="og:locale" content="en_uk"><meta property="og:type" content="article"><meta property="article:section" content="publications"><meta property="article:published_time" content="2022-10-05T00:00:00+00:00"><meta property="article:modified_time" content="2022-10-05T00:00:00+00:00"><meta property="article:tag" content="Thesis"><meta name=twitter:card content="summary"><meta name=twitter:title content="New tools for Digital Outcrop Models analysis: Implementation for the PZero software"><meta name=twitter:description content="Masters thesis"><link rel=stylesheet href=https://gabri.xyz/css/simple-icons.cc125cfd7958efc8dc27b5dfa6e2a9bbab933ce50b754f77e669e587c16ce857.css type=text/css><link href=https://gabri.xyz/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://gabri.xyz/css/main.d2fe7f30703ab4f9a6a46d0d4c85cf4cf6ff09b1bea06f6fdba6281079202f1d.css><link id=darkModeStyle rel=stylesheet type=text/css href=https://gabri.xyz/css/dark.5b7b30ed93b46140fdfa0b489df2d67912ad22fba068e27bf7557e3d0ad0c0a7.css disabled><script type=text/javascript src=https://gabri.xyz/js/MathJax.js></script><script type=text/x-mathjax-config>
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']],
+				displayMath: [['$$','$$'], ['\[','\]']],
+				processEscapes: true,
+				processEnvironments: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+				TeX: { equationNumbers: { autoNumber: "AMS" },
+						 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			}
+		});
+		</script><link rel=stylesheet href=https://gabri.xyz/katex/katex.min.css><script defer src=https://gabri.xyz/katex/katex.min.js></script><script defer src=https://gabri.xyz/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><div class=content><header><div class=main><a href=https://gabri.xyz/>gabri.xyz</a></div><nav><a href=/>Home</a>
+<a href=/projects>Projects</a>
+<a href=/libraries>Libraries and software</a>
+<a href=/publications>Academic work</a>
+<a href=/about>About</a>
+<button id=dark-mode-toggle class=nav-toggle onclick=toggleTheme() aria-label="Toggle dark mode" type=button><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+<script src=https://gabri.xyz/js/themetoggle.js></script></nav></header><main><article><div class=post-container><div class=post-content><div class=title><h1 class=title>New tools for Digital Outcrop Models analysis: Implementation for the PZero software</h1><div class=meta>Posted on Oct 5, 2022 <span class=draft-label>Open access</span><span class=draft-label>First author</span>
+<a href=ZgotmplZ></a></div></div><hr><section class=body-justify><a class=linkto href=/msc/thesis.pdf>⟶ Thesis</a><h2 id=introduction>Introduction</h2><p>The main goal of this thesis is to add a new point cloud data analysis module to the
+open source 3D geomodelling software PZero (<a href=https://github.com/andrea-bistacchi/PZero>https://github.com/andrea-bistacchi/PZero</a>) with the objective to carry out geological, and in particular structural, analysis
+on Digital Outcrop Models (DOMs). There are many benefits related to the use of
+DOM based analysis. These types of models are able to represent with centimetric
+to millimetric precision extended rock outcrops thus enabling anyone to visualize and
+explore from different points of view the given region without the need to be physically
+present. Moreover these types of analysis offer the possibility to extrapolate with high
+precision robust statistical and dense quantitative data from the outcrop on a scale
+much bigger than the on site techniques.
+At the moment, the state of the art for point cloud based analysis is CloudCom-
+pare. This free and open-source software is able to import different types of data formats
+(.las/.laz, .csv, .ply and more) and efficiently visualize dense point clouds. Moreover
+there are many tools that can be used to both filtering data in different ways to clean
+the point cloud from outliers and calculate properties from the raw data such as nor-
+mals, curvature or point density distribution and more. In addition CloudCompare
+(since version 2.9) can be used to carry out computer-assisted digitization of structural
+traces in point clouds improving by a range of 35-66% the effort needed to extract geo-
+logical properties from three-dimensional dense datasets (Thiele et al. 2017). Using the
+compass tool geologists now can measure orientation data for exposed planar features
+such as fractures, bedding surfaces and more. Once a high number of planes are locally
+measured the user can automatically segment the rest of the point cloud and precisely
+isolate surfaces. The possibility to study and extrapolate properties from dense point
+clouds directly in a geomodelling software is a big advantage. Bistacchi et al. (2015)
+demonstrated that unifying point cloud-based analysis with model driven approaches
+for geomodelling improves both the precision and the accuracy of the resulting 3D
+model, while Martinelli et al. (2020) demonstrated that reservoir-scale characterization
+could be carried out starting from the analysis of Km-scale DOMs.
+This thesis resulted in a solid code base for PZero to import and analyse DOM data
+but also presents a draft workflow to replicate in PZero the already established pipeline
+that in CloudCompare is used to automatically segment and classify fracture sets in
+the digital outcrop.</p></section></div><div class=toc><strong>Table of contents:</strong><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li></ul></nav></div></div><ul class=pagination><div class=page-link><div class=left-item><a href=https://gabri.xyz/publications/bsc/ class=page-link-prev aria-label=Previous><span aria-hidden=true>← Previous</span></a></div><div class=right-item><a href=https://gabri.xyz/publications/pointcloud_segmentation/ class=page-link-next aria-label=Next><span aria-hidden=true>Next →</span></a></div></div></ul></article></main><footer><div style=display:flex><a class=soc href=mailto:mail@gabri.xyz rel=me title=Email><svg class="feather"><use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#mail"/></svg></a><a class=border></a><a class=soc href=https://github.com/gbene rel=me title=GitHub><svg class="feather"><use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github"/></svg></a><a class=border></a><a class=soc href="https://scholar.google.com/citations?user=y5yOUnsAAAAJ&amp;hl=en&amp;oi=ao" rel=me title="Google scholar"><i class="si si-googlescholar"></i></a><a class=border></a><a class=soc href=https://www.linkedin.com/in/gabriele-b-a6b16bb1/ rel=me title=Linkedin><svg class="feather"><use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin"/></svg></a><a class=border></a></div><div class=footer-info>2026 © Gabriele Benedetti | A modified <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></div></footer></div></body></html>
