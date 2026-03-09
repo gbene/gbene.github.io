@@ -13,11 +13,13 @@ contributingauthor=false
 link="https://meetingorganizer.copernicus.org/EGU23/EGU23-9549.html"
 posterorpresentation = true
 weight=2
+toc=true
+
 +++
 
-## Abstract
 {{< linkTo link="/pointcloud_segmentation/poster.pdf" display="Poster" >}}
 
+## Abstract
 
 With the rapid increase in computing power, 3D modelling and efficient visualization of complex geological features has become more common and accessible. We propose a new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (https://github.com/andrea-bistacchi/PZero) with the goal to carry out geological, and in particular structural, analysis on Digital Outcrop Models (DOMs). A solid codebase was implemented in PZero to import and analyse DOM data enabling the users to:
 

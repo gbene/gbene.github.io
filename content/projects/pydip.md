@@ -7,6 +7,8 @@ description = "Python program to generate random structural data such as planes,
 showdate = true
 showtags = false
 link="https://github.com/gbene/pydip"
+toc=true
+
 +++
 
 

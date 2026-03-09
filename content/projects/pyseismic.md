@@ -7,6 +7,8 @@ description = "Visual SUNT style application written in python."
 showdate = true
 showtags = false
 link="https://github.com/gbene/pyseismic"
+toc=true
+
 +++
 
 
@@ -16,7 +18,7 @@ Pyseismic is a simple python interface created to visualize and process seismic 
 
 The aim of this project is to create a simple alternative to the more complex and costly Visual SUNT that can be used to do basic taks without the need to buy professional softwares. Since is entirely written in pyhon it can be run on every platform (Visual SUNT is only on Windows D:).
 
-### Capabilities
+## Capabilities
 
 For now there are very few functions available (the essentials). In particular:
 

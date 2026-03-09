@@ -5,6 +5,8 @@ description= "Creating 3D models of fossils using photogrammetry."
 tags = ["project"]
 showdate = true
 showtags = false
+toc=true
+
 +++
 
 ## Premise

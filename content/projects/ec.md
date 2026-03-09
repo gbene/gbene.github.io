@@ -7,6 +7,8 @@ description = "Low-cost, open-source electronic geological compass."
 showdate = true
 showtags = false
 link="https://github.com/gbene/Electronic-Compass/"
+toc=true
+
 +++
 
 ## The premise

@@ -11,6 +11,8 @@ pub=true
 firstauthor=false
 link="https://se.copernicus.org/articles/16/1351/2025/"
 weight=1
+toc=true
+
 +++
 
 ## Abstract

@@ -12,11 +12,14 @@ contributingauthor=false
 link=""
 posterorpresentation = true
 weight=2
+toc=true
+
 +++
 
 {{< linkTo link="/point_segm/presentation.pdf" display="Presentation" >}}
 
 
+## Abstract
 With the new point cloud visualization and data analysis module for the open source 3D geomodelling software PZero (Bistacchi et al., 2021), it is now possible to import and analyse digital Outcrop Models (DOMs). Furthermore, the users are now enabled to carry out geological, and in particular structural, analysis on DOMs and replicate a working segmentation workflow, already tested in CloudCompare, to extrapolate fracture facets (i.e. the morphological expression of planar discontinuities on an outcrop face, Dewez et al., 2016). Our pipeline can be used to analyse fracture networks on outcrops with arbitrary orientation, but unfortunately, as an inevitable by-product of the segmentation procedure, continuous fracture facets are usually fragmented in multiple adjacent smaller polygons. This effect ultimately leads to skewing towards smaller values the estimation of statistical distributions of many important fracture network parameters, such as spacing, length, and height. Moreover, the results of topological analysis of fracture connectivity are completely distorted by this kind of problem. 
 
 We propose new techniques and approaches to overcome these obstacles. The introduction of new geometrical and topological constraints, in addition to classical orientation parameters, can be used to identify which facet can be merged. We also implement new topological and spacing distribution analysis modules to extrapolate significant fracture set and network information, needed as input parameters for the creation of stochastic Discrete Fracture Networks models. 

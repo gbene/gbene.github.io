@@ -11,5 +11,7 @@ firstauthor=true
 contributingauthor=false
 link=""
 posterorpresentation = false
+thesis=false
 weight=1
+toc=true
 +++

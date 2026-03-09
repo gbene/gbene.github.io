@@ -7,6 +7,8 @@ description = "Using PyVista to visualize GPR data"
 showdate = true
 showtags = false
 link=""
+toc=true
+
 +++
 
 ## The premise

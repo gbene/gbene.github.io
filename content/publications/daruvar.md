@@ -12,6 +12,8 @@ contributingauthor=true
 link="https://hrcak.srce.hr/318263"
 posterorpresentation = false
 weight=1
+toc=true
+
 +++
 
 ## Abstract

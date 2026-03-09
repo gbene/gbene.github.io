@@ -10,7 +10,8 @@
 {{ $firstpp := true }}
 {{ $firstth := true }}
 
-<!-- <ul class="posts"> -->
+<div class="post-container">
+<div class="posts">
 	{{ range .Data.Pages }}
 		{{ if (strings.Contains $pagetitle "projects") }}
 		<!-- <li class="post"> -->
@@ -24,7 +25,7 @@
 		{{ $firstpp = false }}
 		{{end}}
 
-		{{if and (.Params.theses) ($firstth)}}
+		{{if and (.Params.thesis) ($firstth)}}
 		<h1 class="page-title">Theses</h1>
 		<hr>
 		{{ $firstth = false }}
@@ -38,5 +39,13 @@
 		 <h2> <a href="{{ .RelPermalink }}">{{.Title}}</a></h2> <span class="meta">{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}{{ if .Params.firstauthor }}<span class="draft-label">First author</span>{{else}}<span class="draft-label">Contributing author</span>{{end}}  <a href={{ .Params.repo }}>{{ template "feathericon" (dict "Icon" "github" "UseCDN" .Site.Params.useCDN) }}</a>{{if .Params.docs}} <a href={{ .Params.docs }}>{{ template "feathericon" (dict "Icon" "book" "UseCDN" .Site.Params.useCDN) }}</a> {{end}}</span><br><section class="body-justify">{{ .Description }}</section>
 		{{ end }}
 	{{ end }}
-<!-- </ul> -->
+
+	</div>
+	{{ if and (isset .Params "toc") (.Params.toc) }}
+      <div class="toc">
+        <strong>Table of contents:</strong>
+        {{ .Page.TableOfContents }}
+      </div>
+	{{ end }}
+</div>
 {{ end }}

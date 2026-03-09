@@ -6,6 +6,8 @@ description = "Compute the difference between two referenced slopes reconstructe
 showdate = true
 showtags = false
 link="https://github.com/gbene/Python-orders/tree/main/25_11_2020"
+toc=true
+
 +++
 
 
