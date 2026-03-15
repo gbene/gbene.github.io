@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - site-builder  
+  schedule:
+    - cron: "0 0 28 1 *" 
 jobs:
   deploy:
     runs-on: ubuntu-latest

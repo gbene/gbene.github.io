@@ -11,6 +11,7 @@ contributingauthor=false
 repo="https://github.com/gbene/Fractalizer.jl"
 docs="https://gabri.xyz/Fractalizer.jl/"
 +++
+
 ![logo](/fractalizer/logo.svg)
 
 Fractalize the edges of any given curve or closed ring using either a template or random noise!

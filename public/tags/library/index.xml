@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-uk</language>
     <copyright>© Gabriele Benedetti</copyright>
-    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 23:05:43 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Highseas</title>
+      <link>http://localhost:1313/libraries/highseas/</link>
+      <pubDate>Sun, 15 Mar 2026 23:05:43 +0000</pubDate>
+      <guid>http://localhost:1313/libraries/highseas/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/&#39;Highseas&#39;/logo.png&#34; alt=&#34;logo&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fractalizer</title>
       <link>http://localhost:1313/libraries/fractalizer/</link>
