@@ -9,7 +9,7 @@ firstauthor=true
 contributingauthor=false
 repo=""
 docs=""
-toc=true
+toc=false
 
 +++
 ![logo](/'{{ replace .File.ContentBaseName "-" " " | title }}'/logo.png)

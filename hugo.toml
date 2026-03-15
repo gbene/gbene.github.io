@@ -8,6 +8,8 @@ pygmentsstyle = 'monokai'
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 enableRobotsTXT         = true
+favicon="/logo.png"
+
 
 [pagination]
   pagerSize = 3 # articles per page
@@ -16,7 +18,7 @@ enableRobotsTXT         = true
 	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "Hi! I am Gabri, welcome to my site :)"
-	description = "Look in [projects](/projects/) for all my projects, in [libraries and software](/libraries/) for all the codes that I have developed/contributed to develop and/or are actively maintaining and in [academic work](/publications) for a list of publications, conference abstracts and posters/presentations."
+	description = "Look in [projects](/projects/) for all my personal projects, in [libraries and software](/libraries/) for the code that I have developed/contributed to develop and/or are actively maintaining and in [academic work](/publications) for a list of publications, conference abstracts and posters/presentations."
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 	mainSections=["projects", "publications"]

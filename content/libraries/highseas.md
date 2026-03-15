@@ -9,7 +9,7 @@ firstauthor=true
 contributingauthor=false
 repo="https://github.com/gbene/HighSeas.jl"
 docs="https://gabri.xyz/HighSeas.jl"
-toc=true
+toc=false
 +++
 
 ![logo](/highseas/banner.svg)
