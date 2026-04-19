@@ -56,8 +56,25 @@
 </head>
 <body>
         <div class="content"><header>
-	<div class="main">
-		<a href="http://localhost:1313/">gabri.xyz</a>
+	<div class="main" style="clear: both;">
+    <img src="/favicon.svg" style="width:10%;vertical-align: middle;">
+
+		<a href="http://localhost:1313/">
+      gabri.xyz
+    </a>
+    <button id="dark-mode-toggle" class="nav-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button" style="float: right;"><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg></button>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
 	</div>
 	<nav>
 		
@@ -70,19 +87,6 @@
 		<a href="/publications">Academic work</a>
 		
 		<a href="/about">About</a>
-		
-		<button id="dark-mode-toggle" class="nav-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button"><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg></button>
-		<script src="http://localhost:1313/js/themetoggle.js"></script>
 		
 	</nav>
 </header>
@@ -114,7 +118,21 @@
         <section class="body-justify">
           <p><img src="/highseas/banner.svg" alt="logo"></p>
 <p>HighSeas is a Julia package focused on accelerating Sequences of Earthquakes and Aseismic Slips simulations using the Spectral Boundary Integral Method on GPUs.</p>
-
+<p><strong>Associated manuscript</strong>: Benedetti, G., Heimisson, E. R. (2026, submitted). <em>HighSeas.jl Accelerating rate-and-state simulations with GPUs</em></p>
+<h2 id="how-to-cite">How to cite</h2>
+<p>Benedetti, G., &amp; Heimisson, E. R. (2026). HighSeas.jl v0.7.0 - Main release (v0.7.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.19372420">https://doi.org/10.5281/zenodo.19372420</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#a6e22e">@software</span>{benedetti_2026_19372420,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">author</span>       = <span style="color:#e6db74">{Benedetti, Gabriele and
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                  Heimisson, Elías Rafn}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span>        = <span style="color:#e6db74">{HighSeas.jl v0.7.0 - Main release}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">month</span>        = apr,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">year</span>         = <span style="color:#ae81ff">2026</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">publisher</span>    = <span style="color:#e6db74">{Zenodo}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">version</span>      = <span style="color:#e6db74">{v0.7.0}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">doi</span>          = <span style="color:#e6db74">{10.5281/zenodo.19372420}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">url</span>          = <span style="color:#e6db74">{https://doi.org/10.5281/zenodo.19372420}</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
         </section>
         
       </div>
@@ -132,6 +150,10 @@
 		</div>
 
 		<div class="right-item">
+		
+
+		<a href="http://localhost:1313/libraries/squiggles/" class="page-link-next" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+
 		
 		</div>
 
